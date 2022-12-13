@@ -1,0 +1,2009 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Black Friday - ISPbills</title>
+    <meta name="title" content="Black Friday - ISPbills">
+    <meta name="description"
+        content="Get discounts on all of our hosting plans of up to 60% with the most cutting-edge and potent hardware, we provide web hosting from our own network infrastructure.">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="black-friday.html">
+    <meta property="og:title" content="Black Friday - ISPbills">
+    <meta property="og:description"
+        content="Get discounts on all of our hosting plans of up to 60% with the most cutting-edge and potent hardware, we provide web hosting from our own network infrastructure.">
+    <meta property="og:image" content="img/bf-og.jpg">
+    <meta property="fb:app_id" content="0000" />
+
+
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.png"/>
+    <link href="assets/fonts/Inter/inter.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+    <script src="js/lazysizes.min.js" async=""></script>
+
+<!-- Dark Theme FUOC AVOID -->
+<script>
+// On page load or when changing themes, best to add inline in `head` to avoid FOUC
+if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+  document.documentElement.classList.add('dark')
+} else {
+  document.documentElement.classList.remove('dark')
+}
+</script>
+<!--End Dark Theme FUOC AVOID -->
+
+    <style>
+    body{
+        font-family: 'Inter', sans-serif;
+    }
+    /* !important Billed Annually check button*/
+    .toggle-bg:after {
+        background: #fff;
+        border-color: #d1d5db;
+        border-radius: 9999px;
+        border-width: 1px;
+        content: "";
+        height: 1.25rem;
+        left: .125rem;
+        position: absolute;
+        top: .125rem;
+        transition-duration: .15s;
+        width: 1.25rem
+    }
+
+    input:checked+.toggle-bg:after {
+        border-color: #fff;
+        transform: translateX(100%);
+    }
+
+    input:checked+.toggle-bg {
+        background: #1c64f2;
+        border-color: #1c64f2
+    }
+
+    select{
+        -webkit-print-color-adjust: exact;
+        background-image: url(img/arrow-down.svg);
+        background-position: right 0.8rem center;
+        background-repeat: no-repeat;
+        background-size: .6em .6em;
+        color-adjust: exact;
+        padding-right: 2.5rem;
+        
+    }
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: '';
+    }
+    .plan-check{
+        width: 17px;
+        min-width: 17px;
+    }
+
+    .toggle-bg:after {
+    background: #fff;
+    border-color: #d1d5db;
+    border-radius: 9999px;
+    border-width: 1px;
+    box-shadow: var(--tw-ring-inset) 0 0 0 calc(var(--tw-ring-offset-width)) var(--tw-ring-color);
+    content: "";
+    height: 1.25rem;
+    left: .125rem;
+    position: absolute;
+    top: .125rem;
+    transition-duration: .15s;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+    width: 1.25rem
+}
+
+</style>
+
+    <style>
+        @media (min-width: 640px) {
+            .sm\:bg-svg-bottom {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='353' height='304'%3E%3Cg fill='none' fill-rule='evenodd' stroke='%23D0D5F6' stroke-width='2'%3E%3Cpath d='M180.29 759c102.087-21.62 155.232-61.312 159.437-119.074 6.307-86.643-231.598-17.186-136.358-198 95.241-180.813 181.318-185.29 136.358-298C294.767 31.216 174.04-27.954 33.79 16.8c-93.501 29.836-144.652 140.545-153.453 332.126'/%3E%3Cpath d='M138.3 759c80.083-18.988 121.774-53.846 125.072-104.575 4.948-76.093-181.679-15.094-106.966-173.89C231.118 321.738 298.64 317.808 263.372 218.82c-35.269-98.986-129.974-150.95-239.995-111.646C-49.97 133.378-90.096 230.605-97 398.859'/%3E%3Cpath d='M102.065 761c60.604-16.56 92.153-46.963 94.65-91.208 3.743-66.367-137.488-13.165-80.949-151.664 56.54-138.5 107.638-141.927 80.948-228.261-26.69-86.335-98.359-131.656-181.618-97.376C-40.41 215.345-70.775 300.145-76 446.892'/%3E%3C/g%3E%3C/svg%3E");
+            }
+        }
+
+        .toggle_dot {
+            top: -.25rem;
+            transition: all 0.3s ease-in-out;
+        }
+
+        input:checked~.toggle_dot {
+            transform: translateX(100%);
+            background-color: #0082c8;
+        }
+
+        .bg-gradient {
+            background: #667db6;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+
+        .bg-gradient-base {
+            background-color: #0082c8;
+        }
+
+        .font-work-sans {
+            font-family: 'Work Sans', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body class="dark:bg-gray-900">
+
+    <!-- Banner section start -->
+    <div class="py-12" style="background-image: url(img/banner-img.png); background-position: center; background-repeat: no-repeat; background-size: cover;">
+        <div class="max-w-7xl lg:mx-auto mx-5 md:mx-5">
+            <div>
+                <nav :class="{'flex': open, 'hidden': !open}" class="flex  justify-between items-center ">
+
+                    <div class="flex flex-row items-center justify-between p-4">
+                        <a href="index.html"> <img class="h-auto lg:w-48 md:w-48 w-32" src="img/header/ISPbills-logo-white.png" alt="ISPbills Logo" /> </a>
+                        <button class="focus:shadow-outline rounded-lg focus:outline-none lg:hidden" @click="open = !open">
+                            <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" style="display: none;"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="flex items-center px-5 lg:mt-0 ">
+                        
+                        <div @click.away="open = false" class="relative hidden sm:block" x-data="{ open: false }">
+
+                        <button @click="open = !open" class= "text-md dark:hover:bg-gray-700 focus:shadow-outline mt-2 flex w-full flex-row items-center rounded-lg px-4 py-2 text-left font-semibold focus:outline-none dark:bg-gray-800 dark:bg-transparent text-white dark:focus:bg-gray-700 dark:focus:text-white sm:bg-transparent sm:dark:bg-transparent sm:dark:hover:bg-transparent sm:dark:focus:bg-transparent md:mt-0 md:ml-2 md:inline md:w-auto">
+                        <span>Support</span>
+                        <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="mt-1 ml-1 inline h-4 w-4 rotate-0 transform transition-transform duration-200 md:-mt-1">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                        </svg>
+                        </button>
+                        <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" id="js_hidden" style="display: none;" class="relative left-0 z-50 mt-5 mb-4 w-full origin-top-left rounded-lg shadow-xl sm:mt-4 sm:mb-0 md:absolute md:w-80 md:rounded-2xl">
+                        <div class="mb-2 rounded-lg bg-white px-6 py-6 shadow-xl dark:bg-gray-800 md:mb-0 md:rounded-2xl">
+                            <!-- END CONTACT SECTION -->
+                            <div class="space-y-4 divide-y py-3 px-2 dark:divide-gray-700">
+                                <div>
+                                    <h2 class="text-lg font-bold text-gray-800 dark:text-gray-100">Talk to expert</h2>
+                                    <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">You can call us anytime</p>
+                                    <div class="mt-4 mb-6 flex items-center">
+                                    <a href="tel:+8801711928149" class="inline-flex w-full items-center justify-center space-x-2 rounded-xl border border-gray-100 bg-gray-100 px-4 py-2.5 font-semibold leading-6 text-gray-700 shadow-lg hover:border-gray-100 hover:bg-gray-100 hover:text-gray-800 hover:shadow-lg focus:outline-none dark:border-gray-700 dark:bg-gray-700">
+                                        <span class="flex items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-1.5 h-5 w-5 text-blue-500" viewBox="0 0 20 20" fill="currentColor">
+                                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                                            </svg>
+                                            <p class="text-md font-semibold dark:text-gray-100">+88 01711 928149</p>
+                                        </span>
+                                    </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2 class="mt-4 mb-2 text-lg font-bold text-gray-800 dark:text-gray-100">Chat with us</h2>
+                                    <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Chat now with our support team.</p>
+                                    <div class="mt-4 flex items-center space-x-3">
+                                    <div class="bg-white bg-opacity-100 pb-2 dark:bg-gray-800 lg:pb-2 lg:pt-0">
+                                         class="inline-flex w-full items-center justify-center space-x-2 rounded-lg border border-blue-500 bg-blue-500 px-4 py-2 text-sm font-semibold leading-6 text-white hover:border-blue-600 hover:bg-blue-700 hover:text-white focus:outline-none focus:ring focus:ring-gray-500 focus:ring-opacity-25 active:border-blue-700 active:bg-blue-700"> Live chat </a>
+                                    </div>
+                                    <div class="bg-white bg-opacity-100 pb-2 dark:bg-gray-800 lg:pb-2 lg:pt-0">
+                                        <a href="https://help.ispbills.com" class="inline-flex w-full items-center justify-center space-x-2 rounded-lg border border-blue-500 bg-blue-500 px-4 py-2 text-sm font-semibold leading-6 text-white hover:border-blue-600 hover:bg-blue-700 hover:text-white focus:outline-none focus:ring focus:ring-gray-500 focus:ring-opacity-25 active:border-blue-700 active:bg-blue-700"> Support ticket </a>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2 class="mt-4 text-lg font-bold text-gray-800 dark:text-gray-100"><a href="../blog.ISPbills.net/index.html" target="_blank"> Visit our blog</a></h2>
+                                    <p></p>
+                                </div>
+                                <div>
+                                    <h2 class="mt-4 text-lg font-bold text-gray-800 dark:text-gray-100"><a href="../kb.ISPbills.net/index.html" target="_blank"> Knowledgebase </a></h2>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <!-- END CONTACT SECTION -->
+                        </div>
+                        </div>
+                        </div>
+                        <div class="mx-2 flex sm:mb-0 w-9 h-9 bg-slate-100 dark:bg-gray-700 dark:text-gray-200 rounded-lg items-center justify-center cursor-pointer">
+                        <svg class="ISPbills-dark h-7 w-7 p-1 fill-gray-500 dark:fill-gray-800" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                        </svg>
+                        <svg class="ISPbills-light h-7 w-7 p-1" class="" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+                        </svg>
+                        </div>
+                        <a class="text-md ml-2 sm:ml-0 focus:shadow-outline flex items-center rounded-lg bg-gray-100 dark:bg-gray-700 lg:px-4 md:px-4 px-2 py-2 font-semibold text-gray-900 dark:text-gray-200 md:mt-0 md:ml-2 transition-all duration-200" href="https://help.ispbills.com" target="_blank">
+                        <span class="text-gray-700 dark:text-white transition-all duration-200 hidden lg:block md:block">Account</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="lg:ml-2 md:ml-2 ml-0 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd" />
+                        </svg>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 md:gap-5 gap-5 md:justify-items-center items-center py-12 lg:flex lg:justify-between">
+                <div>
+                    <div>
+                        <p class="lg:text-5xl md:text-5xl text-3xl font-bold mb-3" style="background: linear-gradient(179.03deg, #FFFFFF 0.83%, rgba(0, 0, 0, 0) 120%);-webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                        ">Black Friday Sale</p>
+                        <p class="text-xl font-bold" style="background: linear-gradient(180deg, #FF0000 0%, rgba(119, 0, 0, 0) 175.93%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;">UP TO</p>
+                        <p class="text-5xl lg:text-6xl md:text-7xl font-bold mb-12" style="background: linear-gradient(168.83deg, #EF4444 8.25%, rgba(119, 0, 0, 0) 169.36%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;">60% OFF</p>
+        
+                        <a href="#BDIX" class="px-10 lg:px-12 md:px-10 py-4  rounded-full text-white" style="background: linear-gradient(123.61deg, #EF4444 -49.68%, rgba(119, 0, 0, 0) 239.6%);">Get Started</a>
+                    </div>
+                    <div>
+                        <div class="flex gap-2 lg:gap-5 md:gap-4 mt-12 items-center">
+                            <div class="basis-24 text-center rounded-2xl py-3 px-3 lg:px-5 md:px-4" style="background: rgba(255, 255, 255, 0.1);
+                            border: 0.883858px solid rgba(255, 0, 0, 0.21);
+                            backdrop-filter: blur(10.6063px);">
+                                <p id="days" class="text-2xl lg:text-4xl md:text-3xl text-white font-bold text-center">00</p>
+                                <span class="text-white text-xs text-center">DAYS</span>
+                            </div><div class="basis-24 text-center rounded-2xl py-3 px-3 lg:px-5 md:px-4" style="background: rgba(255, 255, 255, 0.1);
+                            border: 0.883858px solid rgba(255, 0, 0, 0.21);
+                            backdrop-filter: blur(10.6063px);">
+                                <p id="hours" class="text-2xl lg:text-4xl md:text-3xl text-white font-bold text-center">00</p>
+                                <span class="text-white text-xs text-center">HOURS</span>
+                            </div><div class="basis-24 text-center rounded-2xl py-3 px-3 lg:px-5 md:px-4" style="background: rgba(255, 255, 255, 0.1);
+                            border: 0.883858px solid rgba(255, 0, 0, 0.21);
+                            backdrop-filter: blur(10.6063px);">
+                                <p id="minutes" class="text-2xl lg:text-4xl md:text-3xl text-white font-bold text-center">00</p>
+                                <span class="text-white text-xs text-center">MINUTES</span>
+                            </div><div class="basis-24 text-center rounded-2xl py-3 px-3 lg:px-5 md:px-4" style="background: rgba(255, 255, 255, 0.1);
+                            border: 0.883858px solid rgba(255, 0, 0, 0.21);
+                            backdrop-filter: blur(10.6063px);">
+                                <p id="seconds" class="text-2xl lg:text-4xl md:text-3xl text-white font-bold text-center">00</p>
+                                <span class="text-white text-xs text-center">SECONDS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <img src="img/servers.png" alt="" class="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner section end -->
+
+    <!-- Offers Section start -->
+    <div class="max-w-7xl mx-auto pb-12 pt-20">
+        <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8 lg:mx-0 md:mx-5 mx-5">
+            <div class="dark:bg-slate-800 border-2 border-red-200 rounded-2xl pb-5"  style="border: 2px solid rgba(255, 0, 0, 0.21); backdrop-filter: blur(10.6063px);">
+                <div class="pb-5 bg-red-50 dark:bg-red-500/25 rounded-2xl py-5 px-5 shadow-md">
+                    <div class="w-full flex">
+                        <p class="font-bold text-xl text-red-500 text-center">Web Hosting</p>
+                    </div>
+                        <p class="font-bold gap-3 dark:text-white">
+                            <span class="text-2xl">60% OFF</span>
+                        </p>
+                </div>
+                <div class="mx-5 mt-5 mb-10 dark:text-gray-400">
+                    <p>Get up to 60% off on our All Web Hosting Plan. BDIX (Bangladesh Internet Exchange) is most essential for any Bangladesh-based website. ISPbills has a data center in Bangladesh with 1 Gbps BDIX connectivity.. We also offer discounts on our US Web Hosting Plan</p>
+                </div>
+                <div class="m-5 flex justify-center">
+                    <a href="#BDIX" class="rounded-lg text-xl text-white px-14 py-3 font-medium absolute bottom-0 mb-5" style="background: linear-gradient(123.61deg, #FF0000 -49.68%, rgba(119, 0, 0, 0) 239.6%);">Get Started</a>
+                </div>
+            </div>
+            <div class="dark:bg-slate-800 border-2 border-red-200 rounded-2xl pb-5"  style="border: 2px solid rgba(255, 0, 0, 0.21); backdrop-filter: blur(10.6063px);">
+                <div class="pb-5 bg-red-50 dark:bg-red-500/25 rounded-2xl p-5 shadow-md">
+                    <div class="w-full flex">
+                        <p class="font-bold text-xl text-red-500">Turbo Hosting</p>
+                    </div>
+                        <p class="font-bold gap-3 dark:text-white">
+                            <span class="text-2xl">50% OFF</span>
+                        </p>
+                    
+                </div>
+                <div class="mx-5 mt-5 mb-10 dark:text-gray-400">
+                    <p>Get up to 50% Discount on our All Turbo Hosting plan. Exceptionally fast and secure web hosting that is eco-friendly with more memory, CPU, and I/O connections than ever before. Our Turbo Speedy servers are located in Bangladesh (BDIX) and United States which will make amazed your visitors.</p>
+                </div>
+                <div class="m-5 flex justify-center">
+                    <a href="#BDIX-TURBO" class="rounded-lg text-xl text-white px-14 py-3 font-medium absolute bottom-0 mb-5" style="background: linear-gradient(123.61deg, #FF0000 -49.68%, rgba(119, 0, 0, 0) 239.6%);">Get Started</a>
+                </div>
+            </div>
+            <div class="dark:bg-slate-800 border-2 border-red-200 rounded-2xl pb-5"  style="border: 2px solid rgba(255, 0, 0, 0.21); backdrop-filter: blur(10.6063px);">
+                <div class="pb-5 bg-red-50 dark:bg-red-500/25 rounded-2xl p-5 shadow-md">
+                    <div class="w-full flex">
+                        <p class="font-bold text-xl text-red-500">VPS Server</p>
+                    </div>
+                        <p class="font-bold gap-3 dark:text-white">
+                            <span class="text-2xl">25% OFF</span>
+                        </p>
+                    
+                </div>
+                <div class="mx-5 mt-5 mb-10 dark:text-gray-400">
+                    <p>Get up to 25% Discount on our BDIX Hosting plan. Virtual private servers with lots of memory, bandwidth, and CPU cores are controlled by Virtualizor and powered by KVM. Get the freedom to utilize your server resources as per your needs.Our VPS servers are located in Bangladesh (BDIX) and United States.</p>
+                </div>
+                <div class="m-5 flex justify-center">
+                    <a href="#BDIX-VPS" class="rounded-lg text-xl text-white px-14 py-3 font-medium absolute bottom-0 mb-5" style="background: linear-gradient(123.61deg, #FF0000 -49.68%, rgba(119, 0, 0, 0) 239.6%);">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Offers Section end -->
+
+    <!-- Packages Cards start -->
+    
+    <!-- Package 1 -->
+    <div id="BDIX" class="py-12 max-w-7xl lg:mx-auto mx-8 text-center" >
+        <p class="text-lg dark:text-gray-400 font-semibold mb-2">Up to 60% Discount</p>
+        <p class="lg:text-4xl md:text-3xl text-2xl font-bold text-center dark:text-white mb-12">BDIX Hosting & US Hosting</p>
+        
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8">
+
+            <!-- Card 1 -->
+
+            <div class="dark:bg-slate-800 border-2 border-red-200 rounded-2xl pb-5"  style="border: 2px solid rgba(255, 0, 0, 0.21); backdrop-filter: blur(10.6063px);">
+                <div class="pb-5 bg-red-50 dark:bg-red-500/25 rounded-2xl p-5 shadow-md">
+                    <div class="w-full flex justify-center">
+                        <div class="flex justify-between items-center mb-2 bg-red-200 dark:bg-slate-500 rounded-full w-20 -ml-8">
+                            <p class="dark:text-white font-bold text-sm px-3">GO</p>
+                            <p class="font-bold bg-red-500  dark:bg-slate-800 text-white rounded-full px-3 py-1 text-sm">50%</p>
+                        </div>
+                    </div>
+                    <p class="text-4xl font-bold mb-2 dark:text-white text-red-500"><span class="text-base mr-1">BDT</span>720<span class="text-lg ml-1">/year</span></p>
+                    <p class="text-base dark:text-white font-semibold">Regular: BDT <s>1,440</s><span class="text-xs">/year</span></p>
+                </div>
+                <div class="mx-5 mt-5 mb-6">
+                    <ul class="dark:text-white">
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-sm"><strong>1 GB</strong> SSD Storage</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-sm"><strong>100 GB</strong> Bandwidth</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-sm"><strong>1 GB</strong> Physical Memory</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-sm"><strong>0.5 Core</strong> CPU</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-sm"><strong>10 MB/s</strong> I/O</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-sm"><strong>Single Website</strong></p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-sm"><strong>10 Email</strong> Accounts</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <p class="font-medium lg:text-base text-sm dark:text-white mb-2">Select server location:</p>
+                <select class="mb-8 rounded-md px-5 py-1 focus:outline-none text-base border-2 dark:border-none" id="plan_bf_1" name="server" style="width: 225px">
+                    <option value="bdix-go" class="rounded-md px-5 py-1">Bangladesh (BDIX)</option>
+                    <option value="usa-go">Phoenix, USA</option>
+                </select>
+                <div class="button-bf-1 mb-5">
+                    <a href="../ap.ISPbills.net/store/web-hosting-cp/go72c7.html?billingcycle=annually&amp;promocode=blackfriday-50" target="_blank" class="rounded-lg text-lg text-white px-16 py-4 font-medium" style="background: linear-gradient(123.61deg, #FF0000 -49.68%, rgba(119, 0, 0, 0) 239.6%);"> Get Started </a>
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+
+            <div class="dark:bg-slate-800 border-2 border-red-200 rounded-2xl pb-5"  style="border: 2px solid rgba(255, 0, 0, 0.21); backdrop-filter: blur(10.6063px);">
+                <div class="pb-5 bg-red-50  dark:bg-red-500/25 rounded-2xl p-5 shadow-md">
+                    <div class="w-full flex justify-center">
+                        <div class="flex justify-between items-center mb-2 bg-red-200 dark:bg-slate-500 rounded-full w-28 -ml-4">
+                            <p class=" dark:text-white font-bold text-sm pl-3 pr-1">STARTER</p>
+                            <p class="font-bold bg-red-500  dark:bg-slate-800 text-white rounded-full px-3 py-1 text-sm">55%</p>
+                        </div>
+                    </div>
+                    <p class="text-4xl font-bold mb-2 dark:text-white text-red-500"><span class="text-base mr-1">BDT</span>1,148<span class="text-lg ml-1">/year</span></p>
+                    <p class="text-base dark:text-white font-semibold">Regular: BDT <s>2,550</s><span class="text-xs">/year</span></p>
+                </div>
+                <div class="mx-5 mt-5 mb-6">
+                <ul class="dark:text-white">
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-sm"><strong>5 GB</strong> SSD Storage</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-sm"><strong>250 GB</strong> Bandwidth</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-sm"><strong>1 GB</strong> Physical Memory</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-sm"><strong>1 Core</strong> CPU</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-sm"><strong>20 MB/s</strong> I/O</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-sm"><strong>2 Website</strong></p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-sm"><strong>30 Email</strong> Accounts</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <p class="font-medium lg:text-base text-sm dark:text-white mb-2">Select server location:</p>
+                <select class="mb-8 rounded-md px-5 py-1 focus:outline-none text-base border-2 dark:border-none" id="plan_bf_2" name="server" style="width: 225px">
+                    <option value="bdix-starter" class="rounded-md px-5 py-1">Bangladesh (BDIX)</option>
+                    <option value="usa-starter">Phoenix, USA</option>
+                </select>
+                <div class="button-bf-2 mb-5">
+                    <a href="../ap.ISPbills.net/store/web-hosting-cp/starterdfba.html?billingcycle=annually&amp;promocode=blackfriday-55" target="_blank" class="rounded-lg text-lg text-white px-16 py-4 font-medium" style="background: linear-gradient(123.61deg, #FF0000 -49.68%, rgba(119, 0, 0, 0) 239.6%);"> Get Started </a>
+                </div>
+            </div>
+            
+            <!-- Card 3 -->
+
+            <div class="dark:bg-slate-800 border-2 border-red-200 rounded-2xl pb-5"  style="border: 2px solid rgba(255, 0, 0, 0.21); backdrop-filter: blur(10.6063px);">
+                <div class="pb-5 bg-red-50  dark:bg-red-500/25 rounded-2xl p-5 shadow-md">
+                    <div class="w-full flex justify-center">
+                        <div class="flex justify-between items-center mb-2 bg-red-200 dark:bg-slate-500 rounded-full w-28 -ml-4">
+                            <p class="dark:text-white font-bold text-sm pl-3 pr-1">MEDIUM</p>
+                            <p class="font-bold bg-red-500  dark:bg-slate-800 text-white rounded-full px-3 py-1 text-sm">60%</p>
+                        </div>
+                    </div>
+                    <p class="text-4xl font-bold mb-2 dark:text-white text-red-500"><span class="text-base mr-1">BDT</span>1,920<span class="text-lg ml-1">/year</span></p>
+                    <p class="text-base dark:text-white font-semibold">Regular: BDT <s>4,800</s><span class="text-xs">/year</span></p>
+                </div>
+                <div class="mx-5 mt-5 mb-6">
+                <ul class="dark:text-white">
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-sm"><strong>10 GB</strong> SSD Storage</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-sm"><strong>500 GB</strong> Bandwidth</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-sm"><strong>2 GB</strong> Physical Memory</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-sm"><strong>1.5 Core</strong> CPU</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-sm"><strong>20 MB/s</strong> I/O</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-sm"><strong>5 Website</strong></p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-sm"><strong>50 Email</strong> Accounts</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <p class="font-medium lg:text-base text-sm dark:text-white mb-2">Select server location:</p>
+                <select class="mb-8 rounded-md px-5 py-1 focus:outline-none text-base border-2 dark:border-none" id="plan_bf_3" name="server" style="width: 225px">
+                    <option value="bdix-medium" class="rounded-md px-5 py-1">Bangladesh (BDIX)</option>
+                    <option value="usa-medium">Phoenix, USA</option>
+                </select>
+                <div class="button-bf-3 mb-5">
+                    <a href="../ap.ISPbills.net/store/web-hosting-cp/medium37b2.html?billingcycle=annually&amp;promocode=blackfriday-60" target="_blank" class="rounded-lg text-lg text-white px-16 py-4 font-medium" style="background: linear-gradient(123.61deg, #FF0000 -49.68%, rgba(119, 0, 0, 0) 239.6%);"> Get Started </a>
+                </div>
+            </div>
+            
+            <!-- Card 4 -->
+
+            <div class="dark:bg-slate-800 border-2 border-red-200 rounded-2xl pb-5"  style="border: 2px solid rgba(255, 0, 0, 0.21); backdrop-filter: blur(10.6063px);">
+                <div class="pb-5 bg-red-50  dark:bg-red-500/25 rounded-2xl p-5 shadow-md">
+                    <div class="w-full flex justify-center">
+                        <div class="flex justify-between items-center mb-2 bg-red-200 dark:bg-slate-500 rounded-full w-32 -ml-4">
+                            <p class="dark:text-white font-bold text-sm pl-3 pr-1">ADVANCED</p>
+                            <p class="font-bold bg-red-500  dark:bg-slate-800 text-white rounded-full px-3 py-1 text-sm">55%</p>
+                        </div>
+                    </div>
+                    <p class="text-4xl font-bold mb-2 dark:text-white text-red-500"><span class="text-base mr-1">BDT</span>3,713<span class="text-lg ml-1">/year</span></p>
+                    <p class="text-base dark:text-white font-semibold">Regular: BDT <s>8,250</s><span class="text-xs">/year</span></p>
+                </div>
+                <div class="mx-5 mt-5 mb-6">
+                <ul class="dark:text-white">
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-sm"><strong>20 GB</strong> SSD Storage</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-sm"><strong>1 TB</strong> Bandwidth</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-sm"><strong>3 GB</strong> Physical Memory</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-sm"><strong>3 Core</strong> CPU</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-sm"><strong>50 MB/s</strong> I/O</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-sm"><strong>10 Website</strong></p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-sm"><strong>100 Email</strong> Accounts</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <p class="font-medium lg:text-base text-sm dark:text-white mb-2">Select server location:</p>
+                <select class="mb-8 rounded-md px-5 py-1 focus:outline-none text-base border-2 dark:border-none" id="plan_bf_4" name="server" style="width: 225px">
+                    <option value="bdix-advanced" class="rounded-md px-5 py-1">Bangladesh (BDIX)</option>
+                    <option value="usa-advanced">Phoenix, USA</option>
+                </select>
+                <div class="button-bf-4 mb-5">
+                    <a href="../ap.ISPbills.net/store/web-hosting-cp/advanceddfba.html?billingcycle=annually&amp;promocode=blackfriday-55" target="_blank" class="rounded-lg text-lg text-white px-16 py-4 font-medium" style="background: linear-gradient(123.61deg, #FF0000 -49.68%, rgba(119, 0, 0, 0) 239.6%);"> Get Started </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Package 2 -->
+    <div id="BDIX-TURBO" class="py-12 max-w-7xl lg:mx-auto mx-8 text-center">
+        <p class="text-lg mb-2 dark:text-gray-400 font-semibold">Up to 50% Discount</p>
+        <p class="lg:text-4xl md:text-3xl text-2xl font-bold text-center dark:text-white mb-12">BDIX Turbo Hosting & US Turbo Hosting</p>
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8">
+
+            <!-- Card 1 -->
+
+            <div class="dark:bg-slate-800 border-2 border-red-200 rounded-2xl pb-5"  style="border: 2px solid rgba(255, 0, 0, 0.21); backdrop-filter: blur(10.6063px);">
+                <div class="pb-5 bg-red-50  dark:bg-red-500/25 rounded-2xl p-5 shadow-md">
+                    <div class="w-full flex justify-center">
+                        <div class="flex justify-between items-center mb-2 bg-red-200 dark:bg-slate-500 rounded-full w-20 -ml-8">
+                            <p class="dark:text-white font-bold text-sm px-3">GO</p>
+                            <p class="font-bold bg-red-500  dark:bg-slate-800 text-white rounded-full px-3 py-1 text-sm">35%</p>
+                        </div>
+                    </div>
+                    <p class="text-4xl font-bold mb-2 dark:text-white text-red-500"><span class="text-base mr-1">BDT</span>8,044<span class="text-lg ml-1">/year</span></p>
+                    <p class="text-base dark:text-white font-semibold">Regular: BDT <s>12,375</s><span class="text-xs">/year</span></p>
+                </div>
+                <div class="mx-5 mt-5 mb-6">
+                    <ul class="dark:text-white">
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>50 GB</strong> Disk Space</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>Unmetered</strong> Bandwidth</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>Unlimited</strong> Website</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>4 Core</strong> CPU</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>4 GB</strong> Physical Memory</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>100 Entry</strong> Process</p>
+                        </li>
+                        
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-lg text-xs"><strong>130 Process</strong></p>
+                        </li>
+                    </ul>
+                </div>
+
+                <p class="font-medium lg:text-base text-sm dark:text-white mb-2">Select server location:</p>
+                <select class="mb-8 rounded-md px-5 py-1 focus:outline-none text-base border-2 dark:border-none" id="plan_bf_5" name="server" style="width: 225px">
+                    <option value="bdix-turbo-go" class="rounded-md px-5 py-1">Bangladesh (BDIX)</option>
+                    <option value="usa-turbo-go">Phoenix, USA</option>
+                </select>
+                <div class="button-bf-5 mb-5">
+                    <a href="../ap.ISPbills.net/store/bdix-turbo-hosting-cpanel/turbo-god553.html?billingcycle=annually&amp;promocode=blackfriday-35" target="_blank" class="rounded-lg text-lg text-white px-16 py-4 font-medium" style="background: linear-gradient(123.61deg, #FF0000 -49.68%, rgba(119, 0, 0, 0) 239.6%);"> Get Started </a>
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+
+            <div class="dark:bg-slate-800 border-2 border-red-200 rounded-2xl pb-5"  style="border: 2px solid rgba(255, 0, 0, 0.21); backdrop-filter: blur(10.6063px);">
+                <div class="pb-5 bg-red-50  dark:bg-red-500/25 rounded-2xl p-5 shadow-md">
+                    <div class="w-full flex justify-center">
+                        <div class="flex justify-between items-center mb-2 bg-red-200 dark:bg-slate-500 rounded-full w-28 -ml-4">
+                            <p class=" dark:text-white font-bold text-sm pl-3 pr-1">STRONG</p>
+                            <p class="font-bold bg-red-500  dark:bg-slate-800 text-white rounded-full px-3 py-1 text-sm">45%</p>
+                        </div>
+                    </div>
+                    <p class="text-4xl font-bold mb-2 dark:text-white text-red-500"><span class="text-base mr-1">BDT</span>10,527<span class="text-lg ml-1">/year</span></p>
+                    <p class="text-base dark:text-white font-semibold">Regular: BDT <s>19,140</s><span class="text-xs">/year</span></p>
+                </div>
+                <div class="mx-5 mt-5 mb-6">
+                <ul class="dark:text-white">
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>50 GB</strong> Disk Space</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>Unmetered</strong> Bandwidth</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>Unlimited</strong> Website</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>6 Core</strong> CPU</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>6 GB</strong> Physical Memory</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>150 Entry</strong> Process</p>
+                        </li>
+                        
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-lg text-xs"><strong>180 Process</strong></p>
+                        </li>
+                    </ul>
+                </div>
+                <p class="font-medium lg:text-base text-sm dark:text-white mb-2">Select server location:</p>
+                <select class="mb-8 rounded-md px-5 py-1 focus:outline-none text-base border-2 dark:border-none" id="plan_bf_6" name="server" style="width: 225px">
+                    <option value="bdix-turbo-strong" class="rounded-md px-5 py-1">Bangladesh (BDIX)</option>
+                    <option value="usa-turbo-strong">Phoenix, USA</option>
+                </select>
+                <div class="button-bf-6 mb-5">
+                    <a href="../ap.ISPbills.net/store/bdix-turbo-hosting-cpanel/turbo-strong6eab.html?billingcycle=annually&amp;promocode=blackfriday-45" target="_blank" class="rounded-lg text-lg text-white px-16 py-4 font-medium" style="background: linear-gradient(123.61deg, #FF0000 -49.68%, rgba(119, 0, 0, 0) 239.6%);"> Get Started </a>
+                </div>
+            </div>
+            
+            <!-- Card 3 -->
+
+            <div class="dark:bg-slate-800 border-2 border-red-200 rounded-2xl pb-5"  style="border: 2px solid rgba(255, 0, 0, 0.21); backdrop-filter: blur(10.6063px);">
+                <div class="pb-5 bg-red-50  dark:bg-red-500/25 rounded-2xl p-5 shadow-md">
+                    <div class="w-full flex justify-center">
+                        <div class="flex justify-between items-center mb-2 bg-red-200 dark:bg-slate-500 rounded-full w-28 -ml-4">
+                            <p class="dark:text-white font-bold text-sm pl-3 pr-1">POWERFUL</p>
+                            <p class="font-bold bg-red-500  dark:bg-slate-800 text-white rounded-full px-3 py-1 text-sm">50%</p>
+                        </div>
+                    </div>
+                    <p class="text-4xl font-bold mb-2 dark:text-white text-red-500"><span class="text-base mr-1">BDT</span>11,550<span class="text-lg ml-1">/year</span></p>
+                    <p class="text-base dark:text-white font-semibold">Regular: BDT <s>23,100</s><span class="text-xs">/year</span></p>
+                </div>
+                <div class="mx-5 mt-5 mb-6">
+                <ul class="dark:text-white">
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>120 GB</strong> Disk Space</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>Unmetered</strong> Bandwidth</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>Unlimited</strong> Website</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>8 Core</strong> CPU</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>8 GB</strong> Physical Memory</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>200 Entry</strong> Process</p>
+                        </li>
+                        
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-lg text-xs"><strong>230 Process</strong></p>
+                        </li>
+                    </ul>
+                </div>
+                <p class="font-medium lg:text-base text-sm dark:text-white mb-2">Select server location:</p>
+                <select class="mb-8 rounded-md px-5 py-1 focus:outline-none text-base border-2 dark:border-none" id="plan_bf_7" name="server" style="width: 225px">
+                    <option value="bdix-turbo-powerful" class="rounded-md px-5 py-1">Bangladesh (BDIX)</option>
+                    <option value="usa-turbo-powerful">Phoenix, USA</option>
+                </select>
+                <div class="button-bf-7 mb-5">
+                    <a href="../ap.ISPbills.net/store/bdix-turbo-hosting-cpanel/turbo-powerful72c7.html?billingcycle=annually&amp;promocode=blackfriday-50" target="_blank" class="rounded-lg text-lg text-white px-16 py-4 font-medium" style="background: linear-gradient(123.61deg, #FF0000 -49.68%, rgba(119, 0, 0, 0) 239.6%);"> Get Started </a>
+                </div>
+            </div>
+            
+            <!-- Card 4 -->
+
+            <div class="dark:bg-slate-800 border-2 border-red-200 rounded-2xl pb-5"  style="border: 2px solid rgba(255, 0, 0, 0.21); backdrop-filter: blur(10.6063px);">
+                <div class="pb-5 bg-red-50  dark:bg-red-500/25 rounded-2xl p-5 shadow-md">
+                    <div class="w-full flex justify-center">
+                        <div class="flex justify-between items-center mb-2 bg-red-200 dark:bg-slate-500 rounded-full w-32 -ml-4">
+                            <p class="dark:text-white font-bold text-sm pl-3 pr-1">MIGHTY</p>
+                            <p class="font-bold bg-red-500  dark:bg-slate-800 text-white rounded-full px-3 py-1 text-sm">45%</p>
+                        </div>
+                    </div>
+                    <p class="text-4xl font-bold mb-2 dark:text-white text-red-500"><span class="text-base mr-1">BDT</span>16,335<span class="text-lg ml-1">/year</span></p>
+                    <p class="text-base dark:text-white font-semibold">Regular: BDT <s>29,700</s><span class="text-xs">/year</span></p>
+                </div>
+                <div class="mx-5 mt-5 mb-6">
+                <ul class="dark:text-white">
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>150 GB</strong> Disk Space</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>Unmetered</strong> Bandwidth</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>Unlimited</strong> Website</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>8 Core</strong> CPU</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>8 GB</strong> Physical Memory</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>250 Entry</strong> Process</p>
+                        </li>
+                        
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-lg text-xs"><strong>230 Process</strong></p>
+                        </li>
+                    </ul>
+                </div>
+                <p class="font-medium lg:text-base text-sm dark:text-white mb-2">Select server location:</p>
+                <select class="mb-8 rounded-md px-5 py-1 focus:outline-none text-base border-2 dark:border-none" id="plan_bf_8" name="server" style="width: 225px">
+                    <option value="bdix-turbo-mighty" class="rounded-md px-5 py-1">Bangladesh (BDIX)</option>
+                    <option value="usa-turbo-mighty">Phoenix, USA</option>
+                </select>
+                <div class="button-bf-8 mb-5">
+                    <a href="../ap.ISPbills.net/store/bdix-turbo-hosting-cpanel/turbo-mighty6eab.html?billingcycle=annually&amp;promocode=blackfriday-45" target="_blank" class="rounded-lg text-lg text-white px-16 py-4 font-medium" style="background: linear-gradient(123.61deg, #FF0000 -49.68%, rgba(119, 0, 0, 0) 239.6%);"> Get Started </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Package 3 -->
+    <div id="BDIX-VPS" class="py-12 max-w-7xl lg:mx-auto mx-8 text-center">
+        <p class="text-lg mb-2 dark:text-gray-400 font-semibold">Up to 25% Discount</p>
+        <p class="lg:text-4xl md:text-3xl text-2xl font-bold text-center dark:text-white mb-12">BDIX VPS Server & US VPS Server</p>
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8">
+
+            <!-- Card 1 -->
+            <div class="dark:bg-slate-800 border-2 border-red-200 rounded-2xl pb-5"  style="border: 2px solid rgba(255, 0, 0, 0.21); backdrop-filter: blur(10.6063px);">
+                <div class="pb-5 bg-red-50  dark:bg-red-500/25 rounded-2xl p-5 shadow-md">
+                    <div class="w-full flex justify-center">
+                        <div class="flex justify-between items-center mb-2 bg-red-200 dark:bg-slate-500 rounded-full w-40 -ml-4">
+                            <p class="dark:text-white font-bold text-sm pl-5">KVM-2G-2C</p>
+                            <p class="font-bold bg-red-500  dark:bg-slate-800 text-white rounded-full px-3 py-1 text-sm">10%</p>
+                        </div>
+                    </div>
+                    <p class="text-4xl font-bold mb-2 dark:text-white text-red-500"><span class="text-base mr-1">BDT</span>15,840<span class="text-lg ml-1">/year</span></p>
+                    <p class="text-base dark:text-white font-semibold">Regular: BDT <s>17,600</s><span class="text-xs">/year</span></p>
+                </div>
+                <div class="mx-5 mt-5 mb-6">
+                    <ul class="dark:text-white">
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>25 GB</strong> SSD Storage</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>2 GB</strong> RAM</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>2 CPU</strong> Core</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>1 IP</strong> Address</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>1 TB</strong> Traffic</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <p class="font-medium lg:text-base text-sm dark:text-white mb-2">Select server location:</p>
+                <select class="mb-8 rounded-md px-5 py-1 focus:outline-none text-base border-2 dark:border-none" id="plan_bf_9" name="server" style="width: 225px">
+                    <option value="bdix-vps-1" class="rounded-md px-5 py-1">Bangladesh (BDIX)</option>
+                    <option value="usa-vps-1">Phoenix, USA</option>
+                </select>
+                <div class="button-bf-9 mb-5">
+                    <a href="../ap.ISPbills.net/cart2a10.html?billingcycle=annually&amp;promocode=blackfriday-10" target="_blank" class="rounded-lg text-lg text-white px-16 py-4 font-medium" style="background: linear-gradient(123.61deg, #FF0000 -49.68%, rgba(119, 0, 0, 0) 239.6%);"> Get Started </a>
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="dark:bg-slate-800 border-2 border-red-200 rounded-2xl pb-5"  style="border: 2px solid rgba(255, 0, 0, 0.21); backdrop-filter: blur(10.6063px);">
+                <div class="pb-5 bg-red-50  dark:bg-red-500/25 rounded-2xl p-5 shadow-md">
+                    <div class="w-full flex justify-center">
+                        <div class="flex justify-between items-center mb-2 bg-red-200 dark:bg-slate-500 rounded-full w-40 -ml-4">
+                            <p class=" dark:text-white font-bold text-sm pl-5">KVM-4G-4C</p>
+                            <p class="font-bold bg-red-500  dark:bg-slate-800 text-white rounded-full px-3 py-1 text-sm">15%</p>
+                        </div>
+                    </div>
+                    <p class="text-4xl font-bold mb-2 dark:text-white text-red-500"><span class="text-base mr-1">BDT</span>32,725<span class="text-lg ml-1">/year</span></p>
+                    <p class="text-base dark:text-white font-semibold">Regular: BDT <s>38,500</s><span class="text-xs">/year</span></p>
+                </div>
+                <div class="mx-5 mt-5 mb-6">
+                    <ul class="dark:text-white">
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>50 GB</strong> SSD Storage</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>4 GB</strong> RAM</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>4 CPU</strong> Core</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>1 IP</strong> Address</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>3 TB</strong> Traffic</p>
+                        </li>
+                    </ul>
+                </div>
+                <p class="font-medium lg:text-base text-sm dark:text-white mb-2">Select server location:</p>
+                <select class="mb-8 rounded-md px-5 py-1 focus:outline-none text-base border-2 dark:border-none" id="plan_bf_10" name="server" style="width: 225px">
+                    <option value="bdix-vps-2" class="rounded-md px-5 py-1">Bangladesh (BDIX)</option>
+                    <option value="usa-vps-2">Phoenix, USA</option>
+                </select>
+                <div class="button-bf-10 mb-5">
+                    <a href="../ap.ISPbills.net/cart9804.html?billingcycle=annually&amp;promocode=blackfriday-15" target="_blank" class="rounded-lg text-lg text-white px-16 py-4 font-medium" style="background: linear-gradient(123.61deg, #FF0000 -49.68%, rgba(119, 0, 0, 0) 239.6%);"> Get Started </a>
+                </div>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="dark:bg-slate-800 border-2 border-red-200 rounded-2xl pb-5"  style="border: 2px solid rgba(255, 0, 0, 0.21); backdrop-filter: blur(10.6063px);">
+                <div class="pb-5 bg-red-50  dark:bg-red-500/25 rounded-2xl p-5 shadow-md">
+                    <div class="w-full flex justify-center">
+                        <div class="flex justify-between items-center mb-2 bg-red-200 dark:bg-slate-500 rounded-full w-40 -ml-4">
+                            <p class="dark:text-white font-bold text-sm pl-5">KVM-6G-6C</p>
+                            <p class="font-bold bg-red-500  dark:bg-slate-800 text-white rounded-full px-3 py-1 text-sm">25%</p>
+                        </div>
+                    </div>
+                    <p class="text-4xl font-bold mb-2 dark:text-white text-red-500"><span class="text-base mr-1">BDT</span>45,320<span class="text-lg ml-1">/year</span></p>
+                    <p class="text-base dark:text-white font-semibold">Regular: BDT <s>60,500</s><span class="text-xs">/year</span></p>
+                </div>
+                <div class="mx-5 mt-5 mb-6">
+                <ul class="dark:text-white">
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>100 GB</strong> SSD Storage</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>6 GB</strong> RAM</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>6 CPU</strong> Core</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>1 IP</strong> Address</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>5 TB</strong> Traffic</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <p class="font-medium lg:text-base text-sm dark:text-white mb-2">Select server location:</p>
+                <select class="mb-8 rounded-md px-5 py-1 focus:outline-none text-base border-2 dark:border-none" id="plan_bf_11" name="server" style="width: 225px">
+                    <option value="bdix-vps-3" class="rounded-md px-5 py-1">Bangladesh (BDIX)</option>
+                    <option value="usa-vps-3">Phoenix, USA</option>
+                </select>
+                <div class="button-bf-11 mb-5">
+                    <a href="../ap.ISPbills.net/carta32c.html?billingcycle=annually&amp;promocode=blackfriday-25" target="_blank" class="rounded-lg text-lg text-white px-16 py-4 font-medium" style="background: linear-gradient(123.61deg, #FF0000 -49.68%, rgba(119, 0, 0, 0) 239.6%);"> Get Started </a>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="dark:bg-slate-800 border-2 border-red-200 rounded-2xl pb-5"  style="border: 2px solid rgba(255, 0, 0, 0.21); backdrop-filter: blur(10.6063px);">
+                <div class="pb-5 bg-red-50  dark:bg-red-500/25 rounded-2xl p-5 shadow-md">
+                    <div class="w-full flex justify-center">
+                        <div class="flex justify-between items-center mb-2 bg-red-200 dark:bg-slate-500 rounded-full w-40 -ml-4">
+                            <p class="dark:text-white font-bold text-sm pl-3">KVM-8G-8C</p>
+                            <p class="font-bold bg-red-500  dark:bg-slate-800 text-white rounded-full px-3 py-1 text-sm">20%</p>
+                        </div>
+                    </div>
+                    <p class="text-4xl font-bold mb-2 dark:text-white text-red-500"><span class="text-base mr-1">BDT</span>66,000<span class="text-lg ml-1">/year</span></p>
+                    <p class="text-base dark:text-white font-semibold">Regular: BDT <s>82,500</s><span class="text-xs">/year</span></p>
+                </div>
+                <div class="mx-5 mt-5 mb-6">
+                <ul class="dark:text-white">
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>200 GB</strong> SSD Storage</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>8 GB</strong> RAM</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>8 CPU</strong> Core</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>1 IP</strong> Address</p>
+                        </li>
+                        <li class="flex items-center gap-3 mt-3">
+                            <img src="img/plan-check.svg" alt="" class="w-5 h-5">
+                            <p class="font-medium lg:text-base text-xs"><strong>10 TB</strong> Traffic</p>
+                        </li>
+                    </ul>
+                </div>
+                <p class="font-medium lg:text-base text-sm dark:text-white mb-2">Select server location:</p>
+                <select class="mb-8 rounded-md px-5 py-1 focus:outline-none text-base border-2 dark:border-none" id="plan_bf_12" name="server" style="width: 225px">
+                    <option value="bdix-vps-4" class="rounded-md px-5 py-1">Bangladesh (BDIX)</option>
+                    <option value="usa-vps-4">Phoenix, USA</option>
+                </select>
+                <div class="button-bf-12 mb-5">
+                    <a href="../ap.ISPbills.net/store/bdix-kvm-vps/kvm-8g-8c3c97?billingcycle=annually&amp;promocode=blackfriday-20" target="_blank" class="rounded-lg text-lg text-white px-16 py-4 font-medium" style="background: linear-gradient(123.61deg, #FF0000 -49.68%, rgba(119, 0, 0, 0) 239.6%);"> Get Started </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Packages Cards end -->
+
+
+    <!-- START FEATURES-->
+    <div class="space-y-4 container xl:max-w-7xl mx-auto px-6 py-16 lg:py-0 lg:pt-20 lg:px-4 lg:pb-4 lg:dark:pb-10">
+
+        <!-- Heading -->
+        <div class="lg:w-1/2 text-left lg:text-left px-6 sm:px-4 pb-6 sm:pb-8">
+            <div class="text-sm uppercase font-bold tracking-wider mb-1 text-blue-500 dark:text-blue-500">
+                Exciting features
+            </div>
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-2 dark:text-gray-100">
+                All Plans Included
+            </h2>
+            <h3 class="text-lg md:text-xl md:leading-relaxed font-medium text-gray-600 dark:text-gray-400">
+            What makes ISPbills the #1 web hosting company in Bangladesh?
+            </h3>
+        </div>
+        <!-- END Heading -->
+
+
+
+        <!-- Features Section: Modern Alternate With Icons -->
+        <div class="dark:bg-gray-900 bg-white">
+            <div class="space-y-16 container xl:max-w-7xl mx-auto px-6 py-4 lg:px-4 lg:py-6">
+
+
+                <!-- Features -->
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-8">
+
+                    <div
+                        class="group p-8 transition ease-out duration-200 bg-white dark:bg-gray-800 shadow-lg rounded-2xl border-gray-200">
+                        <div class="text-left">
+                            <div class="inline-flex items-center justify-center w-8 h-8 m-5 mb-10 relative">
+                                <div
+                                    class="absolute inset-0 rounded-3xl -m-5 transform rotate-3 bg-purple-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105 group-hover:shadow-lg">
+                                </div>
+                                <div
+                                    class="absolute inset-0 rounded-2xl -m-2 transform -rotate-3 bg-purple-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105">
+                                </div>
+                                <img src="https://www.ISPbills.net/img/plans-icon/plans-icon6.svg" class="relative transform transition ease-out duration-200 group-hover:scale-110 inline-block w-5 h-5" alt="svg icon">
+                            </div>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2 text-left dark:text-gray-100">
+                            Flexible control
+                        </h4>
+                        <p class="leading-relaxed text-gray-600 dark:text-gray-400">
+                        We provide you the flexibility and cPanel control panel to design the website you desire, with full SSD storage and other features.
+                    </div>
+
+
+                    <div
+                        class="group p-8 transition ease-out duration-200 bg-white dark:bg-gray-800 shadow-lg rounded-2xl border-gray-200">
+                        <div class="text-left">
+                            <div class="inline-flex items-center justify-center w-8 h-8 m-5 mb-10 relative">
+                                <div
+                                    class="absolute inset-0 rounded-3xl -m-5 transform rotate-3 bg-red-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105 group-hover:shadow-lg">
+                                </div>
+                                <div
+                                    class="absolute inset-0 rounded-2xl -m-2 transform -rotate-3 bg-red-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105">
+                                </div>
+                                <img src="https://www.ISPbills.net/img/plans-icon/plans-icon2.svg" class="relative transform transition ease-out duration-200 group-hover:scale-110 inline-block w-5 h-5" alt="svg icon">
+                            </div>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2 text-left dark:text-gray-100">
+                            Filtered Bandwidth
+
+
+                        </h4>
+                        <p class="leading-relaxed text-gray-600 dark:text-gray-400">
+                        There are no restrictions of traffic your sites can receive as long as they don't violate our regulations or consume too much CPU.
+                        </p>
+                    </div>
+                    <div
+                        class="group p-8 transition ease-out duration-200 bg-white dark:bg-gray-800 shadow-lg rounded-2xl border-gray-200">
+                        <div class="text-left">
+                            <div class="inline-flex items-center justify-center w-8 h-8 m-5 mb-10 relative">
+                                <div
+                                    class="absolute inset-0 rounded-3xl -m-5 transform rotate-3 bg-green-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105 group-hover:shadow-lg">
+                                </div>
+                                <div
+                                    class="absolute inset-0 rounded-2xl -m-2 transform -rotate-3 bg-green-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105">
+                                </div>
+                                <img src="https://www.ISPbills.net/img/plans-icon/plans-icon3.svg" class="relative transform transition ease-out duration-200 group-hover:scale-110 inline-block w-5 h-5" alt="svg icon">
+                            </div>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2 text-left dark:text-gray-100">
+                            Improve Site Speed
+
+                        </h4>
+                        <p class="leading-relaxed text-gray-600 dark:text-gray-400">
+                        By switching to our web hosting, you may get a 50% increase in site speed and generate more money with a speedier site.
+                    </p>
+                    </div>
+                    <div
+                        class="group p-8 transition ease-out duration-200 bg-white dark:bg-gray-800 shadow-lg rounded-2xl border-gray-200">
+                        <div class="text-left">
+                            <div class="inline-flex items-center justify-center w-8 h-8 m-5 mb-10 relative">
+                                <div
+                                    class="absolute inset-0 rounded-3xl -m-5 transform rotate-3 bg-gray-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105 group-hover:shadow-lg">
+                                </div>
+                                <div
+                                    class="absolute inset-0 rounded-2xl -m-2 transform -rotate-3 bg-gray-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105">
+                                </div>
+                                <img src="https://www.ISPbills.net/img/plans-icon/plans-icon9.svg" class="relative transform transition ease-out duration-200 group-hover:scale-110 inline-block w-5 h-5" alt="svg icon">
+                            </div>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2 text-left dark:text-gray-100">
+                            Premium Tools
+
+                        </h4>
+                        <p class="leading-relaxed text-gray-600 dark:text-gray-400">
+                        Get the tools you need to develop better websites, including site migrations, Lets Encrypt SSL, Imunify Protection, and more.
+                        </p>
+                    </div>
+                    <div
+                        class="group p-8 transition ease-out duration-200 bg-white dark:bg-gray-800 shadow-lg rounded-2xl border-gray-200">
+                        <div class="text-left">
+                            <div class="inline-flex items-center justify-center w-8 h-8 m-5 mb-10 relative">
+                                <div
+                                    class="absolute inset-0 rounded-3xl -m-5 transform rotate-3 bg-blue-200 dark:bg-blue-900 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105 group-hover:shadow-lg">
+                                </div>
+                                <div
+                                    class="absolute inset-0 rounded-2xl -m-2 transform -rotate-3 bg-blue-700 bg-opacity- dark:bg-opacity-7075 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105">
+                                </div>
+                                <img src="https://www.ISPbills.net/img/plans-icon/plans-icon10.svg" class="relative transform transition ease-out duration-200 group-hover:scale-110 inline-block w-5 h-5" alt="svg icon">
+                            </div>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2 text-left dark:text-gray-100">
+                            Dedicated Power
+                        </h4>
+                        <p class="leading-relaxed text-gray-600 dark:text-gray-400">
+                        Our server resources are controlled by Cloudlinux. Every plan includes storage, a CPU, and RAM to get the job done.
+                        </p>
+                    </div>
+                    <div
+                        class="group p-8 transition ease-out duration-200 bg-white dark:bg-gray-800 shadow-lg rounded-2xl border-gray-200">
+                        <div class="text-left">
+                            <div class="inline-flex items-center justify-center w-8 h-8 m-5 mb-10 relative">
+                                <div
+                                    class="absolute inset-0 rounded-3xl -m-5 transform rotate-3 bg-yellow-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105 group-hover:shadow-lg">
+                                </div>
+                                <div
+                                    class="absolute inset-0 rounded-2xl -m-2 transform -rotate-3 bg-yellow-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105">
+                                </div>
+                                <img src="https://www.ISPbills.net/img/plans-icon/plans-icon4.svg" class="relative transform transition ease-out duration-200 group-hover:scale-110 inline-block w-5 h-5" alt="svg icon">
+                            </div>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2 text-left dark:text-gray-100">
+                            Maximum Security
+
+
+                        </h4>
+                        <p class="leading-relaxed text-gray-600 dark:text-gray-400">
+                        We protect your audience and brand with enterprise-grade security, Solid Security, and Firewall technology.
+                        </p>
+                    </div>
+                    <div
+                        class="group p-8 transition ease-out duration-200 bg-white dark:bg-gray-800 shadow-lg rounded-2xl border-gray-200">
+                        <div class="text-left">
+                            <div class="inline-flex items-center justify-center w-8 h-8 m-5 mb-10 relative">
+                                <div
+                                    class="absolute inset-0 rounded-3xl -m-5 transform rotate-3 bg-indigo-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105 group-hover:shadow-lg">
+                                </div>
+                                <div
+                                    class="absolute inset-0 rounded-2xl -m-2 transform -rotate-3 bg-indigo-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105">
+                                </div>
+                                <img src="https://www.ISPbills.net/img/plans-icon/plans-icon11.svg" class="relative transform transition ease-out duration-200 group-hover:scale-110 inline-block w-5 h-5" alt="svg icon">
+                            </div>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2 text-left dark:text-gray-100">
+                            Always Client First
+
+                        </h4>
+                        <p class="leading-relaxed text-gray-600 dark:text-gray-400">
+                        The user-friendly client area management features enable you to put your clients first by allowing you to make safe payments.
+                    </p>
+                    </div>
+                    <div
+                        class="group p-8 transition ease-out duration-200 bg-white dark:bg-gray-800 shadow-lg rounded-2xl border-gray-200">
+                        <div class="text-left">
+                            <div class="inline-flex items-center justify-center w-8 h-8 m-5 mb-10 relative">
+                                <div
+                                    class="absolute inset-0 rounded-3xl -m-5 transform rotate-3 bg-red-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105 group-hover:shadow-lg">
+                                </div>
+                                <div
+                                    class="absolute inset-0 rounded-2xl -m-2 transform -rotate-3 bg-red-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105">
+                                </div>
+                                <img src="https://www.ISPbills.net/img/plans-icon/plans-icon10.svg" class="relative transform transition ease-out duration-200 group-hover:scale-110 inline-block w-5 h-5" alt="svg icon">
+                            </div>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2 text-left dark:text-gray-100">
+                            Improved Performance
+
+
+
+                        </h4>
+                        <p class="leading-relaxed text-gray-600 dark:text-gray-400">
+                        Get the performance for your business with built-in capacity tailored for sites and redundant and highly scalable solutions.
+                        </p>
+                    </div>
+                </div>
+                <!-- END Features -->
+            </div>
+        </div>
+        <!-- END Features Section: Modern Alternate With Icons -->
+    </div>
+    <!-- END FEATURES -->
+
+
+  <!-- START FAQ-->
+    <div class="space-y-4 container xl:max-w-7xl mx-auto px-8 pb-16 lg:py-0 pt-4 lg:pt-24 lg:px-6 lg:pb-36 lg:dark:pb-10">
+        <!-- Heading -->
+        <div class="lg:w-1/2 text-left lg:text-left px-6 sm:px-4 pb-6 sm:pb-8">
+            <div class="text-sm uppercase font-bold tracking-wider mb-1 text-blue-500 dark:text-blue-500">
+                OUR FAQ's
+            </div>
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-2 dark:text-gray-100">
+                Explore FAQ's
+            </h2>
+            <h3 class="text-lg md:text-xl md:leading-relaxed font-medium text-gray-600 dark:text-gray-400">
+                Find the answers to frequently asked questions.
+            </h3>
+        </div>
+        <!-- END Heading -->
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-0 sm:mx-auto sm:mb-2 -mx-2">
+            <div>
+                <div class="">
+                    <div
+                        class="dark:bg-gray-800 question-and-answer select-none cursor-pointer shadow-md mx-4 my-4 sm:my-4 px-6 py-4 rounded-lg text-sm group">
+                        <dt class="question">
+                            <div class="flex justify-between">
+                                <div class="text-gray-800 dark:text-gray-100 font-semibold text-base">
+                                What is the best way to buy Black Friday web hosting?</div>
+                                <div>
+                                <div class="question-chevron group-hover:bg-blue-500 w-5 h-5 block text-white bg-blue-400 rounded-full p-1">
+                                    <img src="https://www.ISPbills.net/img/arrow-down-white.svg" alt="" class="w-2 h-3 mx-auto">
+                                </div>
+                                <div class="question-chevron group-hover:bg-blue-500 w-5 h-5 block text-white bg-blue-400 rounded-full p-1 hidden">
+                                    <img src="https://www.ISPbills.net/img/arrow-down-white.svg" alt="" class="w-2 h-3 mx-auto rotate-180">
+                                </div>
+                            </div>
+                            </div>
+                        </dt>
+                        <dd class="answer hidden mt-3 leading-snug text-gray-700 dark:text-gray-300 text-md">
+                        During the Black Friday season, the discounts are automatically applied to your order. When a bargain comes up that interests you, just choose it. You can just choose the plan and pay for your transaction without the need for web host discount coupons.
+
+                        </dd>
+                    </div>
+                </div>
+                <div class="">
+                    <div
+                        class="dark:bg-gray-800 question-and-answer select-none cursor-pointer shadow-md mx-4 my-4 sm:my-4 px-6 py-4 rounded-lg text-sm group">
+                        <dt class="question">
+                            <div class="flex justify-between">
+                                <div class="text-gray-800 dark:text-gray-100 font-semibold text-base">
+                                    How long does it take to setup my account? </div>
+                                <div>
+                                <div class="question-chevron group-hover:bg-blue-500 w-5 h-5 block text-white bg-blue-400 rounded-full p-1">
+                                    <img src="https://www.ISPbills.net/img/arrow-down-white.svg" alt="" class="w-2 h-3 mx-auto">
+                                </div>
+                                <div class="question-chevron group-hover:bg-blue-500 w-5 h-5 block text-white bg-blue-400 rounded-full p-1 hidden">
+                                    <img src="https://www.ISPbills.net/img/arrow-down-white.svg" alt="" class="w-2 h-3 mx-auto rotate-180">
+                                </div>
+                            </div>
+                            </div>
+                        </dt>
+                        <dd class="answer hidden mt-3 leading-snug text-gray-700 dark:text-gray-300 text-md">
+                            Our web hosting are instantly deployed using our billing system. If instant setup fail for
+                            any
+                            reason, we will setup within 24 hours.
+
+                        </dd>
+                    </div>
+                </div>
+                <div class="">
+                    <div
+                        class="dark:bg-gray-800 question-and-answer select-none cursor-pointer shadow-md mx-4 my-4 sm:my-4 px-6 py-4 rounded-lg text-sm group">
+                        <dt class="question">
+                            <div class="flex justify-between">
+                                <div class="text-gray-800 dark:text-gray-100 font-semibold text-base">
+                                    Which Plan Should I Choose?
+                                </div>
+                                <div>
+                                <div class="question-chevron group-hover:bg-blue-500 w-5 h-5 block text-white bg-blue-400 rounded-full p-1">
+                                    <img src="https://www.ISPbills.net/img/arrow-down-white.svg" alt="" class="w-2 h-3 mx-auto">
+                                </div>
+                                <div class="question-chevron group-hover:bg-blue-500 w-5 h-5 block text-white bg-blue-400 rounded-full p-1 hidden">
+                                    <img src="https://www.ISPbills.net/img/arrow-down-white.svg" alt="" class="w-2 h-3 mx-auto rotate-180">
+                                </div>
+                            </div>
+                            </div>
+                        </dt>
+                        <dd class="answer hidden mt-3 leading-snug text-gray-700 dark:text-gray-300 text-md">
+                        You can upgrade or downgrade your hosting plan anytime without downtime. If you are not sure which plan will be most suitable for you, we recommend starting small and scaling your way up.
+
+                        </dd>
+                    </div>
+                </div>
+                <div class="">
+                    <div
+                        class="dark:bg-gray-800 question-and-answer select-none cursor-pointer shadow-md mx-4 my-4 sm:my-4 px-6 py-4 rounded-lg text-sm group">
+                        <dt class="question">
+                            <div class="flex justify-between">
+                                <div class="text-gray-800 dark:text-gray-100 font-semibold text-base">
+                                    Can I upgrade my plan after I sign up?
+                                </div>
+                                <div>
+                                <div class="question-chevron group-hover:bg-blue-500 w-5 h-5 block text-white bg-blue-400 rounded-full p-1">
+                                    <img src="https://www.ISPbills.net/img/arrow-down-white.svg" alt="" class="w-2 h-3 mx-auto">
+                                </div>
+                                <div class="question-chevron group-hover:bg-blue-500 w-5 h-5 block text-white bg-blue-400 rounded-full p-1 hidden">
+                                    <img src="https://www.ISPbills.net/img/arrow-down-white.svg" alt="" class="w-2 h-3 mx-auto rotate-180">
+                                </div>
+                            </div>
+                            </div>
+                        </dt>
+                        <dd class="answer hidden mt-3 leading-snug text-gray-700 dark:text-gray-300 text-md">
+                        Yes, you can upgrade your plan at any time without any downtime. Upgrading your plan is easy and free, scale up at any time from your dashboard with just a click.
+
+                        </dd>
+                    </div>
+                </div>
+                <div class="">
+                    <div
+                        class="dark:bg-gray-800 question-and-answer select-none cursor-pointer shadow-md mx-4 my-4 sm:my-4 px-6 py-4 rounded-lg text-sm group">
+                        <dt class="question">
+                            <div class="flex justify-between">
+                                <div class="text-gray-800 dark:text-gray-100 font-semibold text-base">
+                                    Does ISPbills charge any hidden fees?
+                                </div>
+                                <div>
+                                <div class="question-chevron group-hover:bg-blue-500 w-5 h-5 block text-white bg-blue-400 rounded-full p-1">
+                                    <img src="https://www.ISPbills.net/img/arrow-down-white.svg" alt="" class="w-2 h-3 mx-auto">
+                                </div>
+                                <div class="question-chevron group-hover:bg-blue-500 w-5 h-5 block text-white bg-blue-400 rounded-full p-1 hidden">
+                                    <img src="https://www.ISPbills.net/img/arrow-down-white.svg" alt="" class="w-2 h-3 mx-auto rotate-180">
+                                </div>
+                            </div>
+                            </div>
+                        </dt>
+                        <dd class="answer hidden mt-3 leading-snug text-gray-700 dark:text-gray-300 text-md">
+                        No, we do not charge any hidden fees. You only pay for the plans and add-ons you select at signup, whether you decide to take advantage of one of our Black Friday specials or get our web hosting at the regular price. Every month, you will also receive an invoice that details all of the services you are being charged for.
+                        </dd>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="-mt-4 sm:-mt-0">
+                <div class="">
+                    <div
+                        class="dark:bg-gray-800 question-and-answer select-none cursor-pointer shadow-md mx-4 my-4 sm:my-4 px-6 py-4 rounded-lg text-sm group">
+                        <dt class="question">
+                            <div class="flex justify-between">
+                                <div class="text-gray-800 dark:text-gray-100 font-semibold text-base">
+                                Would You Provide Customer Support?
+                                </div>
+                                <div>
+                                <div class="question-chevron group-hover:bg-blue-500 w-5 h-5 block text-white bg-blue-400 rounded-full p-1">
+                                    <img src="https://www.ISPbills.net/img/arrow-down-white.svg" alt="" class="w-2 h-3 mx-auto">
+                                </div>
+                                <div class="question-chevron group-hover:bg-blue-500 w-5 h-5 block text-white bg-blue-400 rounded-full p-1 hidden">
+                                    <img src="https://www.ISPbills.net/img/arrow-down-white.svg" alt="" class="w-2 h-3 mx-auto rotate-180">
+                                </div>
+                            </div>
+                            </div>
+                        </dt>
+                        <dd class="answer hidden mt-3 leading-snug text-gray-700 dark:text-gray-300 text-md">
+                        Yes, we have. One of the main advantages of selecting ISPbills as your web hosting provider is that you have 24/7 access to our highly skilled crew. Send us a message at any time, no matter what the issue is; we are always available and pleased to assist you.
+                        </dd>
+                    </div>
+                </div>
+                <div class="">
+                    <div
+                        class="dark:bg-gray-800 question-and-answer select-none cursor-pointer shadow-md mx-4 my-4 sm:my-4 px-6 py-4 rounded-lg text-sm group">
+                        <dt class="question">
+                            <div class="flex justify-between">
+                                <div class="text-gray-800 dark:text-gray-100 font-semibold text-base">
+                                Is it possible to migrate My Website to ISPbills?
+                                </div>
+                                <div>
+                                <div class="question-chevron group-hover:bg-blue-500 w-5 h-5 block text-white bg-blue-400 rounded-full p-1">
+                                    <img src="https://www.ISPbills.net/img/arrow-down-white.svg" alt="" class="w-2 h-3 mx-auto">
+                                </div>
+                                <div class="question-chevron group-hover:bg-blue-500 w-5 h-5 block text-white bg-blue-400 rounded-full p-1 hidden">
+                                    <img src="https://www.ISPbills.net/img/arrow-down-white.svg" alt="" class="w-2 h-3 mx-auto rotate-180">
+                                </div>
+                            </div>
+                            </div>
+                        </dt>
+                        <dd class="answer hidden mt-3 leading-snug text-gray-700 dark:text-gray-300 text-md">
+                            Yes, our expert support team is standing by to transfer your site from your old host. Contact us and describe your website in detail, along with the content management system you use and the plan you are considering. You could save money on your hosting plan when you move during the Black Friday web hosting sales.
+                        </dd>
+                    </div>
+                </div>
+
+
+                <div class="">
+                    <div
+                        class="dark:bg-gray-800 question-and-answer select-none cursor-pointer shadow-md mx-4 my-4 sm:my-4 px-6 py-4 rounded-lg text-sm group">
+                        <dt class="question">
+                            <div class="flex justify-between">
+                                <div class="text-gray-800 dark:text-gray-100 font-semibold text-base">
+                                    Does ISPbills perform backups of my account?
+                                </div>
+                                <div>
+                                <div class="question-chevron group-hover:bg-blue-500 w-5 h-5 block text-white bg-blue-400 rounded-full p-1">
+                                    <img src="https://www.ISPbills.net/img/arrow-down-white.svg" alt="" class="w-2 h-3 mx-auto">
+                                </div>
+                                <div class="question-chevron group-hover:bg-blue-500 w-5 h-5 block text-white bg-blue-400 rounded-full p-1 hidden">
+                                    <img src="https://www.ISPbills.net/img/arrow-down-white.svg" alt="" class="w-2 h-3 mx-auto rotate-180">
+                                </div>
+                            </div>
+                            </div>
+                        </dt>
+                        <dd class="answer hidden mt-3 leading-snug text-gray-700 dark:text-gray-300 text-md">
+                        Yes, we do offer automated daily backup on shared hosting using Jet Backup, with 14 daily restore points. And you're in full control of when your daily backups take place. Restore a clean version of your website – or recover a single file or folder – with just one click.
+                        </dd>
+                    </div>
+                </div>
+
+                <div>
+                    <div
+                        class="dark:bg-gray-800 question-and-answer select-none cursor-pointer shadow-md mx-4 my-4 sm:my-4 px-6 py-4 rounded-lg text-sm group">
+                        <dt class="question">
+                            <div class="flex justify-between">
+                                <div class="text-gray-800 dark:text-gray-100 font-semibold text-base">
+                                    What payment methods do you accept?
+                                </div>
+                                <div>
+                                <div class="question-chevron group-hover:bg-blue-500 w-5 h-5 block text-white bg-blue-400 rounded-full p-1">
+                                    <img src="https://www.ISPbills.net/img/arrow-down-white.svg" alt="" class="w-2 h-3 mx-auto">
+                                </div>
+                                <div class="question-chevron group-hover:bg-blue-500 w-5 h-5 block text-white bg-blue-400 rounded-full p-1 hidden">
+                                    <img src="https://www.ISPbills.net/img/arrow-down-white.svg" alt="" class="w-2 h-3 mx-auto rotate-180">
+                                </div>
+                            </div>
+                            </div>
+                        </dt>
+                        <dd class="answer hidden mt-3 leading-snug text-gray-700 dark:text-gray-300 text-md">
+                            We accept a wide variety of payment methods including Rocket, bKash, Nagad, Bank Transfer, Local and International
+                            Credit Card, Paypal etc.
+                        </dd>
+                    </div>
+                </div>
+
+                <div>
+                    <div
+                        class="dark:bg-gray-800 question-and-answer select-none cursor-pointer shadow-md mx-4 my-4 sm:my-4 px-6 py-4 rounded-lg text-sm group">
+                        <dt class="question">
+                            <div class="flex justify-between">
+                                <div class="text-gray-800 dark:text-gray-100 font-semibold text-base">
+                                    Why don't you offer unlimited storage? </div>
+                                <div>
+                                <div class="question-chevron group-hover:bg-blue-500 w-5 h-5 block text-white bg-blue-400 rounded-full p-1">
+                                    <img src="https://www.ISPbills.net/img/arrow-down-white.svg" alt="" class="w-2 h-3 mx-auto">
+                                </div>
+                                <div class="question-chevron group-hover:bg-blue-500 w-5 h-5 block text-white bg-blue-400 rounded-full p-1 hidden">
+                                    <img src="https://www.ISPbills.net/img/arrow-down-white.svg" alt="" class="w-2 h-3 mx-auto rotate-180">
+                                </div>
+                            </div>
+                            </div>
+                        </dt>
+                        <dd class="answer hidden mt-3 leading-snug text-gray-700 dark:text-gray-300 text-md">
+                        Unlimited Storage is a myth. As everything has a limit. We're upfront with our shared hosting plan limits and don't hide hidden limits in our Terms of Service like most unlimited storage providers.
+                        </dd>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END FAQ -->
+
+    <!-- Disclaimer section start -->
+
+        <div class="space-y-4 container xl:max-w-7xl mx-auto px-8 pb-16 lg:py-0 pt-4 lg:pt-12 lg:px-6 lg:pb-36 lg:dark:pb-10">
+            <div>
+                <div class="mb-12">
+                    <p class="text-4xl font-bold dark:text-white">Disclaimer</p>
+                    <p class="text-lg md:text-xl md:leading-relaxed font-medium text-gray-600 dark:text-gray-400">These rules will applied in this promotion.</p>
+                </div>
+                <div>
+                    <ul>
+                        <li class="flex items-center gap-2 mb-2">
+                            <img src="https://www.ISPbills.net/img/red-circle.png" alt="" class="w-2 h-2">
+                            <p class="dark:text-white">For new purchases only, the offer is applicable. If you have already received service from us, you can't replace that service by this offer.</p>
+                        </li>
+                        <li class="flex items-center gap-2 mb-2">
+                            <img src="https://www.ISPbills.net/img/red-circle.png" alt="" class="w-2 h-2">
+                            <p class="dark:text-white">Discounts only apply to initial requests, a billing cycle of up to one year.</p>
+                        </li>
+                        <li class="flex items-center gap-2 mb-2">
+                            <img src="https://www.ISPbills.net/img/red-circle.png" alt="" class="w-2 h-2">
+                            <p class="dark:text-white">If you've previously signed up for a shared hosting package with us, the 30-day return policy won't apply to you.</p>
+                        </li>
+                        <li class="flex items-center gap-2 mb-2">
+                            <img src="https://www.ISPbills.net/img/red-circle.png" alt="" class="w-2 h-2">
+                            <p class="dark:text-white">For cPanel websites, hosting migration is guaranteed. But for all other sites, we will evaluate each situation individually.</p>
+                        </li>
+                        <li class="flex items-center gap-2 mb-2">
+                            <img src="https://www.ISPbills.net/img/red-circle.png" alt="" class="w-2 h-2">
+                            <p class="dark:text-white">During the transfer promotion, our customary "24-hour hosting migration guarantee" is not applicable. Because of the heightened interest, migration can take longer during this time.</p>
+                        </li>
+                        <li class="flex items-center gap-2 mb-2">
+                            <img src="https://www.ISPbills.net/img/red-circle.png" alt="" class="w-2 h-2">
+                            <p class="dark:text-white">Orders that violate ISPbills's terms may be canceled at our discretion.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    <!-- Disclaimer section end -->
+
+
+    <!-- Footer-->
+    <div class="bg-gray-200 dark:bg-gray-900">
+        <div class="container xl:max-w-7xl mx-auto px-6 py-12 pt-14 lg:py-4 lg:px-8 border-t dark:border-gray-700 ">
+
+
+
+            <div class="sm:flex items-center rounded-xl px-2 py-2 sm:pt-16 sm:pb-20 sm:px-4 sm:mt-8 ">
+
+                <div class="sm:flex-1 md:w-7/12">
+                    <h2 class="text-3xl md:text-4xl font-extrabold dark:text-gray-100">Do you have any questions? <br>
+                        We are always here to answer you</h2>
+
+
+                    <p class="mt-10 text-lg pr-0 sm:pr-8 dark:text-gray-400">Get in touch with one of our specialists.
+                        We'll review your needs and offer Talk to one of our hosting specialists, who will review your
+                        needs and propose a hosting solution that will specifically suit the needs of your business.
+                    </p>
+
+
+                    <div class="mt-4 grid grid-cols-1 sm:grid-cols-4 gap-6 py-10">
+
+                        <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+
+                            <div class="flex justify-center px-4 py-5">
+                                <img src="https://www.ISPbills.net/img/LiveChat.svg" alt="" class="w-12 h-14">
+                            </div>
+
+                            
+                                <h1 class="text-md text-gray-100 text-center bg-blue-600 py-3 px-4 font-semibold">Live
+                                    Chat</h1>
+                            </a>
+
+                        </div>
+
+                        <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+
+                            <div class="flex justify-center px-4 py-5">
+                                <img src="https://www.ISPbills.net/img/EmailSupport.svg" alt="" class="w-12 h-14">
+                            </div>
+
+                            <a href="https://www.ISPbills.net/cdn-cgi/l/email-protection#dfacaaafafb0adab9fb3b6b2bbbef1b1baab">
+                                <h1 class="text-md text-gray-100 text-center bg-purple-600 py-3 px-4 font-semibold">
+                                    Email Support</h1>
+                            </a>
+
+                        </div>
+
+                        <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+
+                            <div class="flex justify-center px-4 py-5">
+                                <img src="https://www.ISPbills.net/img/24x7-Helpdesk.svg" alt="" class="w-12 h-14">
+                            </div>
+
+                            <a href="https://www.ISPbills.net/contact-us.php">
+                                <h1 class="text-md text-gray-100 text-center bg-indigo-600 py-3 px-4 font-semibold">24x7
+                                    Helpdesk</h1>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+
+                <div class="sm:flex md:w-5/12 justify-end items-center hidden sm:block ">
+                    <img src="https://www.ISPbills.net/img/footer-top.png" class="h-full mt-12 sm:mt-0 ">
+                </div>
+
+            </div>
+
+        </div>
+    </div>    <footer class="bg-gray-900 dark:bg-gray-800 text-gray-400 px-0 pt-16 pb-12 sm:py-16">
+  <div class="max-w-7xl px-8 mx-auto mb-12 lg:mb-12 lg:mt-4">
+    <img class="h-10" src="https://www.ISPbills.net/img/header/logo.svg" alt="ISPbills logo">
+    <p class="mt-6 text-gray-400 text-md">ISPbills Web Hosting plan is providing reliable hosting services for individuals and businesses. Whether you're looking for a small business web host or domain name for your business, ISPbills has the service and experienced team to support you!</p>
+  </div>
+  <div class="max-w-7xl px-8 mx-auto grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-x-0">
+    <div class="mb-2 sm:mb-0">
+      <h5 class="text-xl font-semibold text-gray-50">Hosting</h5>
+      <nav class="mt-4">
+        <ul class="space-y-1 sm:space-y-2">
+          <li>
+            <a href="https://www.ISPbills.net/web-hosting.php" class="font-normal sm:text-base hover:text-gray-400">Web Hosting</a>
+          </li>
+          
+          <li>
+            <a href="https://www.ISPbills.net/reseller-hosting.php" class="font-normal sm:text-base hover:text-gray-400">Reseller Hosting</a>
+          </li> 
+          
+          <li>
+            <a href="https://www.ISPbills.net/vps-hosting.php" class="font-normal sm:text-base hover:text-gray-400">VPS Hosting</a>
+          </li>
+          
+          <li>
+            <a href="https://www.ISPbills.net/dedicated-server.php" class="font-normal sm:text-base hover:text-gray-400">Dedicated Server</a>
+          </li>
+
+          
+          
+        </ul>
+      </nav>
+    </div>
+   
+   
+    <div class="hidden md:block">
+      <h5 class="text-xl font-semibold text-gray-50">Domain</h5>
+      <nav class="mt-4">
+        <ul class="space-y-1 sm:space-y-2">
+          <li>
+            <a href="https://www.ISPbills.net/domain-name.php" class="font-normal sm:text-base hover:text-gray-400">Domain Name</a>
+          </li>
+          <li>
+            <a href="https://ap.ISPbills.net/cart.php?a=add&amp;domain=register" class="font-normal sm:text-base hover:text-gray-400">Register Domain</a>
+          </li>
+          <li>
+            <a href="https://ap.ISPbills.net/cart.php?a=add&amp;domain=transfer" class="font-normal sm:text-base hover:text-gray-400">Transfer Domain</a>
+            <li>
+            <a href="https://ap.ISPbills.net/domain/pricing" class="font-normal sm:text-base hover:text-gray-400">Domain Promos</a>
+          </li>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+    
+    
+    <div class="mb-2 sm:mb-0">
+      <h5 class="text-xl font-semibold text-gray-50">Utilities</h5>
+      <nav class="mt-4">
+        <ul class="space-y-1 sm:space-y-2">
+          <li>
+            <a href="https://www.ISPbills.net/google-workspace.php" class="font-normal sm:text-base hover:text-gray-400">Google Workspace</a>
+          </li>
+          <li><a href="https://www.ISPbills.net/bdix.php" class="font-normal sm:text-base hover:text-gray-400">BDIX Services</a> </li>
+          <li><a href="https://www.ISPbills.net/cloud-pricing.php" class="font-normal sm:text-base hover:text-gray-400">Managed Cloud</a> </li>
+          <li><a href="https://www.ISPbills.net/affiliate.php" class="font-normal sm:text-base hover:text-gray-400">Affiliate Program</a> </li>
+        </ul>
+      </nav>
+    </div>
+    
+    
+    <div class="mb-2 sm:mb-0">
+      <h5 class="text-xl font-semibold text-gray-50">Company</h5>
+      <nav class="mt-4">
+        <ul class="space-y-1 sm:space-y-2">
+          <li>
+            <a href="https://ap.ISPbills.net/login.php" class="font-normal sm:text-base hover:text-gray-400">Client area</a>
+          </li>
+          <li> <a href="https://www.ISPbills.net/about-us.php" class="font-normal sm:text-base hover:text-gray-400">About ISPbills</a></li>
+          <li> <a href="https://www.ISPbills.net/payment-methods.php" class="font-normal sm:text-base hover:text-gray-400">Payment methods</a></li>
+          <li> <a href="https://ap.ISPbills.net/announcements" class="font-normal sm:text-base hover:text-gray-400">Announcements</a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+    <div class="mb-2 sm:mb-0">
+      <h5 class="text-xl font-semibold text-gray-50">Legal</h5>
+      <nav class="mt-4">
+        <ul class="space-y-1 sm:space-y-2">
+         
+          <li><a href="https://ap.ISPbills.net/submitticket.php?step=2&amp;deptid=3" class="font-normal sm:text-base hover:text-gray-400">Report abuse</a></li>
+          <li><a href="https://www.ISPbills.net/tos.php" class="font-normal sm:text-base hover:text-gray-400">Service terms</a></li>
+          <li><a href="https://www.ISPbills.net/privacy-policy.php" class="font-normal sm:text-base hover:text-gray-400">Privacy policy</a></li>
+          <li>
+            <a href="https://www.ISPbills.net/contact-us.php" class="font-normal sm:text-base hover:text-gray-400">Get in touch</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+    
+
+  </div>
+
+
+  <div class="max-w-7xl px-10 mx-auto">
+  <div class="space-y-4 mt-10 lg:mt-16 border-t border-gray-800 dark:border-gray-700">
+    </div>
+  </div>
+
+
+  <div class="max-w-7xl px-8 mx-auto flex flex-col  md:flex-row sm:items-center justify-between items-start space-y-6 sm:space-y-0 mt-8 lg:mt-12">
+    
+  
+  <div class="flex flex-wrap sm:justify-center space-x-6"> 
+    <p>© Copyright ISPbills 2022 | All rights reserved</p>
+    </div>
+
+    <nav class="flex items-center space-x-2 bg-gray-800 dark:bg-gray-700 px-4 py-1.5 shadow-lg rounded-xl">
+      <a href="https://www.facebook.com/ISPbills/" class="hover:text-blue-400">
+        <span class="sr-only">Facebook</span>
+        <svg class="h-6 w-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+          <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+        </svg>
+      </a>
+      <a href="https://www.instagram.com/ISPbills/" class="hover:text-blue-400">
+        <span class="sr-only">Instagram</span>
+        <svg class="h-6 w-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+          <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+        </svg>
+      </a>
+      <a href="https://twitter.com/ISPbills" class="hover:text-blue-400">
+        <span class="sr-only">Twitter</span>
+        <svg class="h-6 w-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+        </svg>
+      </a>
+
+      <a href="https://bd.linkedin.com/company/ISPbills" class="hover:text-blue-400">
+        <span class="sr-only">LinkedIn</span>
+        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="w-5 h-5" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+</a>
+        
+      
+    </nav>
+
+  </div>
+</footer>
+
+<!-- Additional Javascripts -->
+
+<script data-cfasync="false" src="https://www.ISPbills.net/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://www.ISPbills.net/js/jquery-3.6.1.slim.min.js"></script>
+<script src="https://www.ISPbills.net/js/alpine.min.js" defer></script>
+
+<!-- End Additional Javascripts -->    <!-- End Footer -->
+
+
+
+    <!-- Countdown js start -->
+    <script>
+        let countDownDate = new Date("Nov 25, 2022 23:59:00").getTime(); 
+        let timer = setInterval(tick, 1000);
+        function tick(){
+            let now = new Date().getTime();
+            let distance = countDownDate-now;
+            if(distance>0){
+                let days = Math.floor(distance / (1000*60*60*24));
+                if(days<10){days='0'+days;}
+                let hours = Math.floor((distance % (1000*60*60*24))/(1000*60*60));
+                if(hours<10){hours='0'+ hours;}
+                let minutes = Math.floor((distance % (1000*60*60))/(1000*60));
+                if(minutes<10){minutes='0'+minutes;}
+                let seconds = Math.floor((distance % (1000*60))/1000);
+                if(seconds<10){seconds='0'+ seconds;}
+
+                document.getElementById("days").innerHTML= days;
+                document.getElementById("hours").innerHTML= hours;
+                document.getElementById("minutes").innerHTML= minutes;
+                document.getElementById("seconds").innerHTML= seconds;
+            }
+        }
+    </script>
+    <!-- Countdown js end -->
+
+    <!-- Header JS start -->
+    <script>
+        // icons
+        const sunIcon = document.querySelector(".ISPbills-light")
+        const moonIcon = document.querySelector(".ISPbills-dark")
+        
+        // theme vars
+        const userTheme = localStorage.getItem("theme");
+        const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        
+        // icon toggle
+        const iconToggle = () =>{
+            moonIcon.classList.toggle("display-none");
+            sunIcon.classList.toggle("display-none");
+        }
+        
+        // initial theme check
+        const themeCheck = () =>{
+            if (userTheme === "dark" || (!userTheme && systemTheme)){
+            document.documentElement.classList.add("dark");
+            moonIcon.classList.add("display-none");
+            return;
+            }
+            sunIcon.classList.add("display-none");
+        }
+        
+        // manual theme switch
+        const themeSwitch = () => {
+            if (document.documentElement.classList.contains("dark")){
+            document.documentElement.classList.remove("dark");
+            localStorage.setItem("theme", "light");
+            iconToggle();
+            return;
+            }
+            document.documentElement.classList.add("dark");
+            localStorage.setItem("theme", "dark");
+            iconToggle();
+        }
+        
+        
+        // call theme switch on clicking button
+        sunIcon.addEventListener("click", () => {
+            themeSwitch();
+        })
+        moonIcon.addEventListener("click", () => {
+            themeSwitch();
+        })
+        // invoke theme check on initial load
+        themeCheck();
+    </script>
+    <!-- Header JS end -->
+
+
+<!-- Start FAQ Function -->
+    <script>
+        $('.question-and-answer').click(function () {
+            $(this).find(".answer ").toggleClass("hidden ")
+            $(this).find(".question-chevron ").toggleClass("hidden ")
+        })
+    </script>
+<!-- End FAQ Function -->
+
+
+<!-- Start BDT, USD Switcher Function -->
+    <script>
+        function myFunction() {
+            var x = document.querySelectorAll('.monthly');
+            var y = document.querySelectorAll('.annually');
+            for (var i = 0; i < x.length; i++) {
+                if (document.getElementById("toggle").checked == true) {
+                    x[i].classList.add('hidden');
+                    y[i].classList.remove('hidden');
+                } else {
+                    x[i].classList.remove('hidden');
+                    y[i].classList.add('hidden');
+                }
+            }
+        }
+        function myFunctionUSD() {
+             var x = document.querySelectorAll('.bdt');
+             var y = document.querySelectorAll('.usd');
+             for (var i = 0; i < x.length; i++) {
+                 if (document.getElementById("toggleusd").checked == true) {
+                     x[i].classList.add('hidden');
+                     y[i].classList.remove('hidden');
+                 } else {
+                     x[i].classList.remove('hidden');
+                     y[i].classList.add('hidden');
+                 }
+             }
+         }
+    </script>
+<!-- End BDT, USD Switcher Function -->
+
+<!-- Packages selector js -->
+
+<script type="text/javascript">
+    $(document).ready(function(e) {
+
+        //BDIX & USA GO
+        $('#plan_bf_1').change(function(e) {
+            var an = $(this).val();
+            switch(an){
+                case "bdix-go": $('.button-bf-1 a').attr('href',"https://ap.ISPbills.net/store/web-hosting-cp/go?billingcycle=annually&amp;promocode=blackfriday-50"); break;
+                case "usa-go": $('.button-bf-1 a').attr('href',"https://ap.ISPbills.net/store/web-hosting-cpanel/go?billingcycle=annually&amp;promocode=blackfriday-50"); break;
+                }
+            });
+            
+            //BDIX & USA STARTER
+            $('#plan_bf_2').change(function(e) {
+            var an = $(this).val();
+            switch(an){
+                case "bdix-starter": $('.button-bf-2 a').attr('href',"https://ap.ISPbills.net/store/web-hosting-cp/starter?billingcycle=annually&amp;promocode=blackfriday-55"); break;
+                case "usa-starter": $('.button-bf-2 a').attr('href',"https://ap.ISPbills.net/store/web-hosting-cpanel/starter?billingcycle=annually&amp;promocode=blackfriday-55"); break;
+                }
+            });    
+            
+            //BDIX & USA MEDIUM
+            $('#plan_bf_3').change(function(e) {
+            var an = $(this).val();
+            switch(an){
+                case "bdix-medium": $('.button-bf-3 a').attr('href',"https://ap.ISPbills.net/store/web-hosting-cp/medium?billingcycle=annually&amp;promocode=blackfriday-60"); break;
+                case "usa-medium": $('.button-bf-3 a').attr('href',"https://ap.ISPbills.net/store/web-hosting-cpanel/medium?billingcycle=annually&amp;promocode=blackfriday-60"); break;
+                }
+            });
+
+            //BDIX & USA ADVANCED
+            $('#plan_bf_4').change(function(e) {
+            var an = $(this).val();
+            switch(an){
+                case "bdix-advanced": $('.button-bf-4 a').attr('href',"https://ap.ISPbills.net/store/web-hosting-cp/advanced?billingcycle=annually&amp;promocode=blackfriday-55"); break;
+                case "usa-advanced": $('.button-bf-4 a').attr('href',"https://ap.ISPbills.net/store/web-hosting-cpanel/advanced?billingcycle=annually&amp;promocode=blackfriday-55"); break
+                }
+            });
+
+            // BDIX & USA TURBO GO
+            $('#plan_bf_5').change(function(e) {
+            var an = $(this).val();
+            switch(an){
+                case "bdix-turbo-go": $('.button-bf-5 a').attr('href',"https://ap.ISPbills.net/store/bdix-turbo-hosting-cpanel/turbo-go?billingcycle=annually&amp;promocode=blackfriday-35"); break;
+                case "usa-turbo-go": $('.button-bf-5 a').attr('href',"https://ap.ISPbills.net/store/turbo-hosting-cpanel/turbo-go?billingcycle=annually&amp;promocode=blackfriday-35"); break;
+                }
+            });
+            
+            //BDIX & USA TURBO STRONG
+            $('#plan_bf_6').change(function(e) {
+            var an = $(this).val();
+            switch(an){
+                case "bdix-turbo-strong": $('.button-bf-6 a').attr('href',"https://ap.ISPbills.net/store/bdix-turbo-hosting-cpanel/turbo-strong?billingcycle=annually&amp;promocode=blackfriday-45"); break;
+                case "usa-turbo-strong": $('.button-bf-6 a').attr('href',"https://ap.ISPbills.net/store/turbo-hosting-cpanel/turbo-strong?billingcycle=annually&amp;promocode=blackfriday-45"); break;
+                }
+            });    
+            
+            //BDIX & USA TURBO POWERFUL
+            $('#plan_bf_7').change(function(e) {
+            var an = $(this).val();
+            switch(an){
+                case "bdix-turbo-powerful": $('.button-bf-7 a').attr('href',"https://ap.ISPbills.net/store/bdix-turbo-hosting-cpanel/turbo-powerful?billingcycle=annually&amp;promocode=blackfriday-50"); break;
+                case "usa-turbo-powerful": $('.button-bf-7 a').attr('href',"https://ap.ISPbills.net/store/turbo-hosting-cpanel/turbo-powerful?billingcycle=annually&amp;promocode=blackfriday-50"); break;
+                }
+            });
+
+            //BDIX & USA TURBO MIGHTY
+            $('#plan_bf_8').change(function(e) {
+            var an = $(this).val();
+            switch(an){
+                case "bdix-turbo-mighty": $('.button-bf-8 a').attr('href',"https://ap.ISPbills.net/store/bdix-turbo-hosting-cpanel/turbo-mighty?billingcycle=annually&amp;promocode=blackfriday-45"); break;
+                case "usa-turbo-mighty": $('.button-bf-8 a').attr('href',"https://ap.ISPbills.net/store/turbo-hosting-cpanel/turbo-mighty?billingcycle=annually&amp;promocode=blackfriday-45"); break;
+                }
+            });
+            
+            // BDIX & USA VPS 1
+            $('#plan_bf_9').change(function(e) {
+            var an = $(this).val();
+            switch(an){
+                case "bdix-vps-1": $('.button-bf-9 a').attr('href',"https://ap.ISPbills.net/store/bdix-kvm-vps/kvm-2g-2c?billingcycle=annually&amp;promocode=blackfriday-10"); break;
+                case "usa-vps-1": $('.button-bf-9 a').attr('href',"https://ap.ISPbills.net/store/unmanaged-vps-kvm-usa/kvm-2g-2c?billingcycle=annually&amp;promocode=blackfriday-10"); break;
+                }
+            });
+            
+            //BDIX & USA VPS 2
+            $('#plan_bf_10').change(function(e) {
+            var an = $(this).val();
+            switch(an){
+                case "bdix-vps-2": $('.button-bf-10 a').attr('href',"https://ap.ISPbills.net/store/bdix-kvm-vps/kvm-4g-4c?billingcycle=annually&amp;promocode=blackfriday-15"); break;
+                case "usa-vps-2": $('.button-bf-10 a').attr('href',"https://ap.ISPbills.net/store/unmanaged-vps-kvm-usa/kvm-4g-4c?billingcycle=annually&amp;promocode=blackfriday-15"); break;
+                }
+            });    
+            
+            //BDIX & USA VPS 3
+            $('#plan_bf_11').change(function(e) {
+            var an = $(this).val();
+            switch(an){
+                case "bdix-vps-3": $('.button-bf-11 a').attr('href',"https://ap.ISPbills.net/store/bdix-kvm-vps/kvm-6g-6c?billingcycle=annually&amp;promocode=blackfriday-25"); break;
+                case "usa-vps-3": $('.button-bf-11 a').attr('href',"https://ap.ISPbills.net/store/unmanaged-vps-kvm-usa/kvm-6g-6c?billingcycle=annually&amp;promocode=blackfriday-25"); break;
+                }
+            });
+
+            //BDIX & USA VPS 4
+            $('#plan_bf_12').change(function(e) {
+            var an = $(this).val();
+            switch(an){
+                case "bdix-vps-4": $('.button-bf-12 a').attr('href',"https://ap.ISPbills.net/store/bdix-kvm-vps/kvm-8g-8c?billingcycle=annually&amp;promocode=blackfriday-20"); break;
+                case "usa-vps-4": $('.button-bf-12 a').attr('href',"https://ap.ISPbills.net/store/unmanaged-vps-kvm-usa/kvm-8g-8c?billingcycle=annually&amp;promocode=blackfriday-20"); break;
+                }
+            });
+
+
+        });
+</script>
+
+    <!-- Packages selector js end -->
+
+
+</body>
+
+</html>

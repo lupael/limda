@@ -1,0 +1,2142 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Primary Meta Tags -->
+      <title>Reseller Hosting - ISPbills</title>
+      <meta name="title" content="Reseller Hosting - ISPbills">
+      <meta name="description"
+         content="WHM Reseller Hosting in the United States includes all features and support you need to start a hosting business. All of our reseller hosting plans are designed for you to make money!">
+      <meta name="robots" content="index, follow">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="language" content="English">
+      <!-- Open Graph / Facebook -->
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="reseller-hosting.html">
+      <meta property="og:title" content="Reseller Hosting - ISPbills">
+      <meta property="og:description"
+         content="WHM Reseller Hosting in the United States includes all features and support you need to start a hosting business. All of our reseller hosting plans are designed for you to make money!">
+      <meta property="og:image" content="img/og-images/web-hosting.png">
+      <meta property="fb:app_id" content="0000" />
+      
+      
+      <link rel="shortcut icon" type="image/jpg" href="img/favicon.png"/>
+    <link href="assets/fonts/Inter/inter.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+    <script src="js/lazysizes.min.js" async=""></script>
+
+<!-- Dark Theme FUOC AVOID -->
+<script>
+// On page load or when changing themes, best to add inline in `head` to avoid FOUC
+if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+  document.documentElement.classList.add('dark')
+} else {
+  document.documentElement.classList.remove('dark')
+}
+</script>
+<!--End Dark Theme FUOC AVOID -->
+
+    <style>
+    body{
+        font-family: 'Inter', sans-serif;
+    }
+    /* !important Billed Annually check button*/
+    .toggle-bg:after {
+        background: #fff;
+        border-color: #d1d5db;
+        border-radius: 9999px;
+        border-width: 1px;
+        content: "";
+        height: 1.25rem;
+        left: .125rem;
+        position: absolute;
+        top: .125rem;
+        transition-duration: .15s;
+        width: 1.25rem
+    }
+
+    input:checked+.toggle-bg:after {
+        border-color: #fff;
+        transform: translateX(100%);
+    }
+
+    input:checked+.toggle-bg {
+        background: #1c64f2;
+        border-color: #1c64f2
+    }
+
+    select{
+        -webkit-print-color-adjust: exact;
+        background-image: url(img/arrow-down.svg);
+        background-position: right 0.8rem center;
+        background-repeat: no-repeat;
+        background-size: .6em .6em;
+        color-adjust: exact;
+        padding-right: 2.5rem;
+        
+    }
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: '';
+    }
+    .plan-check{
+        width: 17px;
+        min-width: 17px;
+    }
+
+    .toggle-bg:after {
+    background: #fff;
+    border-color: #d1d5db;
+    border-radius: 9999px;
+    border-width: 1px;
+    box-shadow: var(--tw-ring-inset) 0 0 0 calc(var(--tw-ring-offset-width)) var(--tw-ring-color);
+    content: "";
+    height: 1.25rem;
+    left: .125rem;
+    position: absolute;
+    top: .125rem;
+    transition-duration: .15s;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+    width: 1.25rem
+}
+
+</style>
+      <style>
+         @media (min-width: 640px) {
+         .sm\:bg-svg-bottom {
+         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='353' height='304'%3E%3Cg fill='none' fill-rule='evenodd' stroke='%23D0D5F6' stroke-width='2'%3E%3Cpath d='M180.29 759c102.087-21.62 155.232-61.312 159.437-119.074 6.307-86.643-231.598-17.186-136.358-198 95.241-180.813 181.318-185.29 136.358-298C294.767 31.216 174.04-27.954 33.79 16.8c-93.501 29.836-144.652 140.545-153.453 332.126'/%3E%3Cpath d='M138.3 759c80.083-18.988 121.774-53.846 125.072-104.575 4.948-76.093-181.679-15.094-106.966-173.89C231.118 321.738 298.64 317.808 263.372 218.82c-35.269-98.986-129.974-150.95-239.995-111.646C-49.97 133.378-90.096 230.605-97 398.859'/%3E%3Cpath d='M102.065 761c60.604-16.56 92.153-46.963 94.65-91.208 3.743-66.367-137.488-13.165-80.949-151.664 56.54-138.5 107.638-141.927 80.948-228.261-26.69-86.335-98.359-131.656-181.618-97.376C-40.41 215.345-70.775 300.145-76 446.892'/%3E%3C/g%3E%3C/svg%3E");
+         }
+         }
+         .toggle_dot {
+         top: -.25rem;
+         transition: all 0.3s ease-in-out;
+         }
+         input:checked~.toggle_dot {
+         transform: translateX(100%);
+         background-color: #0082c8;
+         }
+         .bg-gradient {
+         background: #667db6;
+         /* fallback for old browsers */
+         background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+         /* Chrome 10-25, Safari 5.1-6 */
+         background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+         }
+         .bg-gradient-base {
+         background-color: #0082c8;
+         }
+         .font-work-sans {
+         font-family: 'Work Sans', sans-serif;
+         }
+      </style>
+   </head>
+   <body class="dark:bg-gray-900">
+      
+<div class="w-full bg-white text-gray-700 shadow dark:bg-gray-900 dark:text-gray-200">
+   <div x-data="{ open: false }" class="lx:pb-0 mx-auto flex max-w-screen-xl flex-col px-2 py-4 pt-2 lg:-mt-2 lg:flex-row lg:items-center lg:justify-between lg:px-2 lg:py-4 lg:pt-5">
+      <div class="flex flex-row items-center justify-between p-4">
+         <a href="index.html"> <img class="h-auto w-48" src="img/header/logo.svg" alt="ISPbills Logo" /> </a>
+         <button class="focus:shadow-outline rounded-lg focus:outline-none lg:hidden" @click="open = !open">
+            <svg fill="currentColor" viewBox="0 0 20 20" class="h-6 w-6">
+               <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+               <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" style="display: none;"></path>
+            </svg>
+         </button>
+      </div>
+      <nav :class="{'flex': open, 'hidden': !open}" class="ml-0 hidden flex-auto flex-col px-5 pt-5 lg:ml-0 lg:flex lg:flex-row lg:justify-end lg:px-0 lg:pt-0 lg:pb-0">
+         <a class="text-md bg-gray-100 dark:bg-gray-800 sm:bg-transparent sm:dark:bg-transparent focus:shadow-outline mt-2 flex w-full flex-row items-center rounded-lg px-4 py-2 text-left font-semibold hover:text-gray-900 focus:text-gray-900 focus:outline-none dark:hover:text-white dark:focus:text-white md:mt-0 md:ml-2 md:inline md:w-auto" href="index.html">Home</a>
+         <div @click.away="open = false" class="relative" x-data="{ open: false }">
+            <button @click="open = !open" class="text-md bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 focus:shadow-outline mt-2 flex w-full flex-row items-center rounded-lg px-4 py-2 text-left font-semibold hover:text-gray-900 focus:outline-none dark:hover:text-white dark:focus:bg-gray-700 dark:focus:text-white sm:bg-transparent sm:dark:bg-transparent sm:dark:hover:bg-transparent sm:dark:focus:bg-transparent md:mt-0 md:ml-2 md:inline md:w-auto">
+               <span>Hosting</span>
+               <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="mt-1 ml-1 inline h-4 w-4 rotate-0 transform transition-transform duration-200 md:-mt-1">
+                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+               </svg>
+            </button>
+            <!-- mega menu 01 -->
+            <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" id="js_hidden" class="relative z-50 mt-5 mb-4 grid gap-4 w-full origin-top-left left-0 lg:left-[-310px] xl:left-[-180px] grid-cols-1 overflow-hidden rounded-2xl bg-white p-5 shadow-xl dark:bg-gray-800 sm:mt-4 sm:mb-0 sm:grid-cols-2 sm:w-[700px] md:absolute" style="display: none;">
+               <!-- col 1 -->
+            
+               <div class="grid gap-3">
+                  <a href="bdix.html" class="border-b px-6 border-b-gray-100 dark:border-gray-700/70 py-2 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white font-medium uppercase">BDIX CONNECTED</a>
+                  <div class="focus:shadow-outline flex items-center rounded-lg bg-slate-50/50 px-6 py-5 dark:bg-gray-700/10 hover:bg-slate-100 hover:text-gray-900  dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-white md:mt-0">
+                     <a href="bdix-hosting.html">
+                     <span class="inline-block w-[62px] sm:w-auto"> <img src="img/header/icon1.png" class="mr-4 h-12 rounded-lg" /> </span
+                        ></a>
+                     <a href="bdix-hosting.html" class="text-md font-bold text-gray-700 dark:text-gray-100">
+                        <p>BDIX Web Hosting</p>
+                        <p class="text-xs font-light text-gray-500 dark:text-gray-300">BDIX connected web hosting</p>
+                     </a>
+                  </div>
+                  <div class="focus:shadow-outline flex items-center rounded-lg bg-slate-50/50 px-6 py-5 dark:bg-gray-700/10 hover:bg-slate-100 hover:text-gray-900  dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-white md:mt-0">
+                     <a href="bdix-turbo-hosting.html">
+                     <span class="inline-block w-[62px] sm:w-auto"> <img src="img/header/icon2.png" class="mr-4 h-12 rounded-lg" /> </span
+                        ></a>
+                     <a href="bdix-turbo-hosting.html" class="text-md font-bold text-gray-700 dark:text-gray-100">
+                        <p>BDIX Turbo Hosting</p>
+                        <p class="text-xs font-light text-gray-500 dark:text-gray-300">Turbo hosting with BDIX</p>
+                     </a>
+                  </div>
+                  <div class="focus:shadow-outline flex items-center rounded-lg bg-slate-50/50 px-6 py-5 dark:bg-gray-700/10 hover:bg-slate-100 hover:text-gray-900  dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-white md:mt-0">
+                     <a href="bdix-reseller-hosting.html">
+                     <span class="inline-block w-[62px] sm:w-auto"> <img src="img/header/icon3.png" class="mr-4 h-12 rounded-lg" /> </span
+                        ></a>
+                     <a href="bdix-reseller-hosting.html" class="text-md font-bold text-gray-700 dark:text-gray-100">
+                        <p>BDIX Reseller Hosting</p>
+                        <p class="text-xs font-light text-gray-500 dark:text-gray-300">Reliable BDIX reseller hosting</p>
+                     </a>
+                  </div>
+                  <div class="focus:shadow-outline flex items-center rounded-lg bg-slate-50/50 px-6 py-5 dark:bg-gray-700/10 hover:bg-slate-100 hover:text-gray-900  dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-white md:mt-0">
+                     <a href="bdix-windows-hosting.html">
+                     <span class="inline-block w-[62px] sm:w-auto"> <img src="img/header/icon18.png" class="mr-4 h-12 rounded-lg" /> </span
+                        ></a>
+                     <a href="bdix-windows-hosting.html" class="text-md font-bold text-gray-700 dark:text-gray-100">
+                        <p>BDIX Windows Hosting</p>
+                        <p class="text-xs font-light text-gray-500 dark:text-gray-300">Reliable BDIX Windows Hosting</p>
+                     </a>
+                  </div>
+               </div>
+               <!-- col 1 -->
+
+               <!-- col 2 -->
+
+               <div class="grid gap-3">
+                  <a href="#" class="border-b max-h-[41px] px-6 border-b-gray-100 py-2 hover:text-gray-900 dark:border-gray-700/70 dark:text-gray-200 dark:hover:text-white font-medium uppercase">US Based Hosting</a>
+                  <div class="focus:shadow-outline flex items-center rounded-lg bg-slate-50/50 px-6 py-5 dark:bg-gray-700/10 hover:bg-slate-100 hover:text-gray-900  dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-white md:mt-0">
+                     <a href="web-hosting.html">
+                     <span class="inline-block w-[62px] sm:w-auto"> <img src="img/header/icon1.png" class="mr-4 h-12 rounded-lg" /> </span
+                        ></a>
+                     <a href="web-hosting.html" class="text-md font-bold text-gray-700 dark:text-gray-100">
+                        <p>Web Hosting (US)</p>
+                        <p class="text-xs font-light text-gray-500 dark:text-gray-300">Fastest web hosting</p>
+                     </a>
+                  </div>
+                  <div class="focus:shadow-outline flex items-center rounded-lg bg-slate-50/50 px-6 py-5 dark:bg-gray-700/10 hover:bg-slate-100 hover:text-gray-900  dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-white md:mt-0">
+                     <a href="turbo-hosting.html">
+                     <span class="inline-block w-[62px] sm:w-auto"> <img src="img/header/icon2.png" class="mr-4 h-12 rounded-lg" /> </span
+                        ></a>
+                     <a href="turbo-hosting.html" class="text-md font-bold text-gray-700 dark:text-gray-100">
+                        <p>Turbo Hosting (US)</p>
+                        <p class="text-xs font-light text-gray-500 dark:text-gray-300">Superfast turbo hosting</p>
+                     </a>
+                  </div>
+                  <div class="focus:shadow-outline flex items-center rounded-lg bg-slate-50/50 px-6 py-5 dark:bg-gray-700/10 hover:bg-slate-100 hover:text-gray-900  dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-white md:mt-0">
+                     <a href="reseller-hosting.html">
+                     <span class="inline-block w-[62px] sm:w-auto"> <img src="img/header/icon3.png" class="mr-4 h-12 rounded-lg" /> </span
+                        ></a>
+                     <a href="reseller-hosting.html" class="text-md font-bold text-gray-700 dark:text-gray-100">
+                        <p>Reseller Hosting (US)</p>
+                        <p class="text-xs font-light text-gray-500 dark:text-gray-300">Reliable reseller hosting</p>
+                     </a>
+                  </div>
+                  <div class="focus:shadow-outline flex items-center rounded-lg bg-slate-50/50 px-6 py-5 dark:bg-gray-700/10 hover:bg-slate-100 hover:text-gray-900  dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-white md:mt-0">
+                     <a href="#">
+                     <span class="inline-block w-[62px] sm:w-auto"> <img src="img/header/icon17.png" class="mr-4 h-12 rounded-lg" /> </span
+                        ></a>
+                     <a href="#" class="text-md font-bold text-gray-700 dark:text-gray-100">
+                        <p>Windows Hosting (US)</p>
+                        <p class="text-xs font-light text-gray-500 dark:text-gray-300">Reliable Windows Hosting(Coming soon)</p>
+                     </a>
+                  </div>
+               </div>
+               <!-- col 2 end -->
+
+            </div>
+         </div>
+         <div @click.away="open = false" class="relative" x-data="{ open: false }">
+            <button @click="open = !open" class="text-md bg-gray-100 dark:bg-gray-800 sm:bg-transparent sm:dark:bg-transparent dark:hover:bg-gray-700 focus:shadow-outline mt-2 flex w-full flex-row items-center rounded-lg px-4 py-2 text-left font-semibold hover:text-gray-900 focus:outline-none dark:hover:text-white dark:focus:bg-gray-700 dark:focus:text-white sm:dark:hover:bg-transparent sm:dark:focus:bg-transparent md:mt-0 md:ml-2 md:inline md:w-auto">
+               <span>Servers</span>
+               <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="mt-1 ml-1 inline h-4 w-4 rotate-0 transform transition-transform duration-200 md:-mt-1">
+                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+               </svg>
+            </button>
+
+
+
+            <!-- mega menu 02 -->
+            <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" id="js_hidden" class="relative z-50 mt-5 mb-4 grid gap-4 w-full origin-top-left left-0 lg:left-[-310px] xl:left-[-180px] grid-cols-1 overflow-hidden rounded-2xl bg-white p-5 shadow-xl dark:bg-gray-800 sm:mt-4 sm:mb-0 sm:grid-cols-2 sm:w-[700px] md:absolute" style="display: none;">
+               <!-- col 1 -->
+               
+               <div class="grid gap-3">
+                  <a href="#" class="border-b px-6 border-b-gray-100 dark:border-gray-700/70 py-2 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white font-medium uppercase">BDIX CONNECTED</a>
+                  <div class="focus:shadow-outline flex items-center rounded-lg bg-slate-50/50 px-6 py-5 dark:bg-gray-700/10 hover:bg-slate-100 hover:text-gray-900  dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-white md:mt-0">
+                     <a href="bdix-vps.html">
+                     <span class="inline-block w-[62px] sm:w-auto"> <img src="img/header/icon4.png" class="mr-4 h-12 rounded-lg" /> </span
+                        ></a>
+                     <a href="bdix-vps.html" class="text-md font-bold text-gray-700 dark:text-gray-100">
+                        <p>BDIX VPS</p>
+                        <p class="text-xs font-light text-gray-500 dark:text-gray-300">BDIX virtual private sever</p>
+                     </a>
+                  </div>
+                  <div class="focus:shadow-outline flex items-center rounded-lg bg-slate-50/50 px-6 py-5 dark:bg-gray-700/10 hover:bg-slate-100 hover:text-gray-900  dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-white md:mt-0">
+                     <a href="bdix-managed-vps.html">
+                     <span class="inline-block w-[62px] sm:w-auto"> <img src="img/header/icon5.png" class="mr-4 h-12 rounded-lg" /> </span
+                        ></a>
+                     <a href="bdix-managed-vps.html" class="text-md font-bold text-gray-700 dark:text-gray-100">
+                        <p>BDIX Managed VPS</p>
+                        <p class="text-xs font-light text-gray-500 dark:text-gray-300">BDIX managed virtual private sever</p>
+                     </a>
+                  </div>
+                  <div class="focus:shadow-outline flex items-center rounded-lg bg-slate-50/50 px-6 py-5 dark:bg-gray-700/10 hover:bg-slate-100 hover:text-gray-900  dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-white md:mt-0">
+                     <a href="cyberpanel.html">
+                     <span class="inline-block w-[62px] sm:w-auto"> <img src="img/header/icon7.png" class="mr-4 h-12 rounded-lg" /> </span
+                        ></a>
+                     <a href="cyberpanel.html" class="text-md font-bold text-gray-700 dark:text-gray-100">
+                        <p>BDIX CyberPanel VPS</p>
+                        <p class="text-xs font-light text-gray-500 dark:text-gray-300">Managed BDIX CyberPanel vps</p>
+                     </a>
+                  </div>
+                  <div class="focus:shadow-outline flex items-center rounded-lg bg-slate-50/50 px-6 py-5 dark:bg-gray-700/10 hover:bg-slate-100 hover:text-gray-900  dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-white md:mt-0">
+                     <a href="bdix-dedicated-server.html">
+                     <span class="inline-block w-[62px] sm:w-auto"> <img src="img/header/icon6.png" class="mr-4 h-12 rounded-lg" /> </span
+                        ></a>
+                     <a href="bdix-dedicated-server.html" class="text-md font-bold text-gray-700 dark:text-gray-100">
+                        <p>BDIX Dedicated Server</p>
+                        <p class="text-xs font-light text-gray-500 dark:text-gray-300">BDIX connected dedicated server</p>
+                     </a>
+                  </div>
+                  <!-- <div class="hidden sm:block px-6 py-5 min-h-[88px]">
+                  </div> -->
+                  
+               </div>
+               <!-- col 1 end-->
+
+
+               <!-- col 2 -->
+
+               <div class="grid gap-3">
+                  <a href="#" class="border-b max-h-[41px] px-6 border-b-gray-100 py-2 hover:text-gray-900 dark:border-gray-700/70 dark:text-gray-200 dark:hover:text-white font-medium uppercase">Virtual Private Servers</a>
+                  <div class="focus:shadow-outline flex items-center rounded-lg bg-slate-50/50 px-6 py-5 dark:bg-gray-700/10 hover:bg-slate-100 hover:text-gray-900  dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-white md:mt-0">
+                     <a href="vps-hosting.html">
+                     <span class="inline-block w-[62px] sm:w-auto"> <img src="img/header/icon4.png" class="mr-4 h-12 rounded-lg" /> </span
+                        ></a>
+                     <a href="vps-hosting.html" class="text-md font-bold text-gray-700 dark:text-gray-100">
+                        <p>Unmanaged VPS (US)</p>
+                        <p class="text-xs font-light text-gray-500 dark:text-gray-300">Virtual private sever (KVM)</p>
+                     </a>
+                  </div>
+                  <div class="focus:shadow-outline flex items-center rounded-lg bg-slate-50/50 px-6 py-5 dark:bg-gray-700/10 hover:bg-slate-100 hover:text-gray-900  dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-white md:mt-0">
+                     <a href="managed-vps.html">
+                     <span class="inline-block w-[62px] sm:w-auto"> <img src="img/header/icon5.png" class="mr-4 h-12 rounded-lg" /> </span
+                        ></a>
+                     <a href="managed-vps.html" class="text-md font-bold text-gray-700 dark:text-gray-100">
+                        <p>Managed VPS (US)</p>
+                        <p class="text-xs font-light text-gray-500 dark:text-gray-300">Managed virtual private server</p>
+                     </a>
+                  </div>
+                  <div class="focus:shadow-outline flex items-center rounded-lg bg-slate-50/50 px-6 py-5 dark:bg-gray-700/10 hover:bg-slate-100 hover:text-gray-900  dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-white md:mt-0">
+                     <a href="cyberpanel.html">
+                     <span class="inline-block w-[62px] sm:w-auto"> <img src="img/header/icon7.png" class="mr-4 h-12 rounded-lg" /> </span
+                        ></a>
+                     <a href="cyberpanel.html" class="text-md font-bold text-gray-700 dark:text-gray-100">
+                        <p>CyberPanel VPS</p>
+                        <p class="text-xs font-light text-gray-500 dark:text-gray-300">Managed CyberPanel vps</p>
+                     </a>
+                  </div>
+                  <div class="focus:shadow-outline flex items-center rounded-lg bg-slate-50/50 px-6 py-5 dark:bg-gray-700/10 hover:bg-slate-100 hover:text-gray-900  dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-white md:mt-0">
+                     <a href="dedicated-server.html">
+                     <span class="inline-block w-[62px] sm:w-auto"> <img src="img/header/icon6.png" class="mr-4 h-12 rounded-lg" /> </span
+                        ></a>
+                     <a href="dedicated-server.html" class="text-md font-bold text-gray-700 dark:text-gray-100">
+                        <p>Dedicated Server (US)</p>
+                        <p class="text-xs font-light text-gray-500 dark:text-gray-300">Strongest Dedicated server ever</p>
+                     </a>
+                  </div>
+               </div>
+               <!-- col 2 end-->
+
+              
+            </div>
+         </div>
+         <a class="text-md bg-gray-100 dark:bg-gray-800 sm:bg-transparent sm:dark:bg-transparent dark:hover:bg-gray-700 focus:shadow-outline mt-2 flex w-full flex-row items-center rounded-lg px-4 py-2 text-left font-semibold hover:text-gray-900 focus:outline-none dark:hover:text-white dark:focus:bg-gray-700 dark:focus:text-white sm:dark:hover:bg-transparent sm:dark:focus:bg-transparent md:mt-0 md:ml-2 md:inline md:w-auto" href="domain-name.html">Domains</a>
+         <div @click.away="open = false" class="relative" x-data="{ open: false }">
+            <button @click="open = !open" class="text-md bg-gray-100 dark:bg-gray-800 sm:bg-transparent sm:dark:bg-transparent dark:hover:bg-gray-700 focus:shadow-outline mt-2 flex w-full flex-row items-center rounded-lg px-4 py-2 text-left font-semibold hover:text-gray-900 focus:outline-none dark:hover:text-white dark:focus:bg-gray-700 dark:focus:text-white sm:dark:hover:bg-transparent sm:dark:focus:bg-transparent md:mt-0 md:ml-2 md:inline md:w-auto">
+               <span>Addons</span>
+               <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="mt-1 ml-1 inline h-4 w-4 rotate-0 transform transition-transform duration-200 md:-mt-1">
+                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+               </svg>
+            </button>
+            <!-- mega menu 03-->
+            <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" id="js_hidden" class="relative z-50 mt-5 mb-4 grid gap-4 w-full origin-top-left left-0 lg:left-[-310px] xl:left-[-180px] grid-cols-1 overflow-hidden rounded-2xl bg-white p-5 shadow-xl dark:bg-gray-800 sm:mt-4 sm:mb-0 sm:grid-cols-2 sm:w-[700px] md:absolute" style="display: none;">
+               <!-- col 1 -->
+               <div class="grid gap-3">
+                  <a href="#" class="border-b max-h-[41px] px-6 border-b-gray-100 py-2 hover:text-gray-900 dark:border-gray-700/70 dark:text-gray-200 dark:hover:text-white font-medium uppercase">Utilities</a>
+                  <div class="focus:shadow-outline flex items-center rounded-lg bg-slate-50/50 px-6 py-5 dark:bg-gray-700/10 hover:bg-slate-100 hover:text-gray-900  dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-white md:mt-0">
+                     <a href="google-workspace.html">
+                     <span class="inline-block w-[62px] sm:w-auto"> <img src="img/header/icon8.png" class="mr-4 h-12 rounded-lg" /> </span
+                        ></a>
+                     <a href="google-workspace.html" class="text-md font-bold text-gray-700 dark:text-gray-100">
+                        <p>Google Workspace</p>
+                        <p class="text-xs font-light text-gray-500 dark:text-gray-300">A flexible, innovative email solution</p>
+                     </a>
+                  </div>
+                  <div class="focus:shadow-outline flex items-center rounded-lg bg-slate-50/50 px-6 py-5 dark:bg-gray-700/10 hover:bg-slate-100 hover:text-gray-900  dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-white md:mt-0">
+                     <a href="#">
+                     <span class="inline-block w-[62px] sm:w-auto"> <img src="img/header/icon9.png" class="mr-4 h-12 rounded-lg" /> </span
+                        ></a>
+                     <a href="#" class="text-md font-bold text-gray-700 dark:text-gray-100">
+                        <p>DirectAdmin License</p>
+                        <p class="text-xs font-light text-gray-500 dark:text-gray-300">DirectAdmin licence for your servers</p>
+                     </a>
+                  </div>
+                  <div class="focus:shadow-outline flex items-center rounded-lg bg-slate-50/50 px-6 py-5 dark:bg-gray-700/10 hover:bg-slate-100 hover:text-gray-900  dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-white md:mt-0">
+                     <a href="#">
+                     <span class="inline-block w-[62px] sm:w-auto"> <img src="img/header/icon10.png" class="mr-4 h-12 rounded-lg" /> </span
+                        ></a>
+                     <a href="#" class="text-md font-bold text-gray-700 dark:text-gray-100">
+                        <p>Webuzo License</p>
+                        <p class="text-xs font-light text-gray-500 dark:text-gray-300">Webuzo licence for your servers</p>
+                     </a>
+                  </div>
+                  <div class="focus:shadow-outline flex items-center rounded-lg bg-slate-50/50 px-6 py-5 dark:bg-gray-700/10 hover:bg-slate-100 hover:text-gray-900  dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-white md:mt-0">
+                     <a href="#">
+                     <span class="inline-block w-[62px] sm:w-auto"> <img src="img/header/icon11.png" class="mr-4 h-12 rounded-lg" /> </span
+                        ></a>
+                     <a href="#" class="text-md font-bold text-gray-700 dark:text-gray-100">
+                        <p>Server Management</p>
+                        <p class="text-xs font-light text-gray-500 dark:text-gray-300">Complete server management service</p>
+                     </a>
+                  </div>
+                  <div class="focus:shadow-outline flex items-center rounded-lg bg-slate-50/50 px-6 py-5 dark:bg-gray-700/10 hover:bg-slate-100 hover:text-gray-900  dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-white md:mt-0">
+                     <a href="#">
+                     <span class="inline-block w-[62px] sm:w-auto"> <img src="img/header/icon1.png" class="mr-4 h-12 rounded-lg" /> </span
+                        ></a>
+                     <a href="#" class="text-md font-bold text-gray-700 dark:text-gray-100">
+                        <p>Business Email</p>
+                        <p class="text-xs font-light text-gray-500 dark:text-gray-300">Email solution for your business</p>
+                     </a>
+                  </div>
+                  <!-- <div class="hidden sm:block px-6 py-5 min-h-[88px]">
+                  </div> -->
+               </div>
+               <!-- col 2 -->
+               <div class="grid gap-3">
+                  <a href="cloud-pricing.html" class="border-b px-6 border-b-gray-100 dark:border-gray-700/70 py-2 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white font-medium uppercase">Managed Cloud </a>
+                  <div class="focus:shadow-outline flex items-center rounded-lg bg-slate-50/50 px-6 py-5 dark:bg-gray-700/10 hover:bg-slate-100 hover:text-gray-900  dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-white md:mt-0">
+                     <a href="managed-amazon-cloud.html">
+                     <span class="inline-block w-[62px] sm:w-auto"> <img src="img/header/icon12.png" class="mr-4 h-12 rounded-lg" /> </span
+                        ></a>
+                     <a href="managed-amazon-cloud.html" class="text-md font-bold text-gray-700 dark:text-gray-100">
+                        <p>Managed AWS Hosting</p>
+                        <p class="text-xs font-light text-gray-500 dark:text-gray-300">Reliable Amazon Cloud Managed Hosting</p>
+                     </a>
+                  </div>
+                  <div class="focus:shadow-outline flex items-center rounded-lg bg-slate-50/50 px-6 py-5 dark:bg-gray-700/10 hover:bg-slate-100 hover:text-gray-900  dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-white md:mt-0">
+                     <a href="managed-google-cloud.html">
+                     <span class="inline-block w-[62px] sm:w-auto"> <img src="img/header/icon13.png" class="mr-4 h-12 rounded-lg" /> </span
+                        ></a>
+                     <a href="managed-google-cloud.html" class="text-md font-bold text-gray-700 dark:text-gray-100">
+                        <p>Managed GCE Hosting</p>
+                        <p class="text-xs font-light text-gray-500 dark:text-gray-300">Reliable Google Cloud Managed Hosting</p>
+                     </a>
+                  </div>
+                  <div class="focus:shadow-outline flex items-center rounded-lg bg-slate-50/50 px-6 py-5 dark:bg-gray-700/10 hover:bg-slate-100 hover:text-gray-900  dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-white md:mt-0">
+                     <a href="managed-digital-ocean-cloud.html">
+                     <span class="inline-block w-[62px] sm:w-auto"> <img src="img/header/icon14.png" class="mr-4 h-12 rounded-lg" /> </span
+                        ></a>
+                     <a href="managed-digital-ocean-cloud.html" class="text-md font-bold text-gray-700 dark:text-gray-100">
+                        <p>Managed DO Hosting</p>
+                        <p class="text-xs font-light text-gray-500 dark:text-gray-300">Reliable DigitalOcean Managed Hosting</p>
+                     </a>
+                  </div>
+                  <div class="focus:shadow-outline flex items-center rounded-lg bg-slate-50/50 px-6 py-5 dark:bg-gray-700/10 hover:bg-slate-100 hover:text-gray-900  dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-white md:mt-0">
+                     <a href="managed-linode.html">
+                     <span class="inline-block w-[62px] sm:w-auto"> <img src="img/header/icon15.png" class="mr-4 h-12 rounded-lg" /> </span
+                        ></a>
+                     <a href="managed-linode.html" class="text-md font-bold text-gray-700 dark:text-gray-100">
+                        <p>Managed Linode Hosting</p>
+                        <p class="text-xs font-light text-gray-500 dark:text-gray-300">Reliable Linode Managed Hosting</p>
+                     </a>
+                  </div>
+                  <div class="focus:shadow-outline flex items-center rounded-lg bg-slate-50/50 px-6 py-5 dark:bg-gray-700/10 hover:bg-slate-100 hover:text-gray-900  dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-white md:mt-0">
+                     <a href="managed-vultr.html">
+                     <span class="inline-block w-[62px] sm:w-auto"> <img src="img/header/icon16.png" class="mr-4 h-12 rounded-lg" /> </span
+                        ></a>
+                     <a href="managed-vultr.html" class="text-md font-bold text-gray-700 dark:text-gray-100">
+                        <p>Managed Vultr Hosting</p>
+                        <p class="text-xs font-light text-gray-500 dark:text-gray-300">Reliable Vultr Managed Hosting</p>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <!-- END mega menu -->
+         </div>
+      </nav>
+      <nav :class="{'flex': open, 'hidden': !open}" class="hidden flex-auto items-center sm:flex-row sm:items-center justify-between px-5 mt-6 pb-10 lg:mt-0 lg:flex lg:flex-row lg:justify-end lg:px-0 lg:pt-0 lg:pb-0">
+         <div @click.away="open = false" class="relative hidden sm:block" x-data="{ open: false }">
+
+            <button @click="open = !open" class= "text-md dark:hover:bg-gray-700 focus:shadow-outline mt-2 flex w-full flex-row items-center rounded-lg px-4 py-2 text-left font-semibold hover:text-gray-900 focus:outline-none dark:bg-gray-800 dark:bg-transparent dark:hover:text-white dark:focus:bg-gray-700 dark:focus:text-white sm:bg-transparent sm:dark:bg-transparent sm:dark:hover:bg-transparent sm:dark:focus:bg-transparent md:mt-0 md:ml-2 md:inline md:w-auto">
+               <span>Support</span>
+               <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="mt-1 ml-1 inline h-4 w-4 rotate-0 transform transition-transform duration-200 md:-mt-1">
+                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+               </svg>
+            </button>
+            <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" id="js_hidden" style="display: none;" class="relative left-0 z-50 mt-5 mb-4 w-full origin-top-left rounded-lg shadow-xl sm:mt-4 sm:mb-0 md:absolute md:w-80 md:rounded-2xl">
+               <div class="mb-2 rounded-lg bg-white px-6 py-6 shadow-xl dark:bg-gray-800 md:mb-0 md:rounded-2xl">
+                  <!-- END CONTACT SECTION -->
+                  <div class="space-y-4 divide-y py-3 px-2 dark:divide-gray-700">
+                     <div>
+                        <h2 class="text-lg font-bold text-gray-800 dark:text-gray-100">Talk to expert</h2>
+                        <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">You can call us anytime</p>
+                        <div class="mt-4 mb-6 flex items-center">
+                           <a href="tel:+8801711928149" class="inline-flex w-full items-center justify-center space-x-2 rounded-xl border border-gray-100 bg-gray-100 px-4 py-2.5 font-semibold leading-6 text-gray-700 shadow-lg hover:border-gray-100 hover:bg-gray-100 hover:text-gray-800 hover:shadow-lg focus:outline-none dark:border-gray-700 dark:bg-gray-700">
+                              <span class="flex items-center">
+                                 <svg xmlns="http://www.w3.org/2000/svg" class="mr-1.5 h-5 w-5 text-blue-500" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                                 </svg>
+                                 <p class="text-md font-semibold dark:text-gray-100">+88 01711 928149</p>
+                              </span>
+                           </a>
+                        </div>
+                     </div>
+                     <div>
+                        <h2 class="mt-4 mb-2 text-lg font-bold text-gray-800 dark:text-gray-100">Chat with us</h2>
+                        <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Chat now with our support team.</p>
+                        <div class="mt-4 flex items-center space-x-3">
+                           <div class="bg-white bg-opacity-100 pb-2 dark:bg-gray-800 lg:pb-2 lg:pt-0">
+                               <a class="inline-flex w-full items-center justify-center space-x-2 rounded-lg border border-blue-500 bg-blue-500 px-4 py-2 text-sm font-semibold leading-6 text-white hover:border-blue-600 hover:bg-blue-700 hover:text-white focus:outline-none focus:ring focus:ring-gray-500 focus:ring-opacity-25 active:border-blue-700 active:bg-blue-700"> Live chat </a>
+                           </div>
+                           <div class="bg-white bg-opacity-100 pb-2 dark:bg-gray-800 lg:pb-2 lg:pt-0">
+                              <a href="https://help.ispbills.com" class="inline-flex w-full items-center justify-center space-x-2 rounded-lg border border-blue-500 bg-blue-500 px-4 py-2 text-sm font-semibold leading-6 text-white hover:border-blue-600 hover:bg-blue-700 hover:text-white focus:outline-none focus:ring focus:ring-gray-500 focus:ring-opacity-25 active:border-blue-700 active:bg-blue-700"> Support ticket </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div>
+                        <h2 class="mt-4 text-lg font-bold text-gray-800 dark:text-gray-100"><a href="../blog.ISPbills.net/index.html" target="_blank"> Visit our blog</a></h2>
+                        <p></p>
+                     </div>
+                     <div>
+                        <h2 class="mt-4 text-lg font-bold text-gray-800 dark:text-gray-100"><a href="../kb.ISPbills.net/index.html" target="_blank"> Knowledgebase </a></h2>
+                        <p></p>
+                     </div>
+                  </div>
+                  <!-- END CONTACT SECTION -->
+               </div>
+            </div>
+         </div>
+         <button class="text-md text-left:dark focus:shadow-outline flex flex-row items-center rounded-lg bg-transparent px-4 pr-0 sm:px-4 font-semibold hover:text-gray-900 focus:text-gray-900 focus:outline-none dark:bg-transparent dark:hover:bg-transparent dark:hover:text-white dark:focus:bg-transparent dark:focus:text-white sm:hidden md:mt-0 md:ml-2 md:inline md:hidden md:w-auto lg:hidden xl:hidden">
+            <a href="contact-us.html"><span>Contact</span></a>
+            </button>
+         <div class="mx-2 flex sm:mb-0 w-9 h-9 hover:bg-slate-100 rounded-lg dark:hover:bg-gray-700 items-center justify-center cursor-pointer">
+            <svg class="ISPbills-dark h-7 w-7 p-1 fill-gray-500 dark:fill-gray-800" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+               <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+            </svg>
+            <svg class="ISPbills-light h-7 w-7 p-1" class="" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+               <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+            </svg>
+         </div>
+         <a class="text-md ml-2 sm:ml-0 focus:shadow-outline flex items-center rounded-lg bg-gray-100 dark:bg-transparent dark:hover:bg-gray-700 px-4 py-2 font-semibold dark:text-gray-200 md:mt-0 md:ml-2" href="https://help.ispbills.com" target="_blank">
+            <span class="">Account</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+               <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd" />
+            </svg>
+         </a>
+      </nav>
+   </div>
+</div>
+
+      <!-- Additional Script for Dark and Light Mode-->
+
+<script>
+   // icons
+   const sunIcon = document.querySelector(".ISPbills-light")
+   const moonIcon = document.querySelector(".ISPbills-dark")
+   
+   // theme vars
+   const userTheme = localStorage.getItem("theme");
+   const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+   
+   // icon toggle
+   const iconToggle = () =>{
+     moonIcon.classList.toggle("display-none");
+     sunIcon.classList.toggle("display-none");
+   }
+   
+   // initial theme check
+   const themeCheck = () =>{
+     if (userTheme === "dark" || (!userTheme && systemTheme)){
+       document.documentElement.classList.add("dark");
+       moonIcon.classList.add("display-none");
+       return;
+     }
+     sunIcon.classList.add("display-none");
+   }
+   
+   // manual theme switch
+   const themeSwitch = () => {
+     if (document.documentElement.classList.contains("dark")){
+       document.documentElement.classList.remove("dark");
+       localStorage.setItem("theme", "light");
+       iconToggle();
+       return;
+     }
+     document.documentElement.classList.add("dark");
+     localStorage.setItem("theme", "dark");
+     iconToggle();
+   }
+   
+   
+   // call theme switch on clicking button
+   sunIcon.addEventListener("click", () => {
+     themeSwitch();
+   })
+   moonIcon.addEventListener("click", () => {
+     themeSwitch();
+   })
+   // invoke theme check on initial load
+   themeCheck();
+</script>
+
+
+<!-- End Addition Dark and Light Mode Script -->
+
+      <!-- Page Header Section: With Select Box -->
+      <div class="-z-50" style="background-image: url('img/turbo-hosting-hero.jpg'); background-size: cover;">
+         <div class="bg-blue-600 bg-opacity-70 dark:bg-gray-900 dark:bg-opacity-80">
+            <div class="space-y-16 container xl:max-w-7xl mx-auto px-6 py-16 lg:px-8 lg:pt-20 lg:pb-20">
+               <div class="flex flex-col lg:flex-row lg:items-center space-y-12 lg:space-y-0">
+                  <div class="sm:w-2/3 text-left lg:text-left">
+                     <h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-white">
+                        Reseller Hosting (US)
+                     </h2>
+                     <h3 class="text-lg md:text-xl md:leading-relaxed font-medium text-gray-200 dark:text-gray-400">
+                     WHM Reseller Hosting in the United States includes all features and support you need to start a hosting business. All of our reseller hosting plans are designed for you to make money!
+                     </h3>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- END Page Header Section: With Select Box -->
+      <!-- Page Header Section: With Select Box -->
+      <div class="">
+         <div class="space-y-16 container xl:max-w-7xl mx-auto px-6 py-16 lg:px-8 lg:pt-24 lg:pb-20 border-b dark:border-gray-700">
+            <div class="flex flex-col lg:flex-row lg:items-center space-y-12 lg:space-y-0">
+               <div class="lg:w-1/2 text-left lg:text-left">
+                  <div class="text-sm uppercase font-bold tracking-wider mb-1 text-blue-700 dark:text-blue-500">
+                     Pricing Plans
+                  </div>
+                  <h2 class="text-3xl md:text-4xl font-extrabold mb-2 dark:text-gray-100">
+                     Choose the best plan
+                  </h2>
+                  <h3 class="text-lg md:text-xl md:leading-relaxed font-medium text-gray-600 dark:text-gray-400">
+                     Honest and affordable pricing model to help you get started easily.
+                  </h3>
+               </div>
+               <div class="lg:w-1/2 text-center lg:text-right">
+                  <form onsubmit="return false;" class="lg:inline-block">
+                     <div class="flex justify-center items-center space-y-1 text-left bg-white dark:bg-gray-800 shadow-xl rounded-xl px-2 sm:px-5 py-3 mb-4">
+                        <label for="toggle" class="flex items-center cursor-pointer relative my-4 pr-3 sm:pr-5 border-r-2 border-gray-200 dark:border-gray-600">
+                           <input type="checkbox" id="toggle" class="hidden" onclick="myFunction()">
+                           <div class="toggle-bg bg-gray-300 border-2 border-gray-300 h-6 w-11 rounded-full"></div>
+                           <span class="ml-3 text-gray-900 dark:text-gray-200 text-sm font-medium">Billed Annually</span>
+                        </label>
+                        <label for="toggleusd" class="flex items-center cursor-pointer relative my-2 ml-5">
+                           <input type="checkbox" id="toggleusd" class="hidden" onclick="myFunctionBDT()">
+                           <div class="toggle-bg bg-gray-300 border-2 border-gray-300 h-6 w-11 rounded-full"></div>
+                           <span class="ml-3 text-gray-900 dark:text-gray-200 text-sm font-medium">BDT</span>
+                        </label>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- END Page Header Section: With Select Box -->
+      <!--  Pricing Plans -->
+      <div class="w-full bg-white dark:bg-gray-900">
+         <div class="max-w-7xl mx-auto  px-6 sm:px-8 py-6 sm: sm:pb-5">
+            <!-- Pricing Section: With Features -->
+            <div class="">
+               <div class="space-y-10 container xl:max-w-7xl mx-auto py-10 lg:pb-10 lg:pt-20">
+                  
+                  <!-- Pricing Plans -->
+                  <div class="grid grid-cols-1 md:grid-cols-4 gap-12 lg:gap-8">
+                     <!-- Solo Plan -->
+                     <div class="rounded-lg shadow-xl flex flex-col overflow-hidden" style="background-image: url(''); background-size: contain; background-repeat: no-repeat;">
+                        <div class="p-5 lg:p-6 lg:pt-8 lg:pt-8 text-center rounded-t-lg border-b border-gray-200 dark:border-gray-800 overflow-hidden bg-blue-100 dark:bg-gray-700 dark:bg-opacity-100 bg-opacity-70">
+                           <span class="inline-block text-sm uppercase tracking-wider font-semibold px-3 py-1 bg-gray-500 bg-opacity-50 text-white rounded-full mb-4 ">
+                           RH-10G
+                           </span>
+                           <div class="mb-1">
+                              <div id="monthly" class="monthly">
+                                 <span class="text-3xl lg:text-4xl font-extrabold dark:text-gray-100 usd">$8.75</span>
+                                 <span class="text-3xl lg:text-4xl font-extrabold dark:text-gray-100 hidden bdt">TK750</span>
+                                 <span class="text-gray-700 dark:text-gray-300 font-semibold ">/month</span>
+                              </div>
+                              <div id="annually" class="annually hidden">
+                                 <span class="text-3xl lg:text-4xl font-extrabold dark:text-gray-100 usd">$95.95</span>
+                                 <span class="text-3xl lg:text-4xl font-extrabold dark:text-gray-100 hidden bdt">TK8,250</span>
+                                 <span class="text-gray-700 dark:text-gray-300 font-semibold ">/year</span>
+                              </div>
+                           </div>
+                           <p class="text-gray-700 dark:text-gray-300 text-sm font-medium ">
+                              For small companies
+                           </p>
+                        </div>
+                        <div class="" style="">
+                           <div class="p-8 lg:p-8 space-y-5 lg:space-y-6 text-gray-700 flex-grow bg-white dark:bg-gray-800 bg-opacity-100 ">
+                              <ul class="space-y-3 text-sm lg:text-base ">
+                                 <li class="flex items-center space-x-2 ">
+                                    <img src="img/plan-check.svg" alt="plan-check" class="text-green-500 inline-block plan-check">
+                                    <span class="dark:text-gray-400"><strong>10 GB</strong> Disk Space</span>
+                                 </li>
+                                 <li class="flex items-center space-x-2 ">
+                                    <img src="img/plan-check.svg" alt="plan-check" class="text-green-500 inline-block plan-check">
+                                    <span class="dark:text-gray-400"><strong>100 GB</strong> Bandwidth</span>
+                                 </li>
+                                 <li class="flex items-center space-x-2 ">
+                                    <img src="img/plan-check.svg" alt="plan-check" class="text-green-500 inline-block plan-check">
+                                    <span class="dark:text-gray-400"><strong>10 cPanel</strong> Accounts</span>
+                                 </li>
+                                 <li class="flex items-center space-x-2 ">
+                                    <img src="img/plan-check.svg" alt="plan-check" class="text-green-500 inline-block plan-check">
+                                    <span class="dark:text-gray-400"><strong>1 GB</strong> Ram </span>
+                                 </li>
+                                 <li class="flex items-center space-x-2 ">
+                                    <img src="img/plan-check.svg" alt="plan-check" class="text-green-500 inline-block plan-check">
+                                    <span class="dark:text-gray-400"><strong>1 Core</strong> CPU</span>
+                                 </li>
+                                 <li class="flex items-center space-x-2">
+                                    <img src="img/plan-check.svg" alt="plan-check" class="text-green-500 inline-block plan-check">
+                                    <span class="dark:text-gray-400"><strong>10 Entry</strong> Process</span>
+                                 </li>
+                                 <li class="flex items-center space-x-2">
+                                    <img src="img/plan-check.svg" alt="plan-check" class="text-green-500 inline-block plan-check">
+                                    <span class="dark:text-gray-400"><strong>10 MB/s</strong> I/O</span>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="px-5 pb-10 lg:px-6 lg:pb-8 lg:pt-0 bg-white dark:bg-gray-800 bg-opacity-100 ">
+                           <a href="../ap.ISPbills.net/store/reseller-hosting-us/rh-10g.html" class="inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none w-full px-4 py-3 leading-6 rounded-lg border-blue-500
+                              bg-blue-500 text-white hover:text-white hover:bg-blue-700 hover:border-blue-600 focus:ring focus:ring-gray-500 focus:ring-opacity-25 active:bg-blue-700 active:border-blue-700">
+                           Get Started
+                           </a>
+                        </div>
+                     </div>
+                     <!-- END Solo Plan -->
+                     <!-- Agency Plan -->
+                     <div class="rounded-lg shadow-xl flex flex-col overflow-hidden relative" style="background-image: url(''); background-size: contain;">
+                        <div class="p-5 lg:p-6 lg:pt-8 lg:pt-8 text-center rounded-t-lg border-b border-gray-200 dark:border-gray-800 overflow-hidden bg-blue-100 dark:bg-gray-700 dark:bg-opacity-100 bg-opacity-60">
+                           <div class="absolute top-3 right-3 h-10 w-10 flex items-center justify-center text-gray-700 ">
+                              <svg fill="currentColor " viewBox="0 0 20 20 " xmlns="http://www.w3.org/2000/svg " class="hi-solid hi-bookmark inline-block w-6 h-6 ">
+                                 <path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z "></path>
+                              </svg>
+                           </div>
+                           <span class="inline-flex space-x-1 items-center text-sm uppercase tracking-wider font-semibold px-3 py-1 bg-gray-500 bg-opacity-50 text-white rounded-full mb-4 "><span>RH-25G
+                           </span></span>
+                           <div class="mb-1">
+                              <div id="monthly" class="monthly">
+                                 <span class="text-3xl lg:text-4xl font-extrabold dark:text-gray-100 usd">$16.85</span>
+                                 <span class="text-3xl lg:text-4xl font-extrabold dark:text-gray-100 hidden bdt">TK1,450</span>
+                                 <span class="text-gray-700 dark:text-gray-300 font-semibold ">/month</span>
+                              </div>
+                              <div id="annually" class="annually hidden">
+                                 <span class="text-3xl lg:text-4xl font-extrabold dark:text-gray-100 usd">$185.45</span>
+                                 <span class="text-3xl lg:text-4xl font-extrabold dark:text-gray-100 hidden bdt">TK15,950</span>
+                                 <span class="text-gray-700 dark:text-gray-300 font-semibold ">/year</span>
+                              </div>
+                           </div>
+                           <p class="text-gray-700 dark:text-gray-300 text-sm font-medium ">
+                              For medium companies
+                           </p>
+                        </div>
+                        <div class="p-8 lg:p-8 space-y-5 lg:space-y-6 text-gray-700 flex-grow bg-white dark:bg-gray-800 bg-opacity-100 ">
+                           <ul class="space-y-3 text-sm lg:text-base ">
+                              <li class="flex items-center space-x-2 ">
+                                 <img src="img/plan-check.svg" alt="plan-check" class="text-green-500 inline-block plan-check">
+                                 <span class="dark:text-gray-400"><strong>25 GB</strong> Disk Space</span>
+                              </li>
+                              <li class="flex items-center space-x-2 ">
+                                 <img src="img/plan-check.svg" alt="plan-check" class="text-green-500 inline-block plan-check">
+                                 <span class="dark:text-gray-400"><strong>500 GB</strong> Bandwidth</span>
+                              </li>
+                              <li class="flex items-center space-x-2 ">
+                                 <img src="img/plan-check.svg" alt="plan-check" class="text-green-500 inline-block plan-check">
+                                 <span class="dark:text-gray-400"><strong>25 cPanel</strong> Accounts</span>
+                              </li>
+                              <li class="flex items-center space-x-2 ">
+                                 <img src="img/plan-check.svg" alt="plan-check" class="text-green-500 inline-block plan-check">
+                                 <span class="dark:text-gray-400"><strong>1 GB</strong> Ram </span>
+                              </li>
+                              <li class="flex items-center space-x-2 ">
+                                 <img src="img/plan-check.svg" alt="plan-check" class="text-green-500 inline-block plan-check">
+                                 <span class="dark:text-gray-400"><strong>1 Core</strong> CPU</span>
+                              </li>
+                              <li class="flex items-center space-x-2">
+                                 <img src="img/plan-check.svg" alt="plan-check" class="text-green-500 inline-block plan-check">
+                                 <span class="dark:text-gray-400"><strong>25 Entry</strong> Process</span>
+                              </li>
+                              <li class="flex items-center space-x-2">
+                                 <img src="img/plan-check.svg" alt="plan-check" class="text-green-500 inline-block plan-check">
+                                 <span class="dark:text-gray-400"><strong>20 MB/s</strong> I/O</span>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="px-5 pb-10 lg:px-6 lg:pb-8 lg:pt-0 bg-white dark:bg-gray-800 bg-opacity-100 ">
+                           <a href="../ap.ISPbills.net/store/reseller-hosting-us/rh-25g.html" class="inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none w-full px-4 py-3 leading-6 rounded-lg border-blue-500
+                              bg-blue-500 text-white hover:text-white hover:bg-blue-700 hover:border-blue-600 focus:ring focus:ring-gray-500 focus:ring-opacity-25 active:bg-blue-700 active:border-blue-700">
+                           Get Started
+                           </a>
+                        </div>
+                     </div>
+                     <!-- END Agency Plan -->
+                     <!-- Enterprise Plan -->
+                     <div class="rounded-lg shadow-xl flex flex-col overflow-hidden" style="background-image: url(''); background-size: contain;">
+                        <div class="p-5 lg:p-6 lg:pt-8 lg:pt-8 text-center rounded-t-lg border-b border-gray-200 dark:border-gray-800 overflow-hidden bg-blue-100 dark:bg-gray-700 dark:bg-opacity-100 bg-opacity-60">
+                           <span class="inline-block text-sm uppercase tracking-wider font-semibold px-3 py-1 bg-gray-500 bg-opacity-50 text-white rounded-full mb-4 shadow-2xl ">
+                           RH-50G
+                           </span>
+                           <div class="mb-1">
+                              <div id="monthly" class="monthly">
+                                 <span class="text-3xl lg:text-4xl font-extrabold dark:text-gray-100 usd">$29.30</span>
+                                 <span class="text-3xl lg:text-4xl font-extrabold dark:text-gray-100 hidden bdt">TK2,520</span>
+                                 <span class="text-gray-700 dark:text-gray-300 font-semibold ">/month</span>
+                              </div>
+                              <div id="annually" class="annually hidden">
+                                 <span class="text-3xl lg:text-4xl font-extrabold dark:text-gray-100 usd">$322.30</span>
+                                 <span class="text-3xl lg:text-4xl font-extrabold dark:text-gray-100 hidden bdt">TK27,720</span>
+                                 <span class="text-gray-700 dark:text-gray-300 font-semibold ">/year</span>
+                              </div>
+                           </div>
+                           <p class="text-gray-700 dark:text-gray-300 text-sm font-medium ">
+                              For high traffic companies
+                           </p>
+                        </div>
+                        <div class="p-8 lg:p-8 space-y-5 lg:space-y-6 text-gray-700 flex-grow bg-white dark:bg-gray-800 bg-opacity-100 ">
+                           <ul class="space-y-3 text-sm lg:text-base ">
+                              <li class="flex items-center space-x-2 ">
+                                 <img src="img/plan-check.svg" alt="plan-check" class="text-green-500 inline-block plan-check">
+                                 <span class="dark:text-gray-400"><strong>50 GB</strong> Disk Space</span>
+                              </li>
+                              <li class="flex items-center space-x-2 ">
+                                 <img src="img/plan-check.svg" alt="plan-check" class="text-green-500 inline-block plan-check">
+                                 <span class="dark:text-gray-400"><strong>1000 GB</strong> Bandwidth</span>
+                              </li>
+                              <li class="flex items-center space-x-2 ">
+                                 <img src="img/plan-check.svg" alt="plan-check" class="text-green-500 inline-block plan-check">
+                                 <span class="dark:text-gray-400"><strong>50 cPanel</strong> Accounts</span>
+                              </li>
+                              <li class="flex items-center space-x-2 ">
+                                 <img src="img/plan-check.svg" alt="plan-check" class="text-green-500 inline-block plan-check">
+                                 <span class="dark:text-gray-400"><strong>1 GB</strong> Ram </span>
+                              </li>
+                              <li class="flex items-center space-x-2 ">
+                                 <img src="img/plan-check.svg" alt="plan-check" class="text-green-500 inline-block plan-check">
+                                 <span class="dark:text-gray-400"><strong>1 Core</strong> CPU</span>
+                              </li>
+                              <li class="flex items-center space-x-2">
+                                 <img src="img/plan-check.svg" alt="plan-check" class="text-green-500 inline-block plan-check">
+                                 <span class="dark:text-gray-400"><strong>50 Entry</strong> Process</span>
+                              </li>
+                              <li class="flex items-center space-x-2">
+                                 <img src="img/plan-check.svg" alt="plan-check" class="text-green-500 inline-block plan-check">
+                                 <span class="dark:text-gray-400"><strong>25 MB/s</strong> I/O</span>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="px-5 pb-10 lg:px-6 lg:pb-8 lg:pt-0 bg-white dark:bg-gray-800 bg-opacity-100 ">
+                           <a href="../ap.ISPbills.net/store/reseller-hosting-us/rh-50g.html" class="inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none w-full px-4 py-3 leading-6 rounded-lg border-blue-500
+                              bg-blue-500 text-white hover:text-white hover:bg-blue-700 hover:border-blue-600 focus:ring focus:ring-gray-500 focus:ring-opacity-25 active:bg-blue-700 active:border-blue-700 ">
+                           Get Started
+                           </a>
+                        </div>
+                     </div>
+                     <!-- END Enterprise Plan -->
+                     <!-- Professional Plan -->
+                     <div class="rounded-lg shadow-xl flex flex-col overflow-hidden" style="background-image: url(''); background-size: contain;">
+                        <div class="p-5 lg:p-6 lg:pt-8 lg:pt-8 text-center rounded-t-lg border-b border-gray-200 dark:border-gray-800 overflow-hidden bg-blue-100 dark:bg-gray-700 dark:bg-opacity-100 bg-opacity-60">
+                           <span class="inline-block text-sm uppercase tracking-wider font-semibold px-3 py-1 bg-gray-500 bg-opacity-50 text-white rounded-full mb-4 shadow-2xl ">
+                           RH-100G
+                           </span>
+                           <div class="mb-1">
+                              <div id="monthly" class="monthly">
+                                 <span class="text-3xl lg:text-4xl font-extrabold dark:text-gray-100 usd">$44.50</span>
+                                 <span class="text-3xl lg:text-4xl font-extrabold dark:text-gray-100 hidden bdt">TK3,825</span>
+                                 <span class="text-gray-700 dark:text-gray-300 font-semibold ">/month</span>
+                              </div>
+                              <div id="annually" class="annually hidden">
+                                 <span class="text-3xl lg:text-4xl font-extrabold dark:text-gray-100 usd">$489.25</span>
+                                 <span class="text-3xl lg:text-4xl font-extrabold dark:text-gray-100 hidden bdt">TK42,075</span>
+                                 <span class="text-gray-700 dark:text-gray-300 font-semibold ">/year</span>
+                              </div>
+                           </div>
+                           <p class="text-gray-700 dark:text-gray-300 text-sm font-medium ">
+                              For larger companies
+                           </p>
+                        </div>
+                        <div class="p-8 lg:p-8 space-y-5 lg:space-y-6 text-gray-700 flex-grow bg-white dark:bg-gray-800 bg-opacity-100 ">
+                           <ul class="space-y-3 text-sm lg:text-base ">
+                              <li class="flex items-center space-x-2 ">
+                                 <img src="img/plan-check.svg" alt="plan-check" class="text-green-500 inline-block plan-check">
+                                 <span class="dark:text-gray-400"><strong>100 GB</strong> Disk Space</span>
+                              </li>
+                              <li class="flex items-center space-x-2 ">
+                                 <img src="img/plan-check.svg" alt="plan-check" class="text-green-500 inline-block plan-check">
+                                 <span class="dark:text-gray-400"><strong>2000 GB</strong> Bandwidth</span>
+                              </li>
+                              <li class="flex items-center space-x-2 ">
+                                 <img src="img/plan-check.svg" alt="plan-check" class="text-green-500 inline-block plan-check">
+                                 <span class="dark:text-gray-400"><strong>100 cPanel</strong> Accounts</span>
+                              </li>
+                              <li class="flex items-center space-x-2 ">
+                                 <img src="img/plan-check.svg" alt="plan-check" class="text-green-500 inline-block plan-check">
+                                 <span class="dark:text-gray-400"><strong>1 GB</strong> Ram </span>
+                              </li>
+                              <li class="flex items-center space-x-2 ">
+                                 <img src="img/plan-check.svg" alt="plan-check" class="text-green-500 inline-block plan-check">
+                                 <span class="dark:text-gray-400"><strong>1 Core</strong> CPU</span>
+                              </li>
+                              <li class="flex items-center space-x-2">
+                                 <img src="img/plan-check.svg" alt="plan-check" class="text-green-500 inline-block plan-check">
+                                 <span class="dark:text-gray-400"><strong>100 Entry</strong> Process</span>
+                              </li>
+                              <li class="flex items-center space-x-2">
+                                 <img src="img/plan-check.svg" alt="plan-check" class="text-green-500 inline-block plan-check">
+                                 <span class="dark:text-gray-400"><strong>30 MB/s</strong> I/O</span>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="px-5 pb-10 lg:px-6 lg:pb-8 lg:pt-0 bg-white dark:bg-gray-800 bg-opacity-100 ">
+                           <a href="../ap.ISPbills.net/store/reseller-hosting-us/rh-100g.html" class="inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none w-full px-4 py-3 leading-6 rounded-lg border-blue-500
+                              bg-blue-500 text-white hover:text-white hover:bg-blue-700 hover:border-blue-600 focus:ring focus:ring-gray-500 focus:ring-opacity-25 active:bg-blue-700 active:border-blue-700">
+                           Get Started
+                           </a>
+                        </div>
+                     </div>
+                     <!-- END Professional Plan -->
+                  </div>
+                  <!-- END Pricing Plans -->
+               </div>
+            </div>
+            <!-- END Pricing Section: With Features -->
+         </div>
+      </div>
+      <!-- Features Section: Key Features With Icons -->
+      <div class="bg-white dark:bg-gray-900">
+         <div class="space-y-14 container xl:max-w-7xl mx-auto px-6 pt-4 pb-16 lg:px-8 lg:py-16">
+            <!-- Heading -->
+            <div class="lg:w-1/2 text-left lg:text-left">
+               <div class="text-sm uppercase font-bold tracking-wider mb-1 text-blue-500 dark:text-blue-500">
+                  Reseller features
+               </div>
+               <h2 class="text-3xl md:text-4xl font-extrabold mb-2 dark:text-gray-100">
+                  Common features
+               </h2>
+               <h3 class="text-lg md:text-xl md:leading-relaxed font-medium text-gray-600 dark:text-gray-400">
+               The extraordinary features that make your work more efficient.
+               </h3>
+            </div>
+            <!-- END Heading -->
+            <div class="bg-orange-50 dark:bg-gray-800 pt-10 py-4 px-3 sm:px-8 shadow-xl rounded-xl">
+               <div class="swiper mySwiper swiper-initialized swiper-horizontal swiper-pointer-events">
+                  <div class="swiper-wrapper" id="swiper-wrapper-fc87183ff65fcc77" aria-live="off" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                     <!-- Slider one -->
+                     <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 2" style="width: 1152px;">
+                        <!-- Features -->
+                        <div class="">
+                           <div class="grid grid-cols-2 md:grid-cols-6 gap-4 md:gap-12 text-center ">
+                              <div class="py-5 ">
+                                 <div class="group inline-flex items-center justify-center w-10 sm:h-10 sm:w-12 sm:h-12 ml-3 mb-8 relative ">
+                                    <div class="absolute inset-0 rounded-xl -m-3 transform -rotate-6 bg-orange-500 transition ease-out duration-150 group-hover:rotate-6 group-hover:scale-110 ">
+                                    </div>
+                                    <div class="absolute inset-0 rounded-xl -m-3 transform rotate-2 bg-orange-500 bg-opacity-50 shadow-inner transition ease-out duration-150 group-hover:-rotate-3 group-hover:scale-110 ">
+                                    </div>
+                                    <img src="img/features/hosting-features1.svg" alt="hosting-features" class="inline-block w-6 h-6 sm:w-8 sm:h-8 text-white relative transform transition ease-out duration-150 group-hover:scale-125">
+                                 </div>
+                                 <h4 class="text-base sm:text-lg font-bold mb-2 text-gray-700 dark:text-gray-100">
+                                    LiteSpeed
+                                 </h4>
+                              </div>
+                              <div class="py-5 ">
+                                 <div class="group inline-flex items-center justify-center w-10 sm:h-10 sm:w-12 sm:h-12 ml-3 mb-8 relative ">
+                                    <div class="absolute inset-0 rounded-xl -m-3 transform -rotate-6 bg-red-500 transition ease-out duration-150 group-hover:rotate-6 group-hover:scale-110 ">
+                                    </div>
+                                    <div class="absolute inset-0 rounded-xl -m-3 transform rotate-2 bg-red-500 bg-opacity-50 shadow-inner transition ease-out duration-150 group-hover:-rotate-3 group-hover:scale-110 ">
+                                    </div>
+                                    <img src="img/features/hosting-features2.svg" alt="hosting-features" class="inline-block w-6 h-6 sm:w-8 sm:h-8 text-white relative transform transition ease-out duration-150 group-hover:scale-125">
+                                 </div>
+                                 <h4 class="text-base sm:text-lg font-bold mb-2 text-gray-700 dark:text-gray-100">
+                                    cPanel
+                                 </h4>
+                              </div>
+                              <div class="py-5 ">
+                                 <div class="group inline-flex items-center justify-center w-10 sm:h-10 sm:w-12 sm:h-12 ml-3 mb-8 relative ">
+                                    <div class="absolute inset-0 rounded-xl -m-3 transform -rotate-6 bg-teal-600 transition ease-out duration-150 group-hover:rotate-6 group-hover:scale-110 ">
+                                    </div>
+                                    <div class="absolute inset-0 rounded-xl -m-3 transform rotate-2 bg-teal-600 bg-opacity-50 shadow-inner transition ease-out duration-150 group-hover:-rotate-3 group-hover:scale-110 ">
+                                    </div>
+                                    <img src="img/features/hosting-features3.svg" alt="hosting-features" class="inline-block w-6 h-6 sm:w-8 sm:h-8 text-white relative transform transition ease-out duration-150 group-hover:scale-125">
+                                 </div>
+                                 <h4 class="text-base sm:text-lg font-bold mb-2 text-gray-700 dark:text-gray-100">
+                                    Upgradable
+                                 </h4>
+                              </div>
+                              <div class="py-5 ">
+                                 <div class="group inline-flex items-center justify-center w-10 sm:h-10 sm:w-12 sm:h-12 ml-3 mb-8 relative ">
+                                    <div class="absolute inset-0 rounded-xl -m-3 transform -rotate-6 bg-blue-400 transition ease-out duration-150 group-hover:rotate-6 group-hover:scale-110 ">
+                                    </div>
+                                    <div class="absolute inset-0 rounded-xl -m-3 transform rotate-2 bg-blue-400 bg-opacity-50 shadow-inner transition ease-out duration-150 group-hover:-rotate-3 group-hover:scale-110 ">
+                                    </div>
+                                    <img src="img/features/hosting-features4.svg" alt="hosting-features" class="inline-block w-6 h-6 sm:w-8 sm:h-8 text-white relative transform transition ease-out duration-150 group-hover:scale-125">
+                                 </div>
+                                 <h4 class="text-base sm:text-lg font-bold mb-2 text-gray-700 dark:text-gray-100">
+                                    99.9% Uptime
+                                 </h4>
+                              </div>
+                              <div class="py-5 ">
+                                 <div class="group inline-flex items-center justify-center w-10 sm:h-10 sm:w-12 sm:h-12 ml-3 mb-8 relative ">
+                                    <div class="absolute inset-0 rounded-xl -m-3 transform -rotate-6 bg-yellow-400 transition ease-out duration-150 group-hover:rotate-6 group-hover:scale-110 ">
+                                    </div>
+                                    <div class="absolute inset-0 rounded-xl -m-3 transform rotate-2 bg-yellow-500 bg-opacity-50 shadow-inner transition ease-out duration-150 group-hover:-rotate-3 group-hover:scale-110 ">
+                                    </div>
+                                    <img src="img/features/hosting-features5.svg" alt="hosting-features" class="inline-block w-6 h-6 sm:w-8 sm:h-8 text-white relative transform transition ease-out duration-150 group-hover:scale-125">
+                                 </div>
+                                 <h4 class="text-base sm:text-lg font-bold mb-2 text-gray-700 dark:text-gray-100">
+                                    Free SSL
+                                 </h4>
+                              </div>
+                              <div class="py-5 ">
+                                 <div class="group inline-flex items-center justify-center w-10 sm:h-10 sm:w-12 sm:h-12 ml-3 mb-8 relative ">
+                                    <div class="absolute inset-0 rounded-xl -m-3 transform -rotate-6 bg-indigo-600 transition ease-out duration-150 group-hover:rotate-6 group-hover:scale-110 ">
+                                    </div>
+                                    <div class="absolute inset-0 rounded-xl -m-3 transform rotate-2 bg-indigo-600 bg-opacity-50 shadow-inner transition ease-out duration-150 group-hover:-rotate-3 group-hover:scale-110 ">
+                                    </div>
+                                    <img src="img/features/hosting-features6.svg" alt="hosting-features" class="inline-block w-6 h-6 sm:w-8 sm:h-8 text-white relative transform transition ease-out duration-150 group-hover:scale-125">
+                                 </div>
+                                 <h4 class="text-base sm:text-lg font-bold mb-2 text-gray-700 dark:text-gray-100">
+                                    Free Migration
+                                 </h4>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- END Features -->
+                     </div>
+                     <!-- Slider two -->
+                     <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 2" style="width: 1152px;">
+                        <!-- Features -->
+                        <div class="">
+                           <div class="grid grid-cols-2 md:grid-cols-6 gap-4 md:gap-12 text-center ">
+                              <div class="py-5 ">
+                                 <div class="group inline-flex items-center justify-center w-10 sm:h-10 sm:w-12 sm:h-12 ml-3 mb-8 relative ">
+                                    <div class="absolute inset-0 rounded-xl -m-3 transform -rotate-6 bg-orange-500 transition ease-out duration-150 group-hover:rotate-6 group-hover:scale-110 ">
+                                    </div>
+                                    <div class="absolute inset-0 rounded-xl -m-3 transform rotate-2 bg-orange-500 bg-opacity-50 shadow-inner transition ease-out duration-150 group-hover:-rotate-3 group-hover:scale-110 ">
+                                    </div>
+                                    <img src="img/features/hosting-features7.svg" alt="hosting-features" class="inline-block w-6 h-6 sm:w-8 sm:h-8 text-white relative transform transition ease-out duration-150 group-hover:scale-125">
+                                 </div>
+                                 <h4 class="text-base sm:text-lg font-bold mb-2 text-gray-700 dark:text-gray-100">
+                                    WP Installer 
+                                 </h4>
+                              </div>
+                              <div class="py-5 ">
+                                 <div class="group inline-flex items-center justify-center w-10 sm:h-10 sm:w-12 sm:h-12 ml-3 mb-8 relative ">
+                                    <div class="absolute inset-0 rounded-xl -m-3 transform -rotate-6 bg-red-500 transition ease-out duration-150 group-hover:rotate-6 group-hover:scale-110 ">
+                                    </div>
+                                    <div class="absolute inset-0 rounded-xl -m-3 transform rotate-2 bg-red-500 bg-opacity-50 shadow-inner transition ease-out duration-150 group-hover:-rotate-3 group-hover:scale-110 ">
+                                    </div>
+                                    <img src="img/features/hosting-features8.svg" alt="hosting-features" class="inline-block w-6 h-6 sm:w-8 sm:h-8 text-white relative transform transition ease-out duration-150 group-hover:scale-125">
+                                 </div>
+                                 <h4 class="text-base sm:text-lg font-bold mb-2 text-gray-700 dark:text-gray-100">
+                                    Free Webmail
+                                 </h4>
+                              </div>
+                              <div class="py-5 ">
+                                 <div class="group inline-flex items-center justify-center w-10 sm:h-10 sm:w-12 sm:h-12 ml-3 mb-8 relative ">
+                                    <div class="absolute inset-0 rounded-xl -m-3 transform -rotate-6 bg-teal-600 transition ease-out duration-150 group-hover:rotate-6 group-hover:scale-110 ">
+                                    </div>
+                                    <div class="absolute inset-0 rounded-xl -m-3 transform rotate-2 bg-teal-600 bg-opacity-50 shadow-inner transition ease-out duration-150 group-hover:-rotate-3 group-hover:scale-110 ">
+                                    </div>
+                                    <img src="img/features/hosting-features9.svg" alt="hosting-features" class="inline-block w-6 h-6 sm:w-8 sm:h-8 text-white relative transform transition ease-out duration-150 group-hover:scale-125">
+                                 </div>
+                                 <h4 class="text-base sm:text-lg font-bold mb-2 text-gray-700 dark:text-gray-100">
+                                    Subdomains
+                                 </h4>
+                              </div>
+                              <div class="py-5 ">
+                                 <div class="group inline-flex items-center justify-center w-10 sm:h-10 sm:w-12 sm:h-12 ml-3 mb-8 relative ">
+                                    <div class="absolute inset-0 rounded-xl -m-3 transform -rotate-6 bg-blue-400 transition ease-out duration-150 group-hover:rotate-6 group-hover:scale-110 ">
+                                    </div>
+                                    <div class="absolute inset-0 rounded-xl -m-3 transform rotate-2 bg-blue-400 bg-opacity-50 shadow-inner transition ease-out duration-150 group-hover:-rotate-3 group-hover:scale-110 ">
+                                    </div>
+                                    <img src="img/features/hosting-features10.svg" alt="hosting-features" class="inline-block w-6 h-6 sm:w-8 sm:h-8 text-white relative transform transition ease-out duration-150 group-hover:scale-125">
+                                 </div>
+                                 <h4 class="text-base sm:text-lg font-bold mb-2 text-gray-700 dark:text-gray-100">
+                                    MySQL Database
+                                 </h4>
+                              </div>
+                              <div class="py-5 ">
+                                 <div class="group inline-flex items-center justify-center w-10 sm:h-10 sm:w-12 sm:h-12 ml-3 mb-8 relative ">
+                                    <div class="absolute inset-0 rounded-xl -m-3 transform -rotate-6 bg-yellow-400 transition ease-out duration-150 group-hover:rotate-6 group-hover:scale-110 ">
+                                    </div>
+                                    <div class="absolute inset-0 rounded-xl -m-3 transform rotate-2 bg-yellow-500 bg-opacity-50 shadow-inner transition ease-out duration-150 group-hover:-rotate-3 group-hover:scale-110 ">
+                                    </div>
+                                    <img src="img/features/hosting-features11.svg" alt="hosting-features" class="inline-block w-6 h-6 sm:w-8 sm:h-8 text-white relative transform transition ease-out duration-150 group-hover:scale-125">
+                                 </div>
+                                 <h4 class="text-base sm:text-lg font-bold mb-2 text-gray-700 dark:text-gray-100">
+                                    Multiple IX
+                                 </h4>
+                              </div>
+                              <div class="py-5 ">
+                                 <div class="group inline-flex items-center justify-center w-10 sm:h-10 sm:w-12 sm:h-12 ml-3 mb-8 relative ">
+                                    <div class="absolute inset-0 rounded-xl -m-3 transform -rotate-6 bg-indigo-600 transition ease-out duration-150 group-hover:rotate-6 group-hover:scale-110 ">
+                                    </div>
+                                    <div class="absolute inset-0 rounded-xl -m-3 transform rotate-2 bg-indigo-600 bg-opacity-50 shadow-inner transition ease-out duration-150 group-hover:-rotate-3 group-hover:scale-110 ">
+                                    </div>
+                                    <img src="img/features/hosting-features12.svg" alt="hosting-features" class="inline-block w-6 h-6 sm:w-8 sm:h-8 text-white relative transform transition ease-out duration-150 group-hover:scale-125">
+                                 </div>
+                                 <h4 class="text-base sm:text-lg font-bold mb-2 text-gray-700 dark:text-gray-100">
+                                    24/7 Support
+                                 </h4>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- END Features -->
+                     </div>
+                  </div>
+                  <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                  <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+               </div>
+            </div>
+            <!-- END Features Section: Key Features With Icons -->
+         </div>
+      </div>
+      </div>
+
+      
+      <!-- Image feature started -->
+      <div class="bg-white dark:bg-gray-900">
+         <div class="space-y-12 sm:space-y-12 container xl:max-w-7xl mx-auto px-4 py-4 lg:py-8 lg:px-8 lg:pb-16">
+            <div class="sm:flex items-center rounded-xl px-2 py-2 sm:pt-6 sm:pb-20 sm:px-4 sm:mt-8 sm:-mb-12">
+               <div class="sm:flex-1 md:w-7/12">
+                  <h2 class="text-3xl md:text-4xl font-extrabold dark:text-gray-100">Included All the Essentials
+                  </h2>
+                  <div class="mt-6 sm:flex md:w-5/12 justify-center items-center sm:hidden">
+                     <img src="img/reseller-tools.svg" class="h-80 mt-12 sm:mt-0 ml-2">
+                  </div>
+                  <p class="mt-10 text-lg pr-0 sm:pr-8 dark:text-gray-400">Everything can be managed from a single dashboard (WHM). You're able to create new cPanel accounts, manage them, assign resources and all of the actions you need from WHM. All of your clients will get a cPanel control panel with all essential features. Aslo, they can quickly install Content Management Systems (WordPress, Joomla, Magento, and so on) using the Softaculous script installer. Also, you can make your own private nameservers. Get unmetered bandwidth to handle heavy traffic. Add an unlimited number of domains/subdomains and protect your clients with built-in firewalls and anti-virus software.
+                  </p>
+               </div>
+               <div class="sm:flex md:w-5/12 justify-center items-center hidden sm:block">
+                  <img src="img/reseller-tools.svg" class="ml-8 h-80 mt-12 sm:mt-0">
+               </div>
+            </div>
+            <div class="bg-white dark:bg-transparent rounded-xl sm:px-12 sm:shadow-xl -mt-16 sm:-mt-0 sm:py-6">
+               <div class="md:flex items-center">
+                  <div class="md:flex-1 w-4/12 hidden sm:block">
+                     <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_iqknxo2y.json" background="transparent.html" speed="1" style="margin-left: -20px; width: 500px; height: 500px;" loop autoplay>
+                     </lottie-player>
+                     <!-- <img src="https://ouch-cdn2.icons8.com/2Gy9Tol7yz8pkaFrczS8xa1qOOSEIFSkvnebTc-h5fQ/rs:fit:456:456/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNzI5/L2RkZmQ0MzU1LTQ5/NTMtNDhhZi1hZGRi/LWU3YTQzYmFjOWM0/OC5wbmc.png" class="pr-20"> -->
+                  </div>
+                  <div class="md:flex-1 md:w-8/12 items-center px-2 sm:px-0">
+                     <div class="md:flex items-center rounded-xl shadow-md px-5 py-5 bg-gray-w00 dark:bg-gray-800 dark:hover:text-white dark:text-gray-200 hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:shadow-outline" href="#">
+                        <span class="flex justify-center items-center h-14 w-14 mr-5 bg-blue-100 rounded-lg mb-3">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="text-blue-600 h-6 w-6"
+                              viewBox="0 0 20 20" fill="currentColor">
+                              <path fill-rule="evenodd"
+                                 d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
+                                 clip-rule="evenodd" />
+                           </svg>
+                        </span>
+                        <span class="items-center text-xl font-bold text-gray-700 dark:text-gray-100"> <a
+                                    href="#"> LiteSpeed Web Server & LSCache </a> <br>
+                                <p class="text-base font-light text-gray-600 dark:text-gray-400"> Most advanced HTTP web server and caching system</p>
+                            </span>
+                     </div>
+                     <div class="mt-6 md:flex items-center rounded-xl shadow-md px-5 py-5 bg-white dark:bg-gray-800  dark:hover:text-white dark:text-gray-200 hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:shadow-outline" href="#">
+                        <span class="flex justify-center items-center h-14 w-14 mr-5 bg-blue-100 rounded-lg mb-3">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="text-blue-600 h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                           </svg>
+                        </span>
+                        <span class="text-xl font-bold text-gray-700 dark:text-gray-100"> <a href="#"> Quic-HTTP/3
+                                </a> <br>
+                                <p class="text-base font-light text-gray-600 dark:text-gray-400"> Hosting with Quic-HTTP/3 </p>
+                            </span>
+                     </div>
+                     <div class="mt-6 md:flex items-center rounded-xl shadow-md px-5 py-5 bg-white dark:bg-gray-800 dark:hover:text-white dark:text-gray-200 hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:shadow-outline" href="#">
+                        <span class="flex justify-center items-center h-14 w-14 mr-5 bg-blue-100 rounded-lg mb-3">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="text-blue-600 h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                              <path d="M5.5 16a3.5 3.5 0 01-.369-6.98 4 4 0 117.753-1.977A4.5 4.5 0 1113.5 16h-8z" />
+                           </svg>
+                        </span>
+                        <span class="text-xl font-bold text-gray-700 dark:text-gray-100"> <a
+                                    href="#"> Stable & Secure Cloud Tech </a> <br>
+                                <p class="text-base font-light text-gray-600 dark:text-gray-400"> Cloud servers powered by our own network infrastructure</p>
+                            </span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="sm:flex items-center rounded-xl px-2 py-2 pb-16 pt-6 sm:pt-16 sm:pb-20 sm:space-y-8">
+               <div class="sm:flex-1 sm:w-7/12">
+                  <h2 class="text-3xl md:text-4xl font-extrabold dark:text-gray-100">
+                     Complete server management, backup and security
+                  </h2>
+                  <div class="mt-8 flex justify-start items-center sm:hidden">
+                     <img src="img/management.png" class="h-80 -ml-2">
+                  </div>
+                  <p class="mt-10 text-lg sm:pr-8 pr-0 dark:text-gray-400">Everything can be managed from a single dashboard (WHM). You're able to create new cPanel accounts, manage them, assign resources and all of the actions you need from WHM. All of your clients will get cPanel control panel with all essential features. Also, they can quickly install Content Management Systems (WordPress, Joomla, Magento, and so on) using the Softaculous script installer. Also, you can make your own private nameservers. Get unmetered bandwidth to handle heavy traffic. Add an unlimited number of domains/subdomains and protect your clients with built-in firewalls and anti-virus software. Backup is critical for hosting resellers and their customers. As a result, we maintain and provide automatic remote backup for you. However, there is a small fee for the auto backup service. Our reseller server is completely secure and no pirated or cracked software is used.
+                  </p>
+               </div>
+               <div class="sm:flex sm:w-5/12 justify-center items-center hidden sm:block">
+                  <img src="img/management.png" class="h-80">
+               </div>
+            </div>
+         </div>
+      </div>
+     <!-- Features Section: Key Features List -->
+     <div class=""
+        style="background-image: url('img/turbo-hosting-hero.jpg'); background-size: cover;">
+        <div class="bg-gray-900 bg-opacity-80 dark:bg-opacity-90">
+            <div class="space-y-16 container xl:max-w-7xl mx-auto py-16 lg:px-8 lg:py-28 lg:mb-5">
+
+                <!-- Heading -->
+                <div class="lg:w-1/2 text-left lg:text-left px-6 sm:px-0 pb-6 sm:pb-0 text-white -mb-14 sm:-mb-0">
+                    <div class="text-sm uppercase font-bold tracking-wider mb-1 text-blue-500 dark:text-blue-500">
+                        features </div>
+                    <h2 class="text-3xl md:text-4xl font-extrabold mb-2 dark:text-gray-100">
+                        More features
+                    </h2>
+                    <h3 class="text-lg md:text-xl md:leading-relaxed font-medium text-gray-200 dark:text-gray-400">
+                    ISPbills has much more features to explore!
+                    </h3>
+                </div>
+                <!-- END Heading -->
+
+                <!-- Features -->
+                <div class="sm:flex sm:flex-row sm:flex-wrap gap-4 md:gap-5 px-6 sm:px-0">
+                    <div
+                        class="flex items-center space-x-3 mb-4 sm:mb-0 bg-white dark:bg-gray-800 shadow-lg py-1.5 px-3 rounded-xl">
+                        <div class="flex-none flex items-center justify-center w-5 h-5">
+                        <img src="img/check-dark.svg" alt="check">
+                     </div>
+                        <h4 class="font-semibold dark:text-gray-300">
+                            30 Day Money Guarantee
+                        </h4>
+                    </div>
+                    <div
+                        class="flex items-center space-x-3 mb-4 sm:mb-0 bg-white dark:bg-gray-800 shadow-lg py-1.5 px-3 rounded-xl">
+                        <div class="flex-none flex items-center justify-center w-5 h-5">
+                        <img src="img/check-dark.svg" alt="check">
+                     </div>
+                        <h4 class="font-semibold dark:text-gray-300">
+                            Softaculous Script Installer
+
+
+                        </h4>
+                    </div>
+                    <div
+                        class="flex items-center space-x-3 mb-4 sm:mb-0 bg-white dark:bg-gray-800 shadow-lg py-1.5 px-3 rounded-xl">
+                        <div class="flex-none flex items-center justify-center w-5 h-5">
+                        <img src="img/check-dark.svg" alt="check">
+                     </div>
+                        <h4 class="font-semibold dark:text-gray-300">
+                            3.8 Ghz Powerful CPU
+
+
+                        </h4>
+                    </div>
+                    <div
+                        class="flex items-center space-x-3 mb-4 sm:mb-0 bg-white dark:bg-gray-800 shadow-lg py-1.5 px-3 rounded-xl">
+                        <div class="flex-none flex items-center justify-center w-5 h-5">
+                        <img src="img/check-dark.svg" alt="check">
+                     </div>
+                        <h4 class="font-semibold dark:text-gray-300">
+                            Free Data Backup
+
+
+                        </h4>
+                    </div>
+                    <div
+                        class="flex items-center space-x-3 mb-4 sm:mb-0 bg-white dark:bg-gray-800 shadow-lg py-1.5 px-3 rounded-xl">
+                        <div class="flex-none flex items-center justify-center w-5 h-5">
+                        <img src="img/check-dark.svg" alt="check">
+                     </div>
+                        <h4 class="font-semibold dark:text-gray-300">
+                            99.9% Uptime Guarantee
+
+                        </h4>
+                    </div>
+                    <div
+                        class="flex items-center space-x-3 mb-4 sm:mb-0 bg-white dark:bg-gray-800 shadow-lg py-1.5 px-3 rounded-xl">
+                        <div class="flex-none flex items-center justify-center w-5 h-5">
+                        <img src="img/check-dark.svg" alt="check">
+                     </div>
+                        <h4 class="font-semibold dark:text-gray-300">
+                            Malware & Exploit Scanning
+
+                        </h4>
+                    </div>
+
+                    <div
+                        class="flex items-center space-x-3 mb-4 sm:mb-0 bg-white dark:bg-gray-800 shadow-lg py-1.5 px-3 rounded-xl">
+                        <div class="flex-none flex items-center justify-center w-5 h-5">
+                        <img src="img/check-dark.svg" alt="check">
+                     </div>
+                        <h4 class="font-semibold dark:text-gray-300">
+                            Curl / GD2 / ImageMagick
+
+                        </h4>
+                    </div>
+                    <div
+                        class="flex items-center space-x-3 mb-4 sm:mb-0 bg-white dark:bg-gray-800 shadow-lg py-1.5 px-3 rounded-xl">
+                        <div class="flex-none flex items-center justify-center w-5 h-5">
+                        <img src="img/check-dark.svg" alt="check">
+                     </div>
+                        <h4 class="font-semibold dark:text-gray-300">
+                            Free cPanel Migration
+
+                        </h4>
+                    </div>
+                    <div
+                        class="flex items-center space-x-3 mb-4 sm:mb-0 bg-white dark:bg-gray-800 shadow-lg py-1.5 px-3 rounded-xl">
+                        <div class="flex-none flex items-center justify-center w-5 h-5">
+                        <img src="img/check-dark.svg" alt="check">
+                     </div>
+                        <h4 class="font-semibold dark:text-gray-300">
+                            CloudFlare CDN
+
+                        </h4>
+                    </div>
+                    <div
+                        class="flex items-center space-x-3 mb-4 sm:mb-0 bg-white dark:bg-gray-800 shadow-lg py-1.5 px-3 rounded-xl">
+                        <div class="flex-none flex items-center justify-center w-5 h-5">
+                        <img src="img/check-dark.svg" alt="check">
+                     </div>
+                        <h4 class="font-semibold dark:text-gray-300">
+                            Spam Protection
+
+                        </h4>
+                    </div>
+                    <div
+                        class="flex items-center space-x-3 mb-4 sm:mb-0 bg-white dark:bg-gray-800 shadow-lg py-1.5 px-3 rounded-xl">
+                        <div class="flex-none flex items-center justify-center w-5 h-5">
+                        <img src="img/check-dark.svg" alt="check">
+                     </div>
+                        <h4 class="font-semibold dark:text-gray-300">
+                            PHP Selector (5.4 - 7.x)
+
+                        </h4>
+                    </div>
+                    <div
+                        class="flex items-center space-x-3 mb-4 sm:mb-0 bg-white dark:bg-gray-800 shadow-lg py-1.5 px-3 rounded-xl">
+                        <div class="flex-none flex items-center justify-center w-5 h-5">
+                        <img src="img/check-dark.svg" alt="check">
+                     </div>
+                        <h4 class="font-semibold dark:text-gray-300">
+                            24/7 Technical Support
+
+                        </h4>
+                    </div>
+
+                    <div
+                        class="flex items-center space-x-3 mb-4 sm:mb-0 bg-white dark:bg-gray-800 shadow-lg py-1.5 px-3 rounded-xl">
+                        <div class="flex-none flex items-center justify-center w-5 h-5">
+                        <img src="img/check-dark.svg" alt="check">
+                     </div>
+                        <h4 class="font-semibold dark:text-gray-300">
+                            SSH Access Available
+
+                        </h4>
+                    </div>
+                    <div
+                        class="flex items-center space-x-3 mb-4 sm:mb-0 bg-white dark:bg-gray-800 shadow-lg py-1.5 px-3 rounded-xl">
+                        <div class="flex-none flex items-center justify-center w-5 h-5">
+                        <img src="img/check-dark.svg" alt="check">
+                     </div>
+                        <h4 class="font-semibold dark:text-gray-300">
+                            Python Version Selector
+
+                        </h4>
+                    </div>
+                    <div
+                        class="flex items-center space-x-3 mb-4 sm:mb-0 bg-white dark:bg-gray-800 shadow-lg py-1.5 px-3 rounded-xl">
+                        <div class="flex-none flex items-center justify-center w-5 h-5">
+                        <img src="img/check-dark.svg" alt="check">
+                     </div>
+                        <h4 class="font-semibold dark:text-gray-300">
+                            Clustered Failover DNS
+
+                        </h4>
+                    </div>
+                    <div
+                        class="flex items-center space-x-3 mb-4 sm:mb-0 bg-white dark:bg-gray-800 shadow-lg py-1.5 px-3 rounded-xl">
+                        <div class="flex-none flex items-center justify-center w-5 h-5">
+                        <img src="img/check-dark.svg" alt="check">
+                     </div>
+                        <h4 class="font-semibold dark:text-gray-300">
+                            Ruby On Rails
+
+                        </h4>
+                    </div>
+                    <div
+                        class="flex items-center space-x-3 mb-4 sm:mb-0 bg-white dark:bg-gray-800 shadow-lg py-1.5 px-3 rounded-xl">
+                        <div class="flex-none flex items-center justify-center w-5 h-5">
+                        <img src="img/check-dark.svg" alt="check">
+                     </div>
+                        <h4 class="font-semibold dark:text-gray-300">
+                            Node.js Version Selector
+
+                        </h4>
+                    </div>
+                    <div
+                        class="flex items-center space-x-3 mb-4 sm:mb-0 bg-white dark:bg-gray-800 shadow-lg py-1.5 px-3 rounded-xl">
+                        <div class="flex-none flex items-center justify-center w-5 h-5">
+                        <img src="img/check-dark.svg" alt="check">
+                     </div>
+                        <h4 class="font-semibold dark:text-gray-300">
+                            CloudLinux / CageFS
+
+                        </h4>
+                    </div>
+
+
+                    <div
+                        class="flex items-center space-x-3 mb-4 sm:mb-0 bg-white dark:bg-gray-800 shadow-lg py-1.5 px-3 rounded-xl">
+                        <div class="flex-none flex items-center justify-center w-5 h-5">
+                        <img src="img/check-dark.svg" alt="check">
+                     </div>
+                        <h4 class="font-semibold dark:text-gray-300">
+                            ionCube PHP Loader
+
+                        </h4>
+                    </div>
+
+
+                    <div
+                        class="flex items-center space-x-3 mb-4 sm:mb-0 bg-white dark:bg-gray-800 shadow-lg py-1.5 px-3 rounded-xl">
+                        <div class="flex-none flex items-center justify-center w-5 h-5">
+                        <img src="img/check-dark.svg" alt="check">
+                     </div>
+                        <h4 class="font-semibold dark:text-gray-300">
+                            Awstats & Webalizer
+
+
+                        </h4>
+                    </div>
+                    <div
+                        class="flex items-center space-x-3 mb-4 sm:mb-0 bg-white dark:bg-gray-800 shadow-lg py-1.5 px-3 rounded-xl">
+                        <div class="flex-none flex items-center justify-center w-5 h-5">
+                        <img src="img/check-dark.svg" alt="check">
+                     </div>
+                        <h4 class="font-semibold dark:text-gray-300">
+                            Mariadb 10.x / phpMyAdmin
+
+
+                        </h4>
+                    </div>
+                    <div
+                        class="flex items-center space-x-3 mb-4 sm:mb-0 bg-white dark:bg-gray-800 shadow-lg py-1.5 px-3 rounded-xl">
+                        <div class="flex-none flex items-center justify-center w-5 h-5">
+                        <img src="img/check-dark.svg" alt="check">
+                     </div>
+                        <h4 class="font-semibold dark:text-gray-300">
+                            Zend Guard Loader
+
+
+                        </h4>
+                    </div>
+
+
+
+                </div>
+                <!-- END Features -->
+            </div>
+        </div>
+    </div>
+    <!-- END Features Section: Key Features List -->
+
+
+
+
+
+    <!-- START FEATURES-->
+
+    <div class="space-y-4 container xl:max-w-7xl mx-auto py-16 lg:py-0 lg:pt-20 lg:px-4 lg:pb-4 lg:dark:pb-10">
+
+        <!-- Heading -->
+        <div class="lg:w-1/2 text-left lg:text-left px-6 sm:px-4 pb-6 sm:pb-8">
+            <div class="text-sm uppercase font-bold tracking-wider mb-1 text-blue-500 dark:text-blue-500">
+                Exciting features
+            </div>
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-2 dark:text-gray-100">
+                All Plans Included
+            </h2>
+            <h3 class="text-lg md:text-xl md:leading-relaxed font-medium text-gray-600 dark:text-gray-400">
+                What makes ISPbills the #1 web hosting company in Bangladesh?
+            </h3>
+        </div>
+        <!-- END Heading -->
+
+
+
+        <!-- Features Section: Modern Alternate With Icons -->
+        <div class="dark:bg-gray-900 bg-white">
+            <div class="space-y-16 container xl:max-w-7xl mx-auto px-6 py-4 lg:px-4 lg:py-6">
+
+
+                <!-- Features -->
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-8">
+                  <div class="group p-8 transition ease-out duration-200 bg-white dark:bg-gray-800 shadow-lg rounded-2xl border-gray-200">
+                     <div class="text-left">
+                        <div class="inline-flex items-center justify-center w-8 h-8 m-5 mb-10 relative">
+                           <div class="absolute inset-0 rounded-3xl -m-5 transform rotate-3 bg-purple-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105 group-hover:shadow-lg">
+                           </div>
+                           <div class="absolute inset-0 rounded-2xl -m-2 transform -rotate-3 bg-purple-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105">
+                           </div>
+                           <img src="img/plans-icon/plans-icon6.svg" class="relative transform transition ease-out duration-200 group-hover:scale-110 inline-block w-5 h-5" alt="svg icon">
+                        </div>
+                     </div>
+                     <h4 class="text-lg font-bold mb-2 text-left dark:text-gray-100">
+                        Flexible control
+                     </h4>
+                     <p class="leading-relaxed text-gray-600 dark:text-gray-400">
+                     We provide you the flexibility and cPanel control panel to design the website you desire, with full SSD storage and other features.
+                     </p>
+                  </div>
+                  <div class="group p-8 transition ease-out duration-200 bg-white dark:bg-gray-800 shadow-lg rounded-2xl border-gray-200">
+                     <div class="text-left">
+                        <div class="inline-flex items-center justify-center w-8 h-8 m-5 mb-10 relative">
+                           <div class="absolute inset-0 rounded-3xl -m-5 transform rotate-3 bg-red-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105 group-hover:shadow-lg">
+                           </div>
+                           <div class="absolute inset-0 rounded-2xl -m-2 transform -rotate-3 bg-red-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105">
+                           </div>
+                           <img src="img/plans-icon/plans-icon2.svg" class="relative transform transition ease-out duration-200 group-hover:scale-110 inline-block w-5 h-5" alt="svg icon">
+                        </div>
+                     </div>
+                     <h4 class="text-lg font-bold mb-2 text-left dark:text-gray-100">
+                     Unmetered Bandwidth
+                     </h4>
+                     <p class="leading-relaxed text-gray-600 dark:text-gray-400">
+                        There are no restrictions of traffic your sites can receive as long as they don't violate
+                        our regulations or consume too much CPU.
+                     </p>
+                  </div>
+                  <div class="group p-8 transition ease-out duration-200 bg-white dark:bg-gray-800 shadow-lg rounded-2xl border-gray-200">
+                     <div class="text-left">
+                        <div class="inline-flex items-center justify-center w-8 h-8 m-5 mb-10 relative">
+                           <div class="absolute inset-0 rounded-3xl -m-5 transform rotate-3 bg-green-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105 group-hover:shadow-lg">
+                           </div>
+                           <div class="absolute inset-0 rounded-2xl -m-2 transform -rotate-3 bg-green-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105">
+                           </div>
+                           <img src="img/plans-icon/plans-icon3.svg" class="relative transform transition ease-out duration-200 group-hover:scale-110 inline-block w-5 h-5" alt="svg icon">
+                        </div>
+                     </div>
+                     <h4 class="text-lg font-bold mb-2 text-left dark:text-gray-100">
+                        Improve Site Speed
+                     </h4>
+                     <p class="leading-relaxed text-gray-600 dark:text-gray-400">
+                        By switching to our web hosting, you may get a 50% increase in site speed and generate more
+                        money with a speedier site. 
+                     </p>
+                  </div>
+                  <div class="group p-8 transition ease-out duration-200 bg-white dark:bg-gray-800 shadow-lg rounded-2xl border-gray-200">
+                     <div class="text-left">
+                        <div class="inline-flex items-center justify-center w-8 h-8 m-5 mb-10 relative">
+                           <div class="absolute inset-0 rounded-3xl -m-5 transform rotate-3 bg-gray-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105 group-hover:shadow-lg">
+                           </div>
+                           <div class="absolute inset-0 rounded-2xl -m-2 transform -rotate-3 bg-gray-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105">
+                           </div>
+                           <img src="img/plans-icon/plans-icon9.svg" class="relative transform transition ease-out duration-200 group-hover:scale-110 inline-block w-5 h-5" alt="svg icon">
+                        </div>
+                     </div>
+                     <h4 class="text-lg font-bold mb-2 text-left dark:text-gray-100">
+                        Premium Tools
+                     </h4>
+                     <p class="leading-relaxed text-gray-600 dark:text-gray-400">
+                        Get the tools you need to develop better websites, including site migrations, Lets Encrypt
+                        SSL, Imunify Protection, and more.
+                     </p>
+                  </div>
+                  <div class="group p-8 transition ease-out duration-200 bg-white dark:bg-gray-800 shadow-lg rounded-2xl border-gray-200">
+                     <div class="text-left">
+                        <div class="inline-flex items-center justify-center w-8 h-8 m-5 mb-10 relative">
+                           <div class="absolute inset-0 rounded-3xl -m-5 transform rotate-3 bg-blue-200 dark:bg-blue-900 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105 group-hover:shadow-lg">
+                           </div>
+                           <div class="absolute inset-0 rounded-2xl -m-2 transform -rotate-3 bg-blue-700 bg-opacity- dark:bg-opacity-7075 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105">
+                           </div>
+                           <img src="img/plans-icon/plans-icon10.svg" class="relative transform transition ease-out duration-200 group-hover:scale-110 inline-block w-5 h-5" alt="svg icon">
+                        </div>
+                     </div>
+                     <h4 class="text-lg font-bold mb-2 text-left dark:text-gray-100">
+                        Dedicated Power
+                     </h4>
+                     <p class="leading-relaxed text-gray-600 dark:text-gray-400">
+                        Our server resources are controlled by Cloudlinux. Every plan includes storage, a CPU, and
+                        RAM to get the job done.
+                     </p>
+                  </div>
+                  <div class="group p-8 transition ease-out duration-200 bg-white dark:bg-gray-800 shadow-lg rounded-2xl border-gray-200">
+                     <div class="text-left">
+                        <div class="inline-flex items-center justify-center w-8 h-8 m-5 mb-10 relative">
+                           <div class="absolute inset-0 rounded-3xl -m-5 transform rotate-3 bg-yellow-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105 group-hover:shadow-lg">
+                           </div>
+                           <div class="absolute inset-0 rounded-2xl -m-2 transform -rotate-3 bg-yellow-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105">
+                           </div>
+                           <img src="img/plans-icon/plans-icon4.svg" class="relative transform transition ease-out duration-200 group-hover:scale-110 inline-block w-5 h-5" alt="svg icon">
+                        </div>
+                     </div>
+                     <h4 class="text-lg font-bold mb-2 text-left dark:text-gray-100">
+                        Maximum Security
+                     </h4>
+                     <p class="leading-relaxed text-gray-600 dark:text-gray-400">
+                     We protect your audience and brand with enterprise-grade security, Solid Security, and Firewall technology.
+                     </p>
+                  </div>
+                  <div class="group p-8 transition ease-out duration-200 bg-white dark:bg-gray-800 shadow-lg rounded-2xl border-gray-200">
+                     <div class="text-left">
+                        <div class="inline-flex items-center justify-center w-8 h-8 m-5 mb-10 relative">
+                           <div class="absolute inset-0 rounded-3xl -m-5 transform rotate-3 bg-indigo-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105 group-hover:shadow-lg">
+                           </div>
+                           <div class="absolute inset-0 rounded-2xl -m-2 transform -rotate-3 bg-indigo-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105">
+                           </div>
+                           <img src="img/plans-icon/plans-icon11.svg" class="relative transform transition ease-out duration-200 group-hover:scale-110 inline-block w-5 h-5" alt="svg icon">
+                        </div>
+                     </div>
+                     <h4 class="text-lg font-bold mb-2 text-left dark:text-gray-100">
+                        Always Client First
+                     </h4>
+                     <p class="leading-relaxed text-gray-600 dark:text-gray-400">
+                     The user-friendly client area management features enable you to put your clients first by allowing you to make safe payments.
+                     </p>
+                  </div>
+                  <div class="group p-8 transition ease-out duration-200 bg-white dark:bg-gray-800 shadow-lg rounded-2xl border-gray-200">
+                     <div class="text-left">
+                        <div class="inline-flex items-center justify-center w-8 h-8 m-5 mb-10 relative">
+                           <div class="absolute inset-0 rounded-3xl -m-5 transform rotate-3 bg-red-300 transition ease-out duration-200 group-hover:-rotate-3 group-hover:scale-105 group-hover:shadow-lg">
+                           </div>
+                           <div class="absolute inset-0 rounded-2xl -m-2 transform -rotate-3 bg-red-700 bg-opacity-75 shadow-inner transition ease-out duration-200 group-hover:rotate-2 group-hover:scale-105">
+                           </div>
+                           <img src="img/plans-icon/plans-icon10.svg" class="relative transform transition ease-out duration-200 group-hover:scale-110 inline-block w-5 h-5" alt="svg icon">
+                        </div>
+                     </div>
+                     <h4 class="text-lg font-bold mb-2 text-left dark:text-gray-100">
+                        Improved Performance
+                     </h4>
+                     <p class="leading-relaxed text-gray-600 dark:text-gray-400">
+                        Get the performance for your business with built-in capacity tailored for sites and
+                        redundant and highly scalable solutions.
+                     </p>
+                  </div>
+               </div>
+                <!-- END Features -->
+            </div>
+        </div>
+        <!-- END Features Section: Modern Alternate With Icons -->
+
+
+
+
+
+    </div>
+
+    <!-- END FEATURES -->
+
+
+      <!-- START FAQ-->
+      <div class="space-y-4 container xl:max-w-7xl mx-auto px-4 pb-16 lg:py-0 lg:pt-24 lg:px-4 lg:pb-36 lg:dark:pb-10">
+         <!-- Heading -->
+         <div class="lg:w-1/2 text-left lg:text-left px-2 sm:px-4 pb-6 sm:pb-8">
+            <div class="text-sm uppercase font-bold tracking-wider mb-1 text-blue-500 dark:text-blue-500">
+               OUR FAQ's
+            </div>
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-2 dark:text-gray-100">
+               Explore FAQ's
+            </h2>
+            <h3 class="text-lg md:text-xl md:leading-relaxed font-medium text-gray-600 dark:text-gray-400">
+               Find the answers to frequently asked questions.
+            </h3>
+         </div>
+         <!-- END Heading -->
+         <div class="grid grid-cols-1 md:grid-cols-2 gap-0 sm:mx-auto sm:mb-2 -mx-2">
+            <div>
+               <div class="">
+                  <div
+                     class="dark:bg-gray-800 question-and-answer select-none cursor-pointer shadow-md mx-4 my-4 sm:my-4 px-6 py-4 rounded-lg text-sm group">
+                     <dt class="question">
+                        <div class="flex justify-between">
+                           <div class="text-gray-800 dark:text-gray-100 font-semibold text-base">
+                              How long does it take to setup my account? 
+                           </div>
+                           <div>
+                              <div class="question-chevron group-hover:bg-blue-500 w-5 h-5 block text-white bg-blue-400 rounded-full p-1">
+                                 <img src="img/arrow-down-white.svg" alt="" class="w-2 h-3 mx-auto">
+                              </div>
+                              <div class="question-chevron hidden group-hover:bg-blue-500 w-5 h-5 block text-white bg-blue-400 rounded-full p-1">
+                                 <img src="img/arrow-down-white.svg" alt="" class="w-2 h-3 mx-auto rotate-180">
+                              </div>
+                           </div>
+                        </div>
+                     </dt>
+                     <dd class="answer hidden mt-3 leading-snug text-gray-700 dark:text-gray-300 text-md">
+                        Our reseller hosting are instantly deployed using our billing system. If instant setup fail for
+                        any reason, we will setup within 24 hours.
+                     </dd>
+                  </div>
+               </div>
+               <div class="">
+                  <div
+                     class="dark:bg-gray-800 question-and-answer select-none cursor-pointer shadow-md mx-4 my-4 sm:my-4 px-6 py-4 rounded-lg text-sm group">
+                     <dt class="question">
+                        <div class="flex justify-between">
+                           <div class="text-gray-800 dark:text-gray-100 font-semibold text-base">
+                              Which Plan Should I Choose?
+                           </div>
+                           <div>
+                              <div class="question-chevron group-hover:bg-blue-500 w-5 h-5 block text-white bg-blue-400 rounded-full p-1">
+                                 <img src="img/arrow-down-white.svg" alt="" class="w-2 h-3 mx-auto">
+                              </div>
+                              <div class="question-chevron hidden group-hover:bg-blue-500 w-5 h-5 block text-white bg-blue-400 rounded-full p-1">
+                                 <img src="img/arrow-down-white.svg" alt="" class="w-2 h-3 mx-auto rotate-180">
+                              </div>
+                           </div>
+                        </div>
+                     </dt>
+                     <dd class="answer hidden mt-3 leading-snug text-gray-700 dark:text-gray-300 text-md">
+                        You can upgrade or downgrade your reseller hosting plan anytime without annoying your clients. If you are not sure
+                        which plan will be most suitable for you, we recommend to start small and scale your way up.
+                     </dd>
+                  </div>
+               </div>
+               <div class="">
+                  <div
+                     class="dark:bg-gray-800 question-and-answer select-none cursor-pointer shadow-md mx-4 my-4 sm:my-4 px-6 py-4 rounded-lg text-sm group">
+                     <dt class="question">
+                        <div class="flex justify-between">
+                           <div class="text-gray-800 dark:text-gray-100 font-semibold text-base">
+                              Can I upgrade my plan after I sign up?
+                           </div>
+                           <div>
+                              <div class="question-chevron group-hover:bg-blue-500 w-5 h-5 block text-white bg-blue-400 rounded-full p-1">
+                                 <img src="img/arrow-down-white.svg" alt="" class="w-2 h-3 mx-auto">
+                              </div>
+                              <div class="question-chevron hidden group-hover:bg-blue-500 w-5 h-5 block text-white bg-blue-400 rounded-full p-1">
+                                 <img src="img/arrow-down-white.svg" alt="" class="w-2 h-3 mx-auto rotate-180">
+                              </div>
+                           </div>
+                        </div>
+                     </dt>
+                     <dd class="answer hidden mt-3 leading-snug text-gray-700 dark:text-gray-300 text-md">
+                        Yes, you can upgrade your plan any time without annoying your clients. Upgrading your plan is easy
+                        and free, scale up at any time from your dashboard with a click of a button.
+                     </dd>
+                  </div>
+               </div>
+               <div class="">
+                  <div
+                     class="dark:bg-gray-800 question-and-answer select-none cursor-pointer shadow-md mx-4 my-4 sm:my-4 px-6 py-4 rounded-lg text-sm group">
+                     <dt class="question">
+                        <div class="flex justify-between">
+                           <div class="text-gray-800 dark:text-gray-100 font-semibold text-base">
+                              Does ISPbills charge any hidden fees?
+                           </div>
+                           <div>
+                              <div class="question-chevron group-hover:bg-blue-500 w-5 h-5 block text-white bg-blue-400 rounded-full p-1">
+                                 <img src="img/arrow-down-white.svg" alt="" class="w-2 h-3 mx-auto">
+                              </div>
+                              <div class="question-chevron hidden group-hover:bg-blue-500 w-5 h-5 block text-white bg-blue-400 rounded-full p-1">
+                                 <img src="img/arrow-down-white.svg" alt="" class="w-2 h-3 mx-auto rotate-180">
+                              </div>
+                           </div>
+                        </div>
+                     </dt>
+                     <dd class="answer hidden mt-3 leading-snug text-gray-700 dark:text-gray-300 text-md">
+                        We do not charge any hidden fees. All our fees can are clearly published on our website or
+                        Terms of Service. However, if you wish to avail of our backup service or any other service that is not included in the reseller packages, then the extra charges will apply.
+                     </dd>
+                  </div>
+               </div>
+            </div>
+            <div class="-mt-4 sm:-mt-0">
+               <div class="">
+                  <div
+                     class="dark:bg-gray-800 question-and-answer select-none cursor-pointer shadow-md mx-4 my-4 sm:my-4 px-6 py-4 rounded-lg text-sm group">
+                     <dt class="question">
+                        <div class="flex justify-between">
+                           <div class="text-gray-800 dark:text-gray-100 font-semibold text-base">
+                              Will you transfer over my website?
+                           </div>
+                           <div>
+                              <div class="question-chevron group-hover:bg-blue-500 w-5 h-5 block text-white bg-blue-400 rounded-full p-1">
+                                 <img src="img/arrow-down-white.svg" alt="" class="w-2 h-3 mx-auto">
+                              </div>
+                              <div class="question-chevron hidden group-hover:bg-blue-500 w-5 h-5 block text-white bg-blue-400 rounded-full p-1">
+                                 <img src="img/arrow-down-white.svg" alt="" class="w-2 h-3 mx-auto rotate-180">
+                              </div>
+                           </div>
+                        </div>
+                     </dt>
+                     <dd class="answer hidden mt-3 leading-snug text-gray-700 dark:text-gray-300 text-md">
+                        Transfering from another host? Our expert support team is standing by to transfer your site
+                        from your old host.
+                     </dd>
+                  </div>
+               </div>
+               <div class="">
+                  <div
+                     class="dark:bg-gray-800 question-and-answer select-none cursor-pointer shadow-md mx-4 my-4 sm:my-4 px-6 py-4 rounded-lg text-sm group">
+                     <dt class="question">
+                        <div class="flex justify-between">
+                           <div class="text-gray-800 dark:text-gray-100 font-semibold text-base">
+                              Does ISPbills perform backups of my account?
+                           </div>
+                           <div>
+                              <div class="question-chevron group-hover:bg-blue-500 w-5 h-5 block text-white bg-blue-400 rounded-full p-1">
+                                 <img src="img/arrow-down-white.svg" alt="" class="w-2 h-3 mx-auto">
+                              </div>
+                              <div class="question-chevron hidden group-hover:bg-blue-500 w-5 h-5 block text-white bg-blue-400 rounded-full p-1">
+                                 <img src="img/arrow-down-white.svg" alt="" class="w-2 h-3 mx-auto rotate-180">
+                              </div>
+                           </div>
+                        </div>
+                     </dt>
+                     <dd class="answer hidden mt-3 leading-snug text-gray-700 dark:text-gray-300 text-md">
+                     Unfortunately, reseller packages are not covered by our backup system. However, there is a small fee for the auto backup service. If you wish to avail of backup service just pay the small fee and enjoy.
+                     </dd>
+                  </div>
+               </div>
+               <div class="">
+                  <div
+                     class="dark:bg-gray-800 question-and-answer select-none cursor-pointer shadow-md mx-4 my-4 sm:my-4 px-6 py-4 rounded-lg text-sm group">
+                     <dt class="question">
+                        <div class="flex justify-between">
+                           <div class="text-gray-800 dark:text-gray-100 font-semibold text-base">
+                              What payment methods do you accept?
+                           </div>
+                           <div>
+                              <div class="question-chevron group-hover:bg-blue-500 w-5 h-5 block text-white bg-blue-400 rounded-full p-1">
+                                 <img src="img/arrow-down-white.svg" alt="" class="w-2 h-3 mx-auto">
+                              </div>
+                              <div class="question-chevron hidden group-hover:bg-blue-500 w-5 h-5 block text-white bg-blue-400 rounded-full p-1">
+                                 <img src="img/arrow-down-white.svg" alt="" class="w-2 h-3 mx-auto rotate-180">
+                              </div>
+                           </div>
+                        </div>
+                     </dt>
+                     <dd class="answer hidden mt-3 leading-snug text-gray-700 dark:text-gray-300 text-md">
+                        We accept a wide variety of payment methods including Rocket, bKash, Nagad, Bank Transfer, Local and International Credit Card, Paypal etc.
+                     </dd>
+                  </div>
+               </div>
+               <div class="">
+                  <div
+                     class="dark:bg-gray-800 question-and-answer select-none cursor-pointer shadow-md mx-4 my-4 sm:my-4 px-6 py-4 rounded-lg text-sm group">
+                     <dt class="question">
+                        <div class="flex justify-between">
+                           <div class="text-gray-800 dark:text-gray-100 font-semibold text-base">
+                              Why don't you offer unlimited storage? 
+                           </div>
+                           <div>
+                              <div class="question-chevron group-hover:bg-blue-500 w-5 h-5 block text-white bg-blue-400 rounded-full p-1">
+                                 <img src="img/arrow-down-white.svg" alt="" class="w-2 h-3 mx-auto">
+                              </div>
+                              <div class="question-chevron hidden group-hover:bg-blue-500 w-5 h-5 block text-white bg-blue-400 rounded-full p-1">
+                                 <img src="img/arrow-down-white.svg" alt="" class="w-2 h-3 mx-auto rotate-180">
+                              </div>
+                           </div>
+                        </div>
+                     </dt>
+                     <dd class="answer hidden mt-3 leading-snug text-gray-700 dark:text-gray-300 text-md">
+                        Unlimited Storage is a myth. As everything has limit. We're upfront with our shared hosting
+                        plan limits and don't hide hidden limits in our Terms of Service like most unlimited storage
+                        providers.
+                     </dd>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- END FAQ -->
+
+
+      <!-- Footer Top -->
+      <div class="bg-gray-200 dark:bg-gray-900">
+        <div class="container xl:max-w-7xl mx-auto px-6 py-12 pt-14 lg:py-4 lg:px-8 border-t dark:border-gray-700 ">
+
+
+
+            <div class="sm:flex items-center rounded-xl px-2 py-2 sm:pt-16 sm:pb-20 sm:px-4 sm:mt-8 ">
+
+                <div class="sm:flex-1 md:w-7/12">
+                    <h2 class="text-3xl md:text-4xl font-extrabold dark:text-gray-100">Do you have any questions? <br>
+                        We are always here to answer you</h2>
+
+
+                    <p class="mt-10 text-lg pr-0 sm:pr-8 dark:text-gray-400">Get in touch with one of our specialists.
+                        We'll review your needs and offer Talk to one of our hosting specialists, who will review your
+                        needs and propose a hosting solution that will specifically suit the needs of your business.
+                    </p>
+
+
+                    <div class="mt-4 grid grid-cols-1 sm:grid-cols-4 gap-6 py-10">
+
+                        <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+
+                            <div class="flex justify-center px-4 py-5">
+                                <img src="img/LiveChat.svg" alt="" class="w-12 h-14">
+                            </div>
+
+                            
+                                <h1 class="text-md text-gray-100 text-center bg-blue-600 py-3 px-4 font-semibold">Live
+                                    Chat</h1>
+                            </a>
+
+                        </div>
+
+                        <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+
+                            <div class="flex justify-center px-4 py-5">
+                                <img src="img/EmailSupport.svg" alt="" class="w-12 h-14">
+                            </div>
+
+                            <a href="cdn-cgi/l/email-protection.html#e2919792928d9096a28e8b8f8683cc8c8796">
+                                <h1 class="text-md text-gray-100 text-center bg-purple-600 py-3 px-4 font-semibold">
+                                    Email Support</h1>
+                            </a>
+
+                        </div>
+
+                        <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+
+                            <div class="flex justify-center px-4 py-5">
+                                <img src="img/24x7-Helpdesk.svg" alt="" class="w-12 h-14">
+                            </div>
+
+                            <a href="contact-us.html">
+                                <h1 class="text-md text-gray-100 text-center bg-indigo-600 py-3 px-4 font-semibold">24x7
+                                    Helpdesk</h1>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+
+                <div class="sm:flex md:w-5/12 justify-end items-center hidden sm:block ">
+                    <img src="img/footer-top.png" class="h-full mt-12 sm:mt-0 ">
+                </div>
+
+            </div>
+
+        </div>
+    </div>      <footer class="bg-gray-900 dark:bg-gray-800 text-gray-400 px-0 pt-16 pb-12 sm:py-16">
+  <div class="max-w-7xl px-8 mx-auto mb-12 lg:mb-12 lg:mt-4">
+    <img class="h-10" src="img/header/logo.svg" alt="ISPbills logo">
+    <p class="mt-6 text-gray-400 text-md">ISPbills Web Hosting plan is providing reliable hosting services for individuals and businesses. Whether you're looking for a small business web host or domain name for your business, ISPbills has the service and experienced team to support you!</p>
+  </div>
+  <div class="max-w-7xl px-8 mx-auto grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-x-0">
+    <div class="mb-2 sm:mb-0">
+      <h5 class="text-xl font-semibold text-gray-50">Hosting</h5>
+      <nav class="mt-4">
+        <ul class="space-y-1 sm:space-y-2">
+          <li>
+            <a href="web-hosting.html" class="font-normal sm:text-base hover:text-gray-400">Web Hosting</a>
+          </li>
+          
+          <li>
+            <a href="reseller-hosting.html" class="font-normal sm:text-base hover:text-gray-400">Reseller Hosting</a>
+          </li> 
+          
+          <li>
+            <a href="vps-hosting.html" class="font-normal sm:text-base hover:text-gray-400">VPS Hosting</a>
+          </li>
+          
+          <li>
+            <a href="dedicated-server.html" class="font-normal sm:text-base hover:text-gray-400">Dedicated Server</a>
+          </li>
+
+          
+          
+        </ul>
+      </nav>
+    </div>
+   
+   
+    <div class="hidden md:block">
+      <h5 class="text-xl font-semibold text-gray-50">Domain</h5>
+      <nav class="mt-4">
+        <ul class="space-y-1 sm:space-y-2">
+          <li>
+            <a href="domain-name.html" class="font-normal sm:text-base hover:text-gray-400">Domain Name</a>
+          </li>
+          <li>
+            <a href="../ap.ISPbills.net/cart2029.html?a=add&amp;domain=register" class="font-normal sm:text-base hover:text-gray-400">Register Domain</a>
+          </li>
+          <li>
+            <a href="../ap.ISPbills.net/cart7c76.html?a=add&amp;domain=transfer" class="font-normal sm:text-base hover:text-gray-400">Transfer Domain</a>
+            <li>
+            <a href="../ap.ISPbills.net/domain/pricing.html" class="font-normal sm:text-base hover:text-gray-400">Domain Promos</a>
+          </li>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+    
+    
+    <div class="mb-2 sm:mb-0">
+      <h5 class="text-xl font-semibold text-gray-50">Utilities</h5>
+      <nav class="mt-4">
+        <ul class="space-y-1 sm:space-y-2">
+          <li>
+            <a href="google-workspace.html" class="font-normal sm:text-base hover:text-gray-400">Google Workspace</a>
+          </li>
+          <li><a href="bdix.html" class="font-normal sm:text-base hover:text-gray-400">BDIX Services</a> </li>
+          <li><a href="cloud-pricing.html" class="font-normal sm:text-base hover:text-gray-400">Managed Cloud</a> </li>
+          <li><a href="affiliate.html" class="font-normal sm:text-base hover:text-gray-400">Affiliate Program</a> </li>
+        </ul>
+      </nav>
+    </div>
+    
+    
+    <div class="mb-2 sm:mb-0">
+      <h5 class="text-xl font-semibold text-gray-50">Company</h5>
+      <nav class="mt-4">
+        <ul class="space-y-1 sm:space-y-2">
+          <li>
+            <a href="https://help.ispbills.com" class="font-normal sm:text-base hover:text-gray-400">Client area</a>
+          </li>
+          <li> <a href="about-us.html" class="font-normal sm:text-base hover:text-gray-400">About ISPbills</a></li>
+          <li> <a href="payment-methods.html" class="font-normal sm:text-base hover:text-gray-400">Payment methods</a></li>
+          <li> <a href="../ap.ISPbills.net/announcements.html" class="font-normal sm:text-base hover:text-gray-400">Announcements</a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+    <div class="mb-2 sm:mb-0">
+      <h5 class="text-xl font-semibold text-gray-50">Legal</h5>
+      <nav class="mt-4">
+        <ul class="space-y-1 sm:space-y-2">
+         
+          <li><a href="../ap.ISPbills.net/submitticket30a4.html?step=2&amp;deptid=3" class="font-normal sm:text-base hover:text-gray-400">Report abuse</a></li>
+          <li><a href="tos.html" class="font-normal sm:text-base hover:text-gray-400">Service terms</a></li>
+          <li><a href="privacy-policy.html" class="font-normal sm:text-base hover:text-gray-400">Privacy policy</a></li>
+          <li>
+            <a href="contact-us.html" class="font-normal sm:text-base hover:text-gray-400">Get in touch</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+    
+
+  </div>
+
+
+  <div class="max-w-7xl px-10 mx-auto">
+  <div class="space-y-4 mt-10 lg:mt-16 border-t border-gray-800 dark:border-gray-700">
+    </div>
+  </div>
+
+
+  <div class="max-w-7xl px-8 mx-auto flex flex-col  md:flex-row sm:items-center justify-between items-start space-y-6 sm:space-y-0 mt-8 lg:mt-12">
+    
+  
+  <div class="flex flex-wrap sm:justify-center space-x-6"> 
+    <p>© Copyright ISPbills 2022 | All rights reserved</p>
+    </div>
+
+    <nav class="flex items-center space-x-2 bg-gray-800 dark:bg-gray-700 px-4 py-1.5 shadow-lg rounded-xl">
+      <a href="https://www.facebook.com/ISPbills/" class="hover:text-blue-400">
+        <span class="sr-only">Facebook</span>
+        <svg class="h-6 w-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+          <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+        </svg>
+      </a>
+      <a href="https://www.instagram.com/ISPbills/" class="hover:text-blue-400">
+        <span class="sr-only">Instagram</span>
+        <svg class="h-6 w-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+          <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+        </svg>
+      </a>
+      <a href="https://twitter.com/ISPbills" class="hover:text-blue-400">
+        <span class="sr-only">Twitter</span>
+        <svg class="h-6 w-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+        </svg>
+      </a>
+
+      <a href="https://bd.linkedin.com/company/ISPbills" class="hover:text-blue-400">
+        <span class="sr-only">LinkedIn</span>
+        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="w-5 h-5" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+</a>
+        
+      
+    </nav>
+
+  </div>
+</footer>
+
+<!-- Additional Javascripts -->
+
+<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery-3.6.1.slim.min.js"></script>
+<script src="js/alpine.min.js" defer></script>
+
+<!-- End Additional Javascripts -->      <!-- End Footer -->
+
+      <script>
+         $('.question-and-answer').click(function() {
+             $(this).find(".answer ").toggleClass("hidden ")
+             $(this).find(".question-chevron ").toggleClass("hidden ")
+         })
+      </script>
+  
+  <!-- Start USD Switcher -->
+      <script>
+         function myFunction() {
+             var x = document.querySelectorAll('.monthly');
+             var y = document.querySelectorAll('.annually');
+             for (var i = 0; i < x.length; i++) {
+                 if (document.getElementById("toggle").checked == true) {
+                     x[i].classList.add('hidden');
+                     y[i].classList.remove('hidden');
+                 } else {
+                     x[i].classList.remove('hidden');
+                     y[i].classList.add('hidden');
+                 }
+             }
+         }
+         function myFunctionBDT() {
+             var x = document.querySelectorAll('.usd');
+             var y = document.querySelectorAll('.bdt');
+             for (var i = 0; i < x.length; i++) {
+                 if (document.getElementById("toggleusd").checked == true) {
+                     x[i].classList.add('hidden');
+                     y[i].classList.remove('hidden');
+                 } else {
+                     x[i].classList.remove('hidden');
+                     y[i].classList.add('hidden');
+                 }
+             }
+         }
+      </script>
+<!-- End USD Switcher -->
+
+      <!-- Lottie Animation -->
+      <script src="js/lottie-player.js"></script>
+
+   </body>
+</html>

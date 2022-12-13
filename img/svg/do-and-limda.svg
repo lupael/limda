@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 200 54" style="enable-background:new 0 0 200 54;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st2{font-family:'GalanoGrotesque-Medium';}
+	.st3{font-size:57.7471px;}
+</style>
+<g id="XMLID_690_">
+	<g id="XMLID_691_">
+		<g>
+			<g id="XMLID_44_">
+				<g id="XMLID_48_">
+					<path id="XMLID_49_" class="st0" d="M46.99,49.33V40.4c9.45,0,16.78-9.37,13.15-19.31c-1.33-3.65-4.28-6.6-7.96-7.93
+						c-9.94-3.6-19.31,3.71-19.31,13.15l0,0h-8.9c0-15.06,14.56-26.8,30.35-21.87c6.89,2.17,12.4,7.65,14.53,14.53
+						C73.79,34.76,62.05,49.33,46.99,49.33z"/>
+				</g>
+				<polygon id="XMLID_47_" class="st1" points="47.02,40.45 38.12,40.45 38.12,31.55 38.12,31.55 47.02,31.55 47.02,31.55 				"/>
+				<polygon id="XMLID_46_" class="st1" points="38.12,47.26 31.31,47.26 31.31,47.26 31.31,40.45 38.12,40.45 				"/>
+				<path id="XMLID_45_" class="st1" d="M31.31,40.45h-5.71l0,0v-5.71l0,0h5.71l0,0V40.45z"/>
+			</g>
+		</g>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 83.5078 44.9102)" class="st0 st2 st3">+</text>
+<g>
+	<g>
+		<polyline class="st0" points="149.66,7.85 130.85,7.85 130.85,46.15 168.72,46.15 168.72,27 159.11,27 159.11,36.7 140.29,36.7 
+			140.29,17.47 149.78,17.47 149.78,7.85 		"/>
+		<rect x="149.78" y="17.22" class="st0" width="9.32" height="9.78"/>
+		<rect x="166.63" y="16.55" class="st0" width="7.69" height="7.69"/>
+		<rect x="154.93" y="4.59" class="st0" width="9.62" height="9.7"/>
+		<rect x="168.72" y="3.76" class="st0" width="8.28" height="7.53"/>
+	</g>
+	<g>
+		<polygon class="st0" points="140.29,36.21 140.29,17.47 149.78,17.47 149.78,7.85 130.85,7.85 130.85,45.66 		"/>
+		<polygon class="st0" points="159.11,17.4 159.11,17.22 149.78,17.22 149.78,26.72 		"/>
+		<rect x="166.63" y="16.55" class="st0" width="7.69" height="7.69"/>
+		<polyline class="st0" points="164.54,11.96 164.54,4.59 154.93,4.59 154.93,14.29 162.21,14.29 		"/>
+		<polygon class="st0" points="172.75,3.76 168.72,3.76 168.72,7.78 		"/>
+	</g>
+</g>
+</svg>
